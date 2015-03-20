@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{1B6FE168-D56E-4A64-9AFE-D141C005F9F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{E7B4D279-9022-4025-8645-2F5861FA4E69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{B5948C22-1CBE-438C-9833-D9FF25E3E902}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B4D279-9022-4025-8645-2F5861FA4E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B4D279-9022-4025-8645-2F5861FA4E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B4D279-9022-4025-8645-2F5861FA4E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B4D279-9022-4025-8645-2F5861FA4E69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7B4D279-9022-4025-8645-2F5861FA4E69} = {1B6FE168-D56E-4A64-9AFE-D141C005F9F4}
+	EndGlobalSection
+EndGlobal
