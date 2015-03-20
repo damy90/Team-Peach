@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    public abstract class Bird : Animal, ISoundabla, IPlayable
+    public abstract class Mammal : Animal, ISoundable, IPlayable
     {
         public void MakeSound()
         {

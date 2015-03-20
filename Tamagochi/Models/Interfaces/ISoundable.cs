@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    public interface ISoundabla
+    public interface ISoundable
     {
         void MakeSound();
     }

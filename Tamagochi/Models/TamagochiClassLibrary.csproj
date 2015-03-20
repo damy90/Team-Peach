@@ -39,39 +39,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Apple.cs" />
-    <Compile Include="Banan.cs" />
-    <Compile Include="Bird.cs" />
-    <Compile Include="Camelopard.cs" />
-    <Compile Include="Drumstick.cs" />
-    <Compile Include="Eagle.cs" />
-    <Compile Include="Fish.cs" />
-    <Compile Include="FishMeat.cs" />
-    <Compile Include="Food.cs" />
-    <Compile Include="Gender.cs" />
-    <Compile Include="IBuyable.cs" />
-    <Compile Include="ICarnivorous.cs" />
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="IHerbivorous.cs" />
-    <Compile Include="Condition.cs" />
-    <Compile Include="IPlayable.cs" />
-    <Compile Include="ISoundabla.cs" />
-    <Compile Include="Mammal.cs" />
-    <Compile Include="Meat.cs" />
-    <Compile Include="Parrot.cs" />
-    <Compile Include="Pear.cs" />
-    <Compile Include="Pizza.cs" />
-    <Compile Include="Plant.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Models\Animals\Animal.cs" />
+    <Compile Include="Models\Foods\Apple.cs" />
+    <Compile Include="Models\Foods\Banana.cs" />
+    <Compile Include="Models\Animals\Bird.cs" />
+    <Compile Include="Models\Animals\Camelopard.cs" />
+    <Compile Include="Models\Foods\Drumstick.cs" />
+    <Compile Include="Models\Animals\Eagle.cs" />
+    <Compile Include="Models\Animals\Fish.cs" />
+    <Compile Include="Models\Foods\FishMeat.cs" />
+    <Compile Include="Models\Foods\Food.cs" />
+    <Compile Include="Enumerations\Gender.cs" />
+    <Compile Include="Interfaces\IBuyable.cs" />
+    <Compile Include="Interfaces\ICarnivorous.cs" />
+    <Compile Include="Models\Animals\Cat.cs" />
+    <Compile Include="Models\Animals\Dog.cs" />
+    <Compile Include="Interfaces\IHerbivorous.cs" />
+    <Compile Include="Structures\Condition.cs" />
+    <Compile Include="Interfaces\IPlayable.cs" />
+    <Compile Include="Interfaces\ISoundable.cs" />
+    <Compile Include="Models\Animals\Mammal.cs" />
+    <Compile Include="Models\Foods\Meat.cs" />
+    <Compile Include="Models\Animals\Parrot.cs" />
+    <Compile Include="Models\Foods\Pear.cs" />
+    <Compile Include="Models\Foods\Pizza.cs" />
+    <Compile Include="Models\Foods\Plant.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shop.cs" />
-    <Compile Include="Steak.cs" />
+    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\Foods\Steak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

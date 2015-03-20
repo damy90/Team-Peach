@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    public class Banan : Plant, IBuyable
+    public class Banana : Plant, IBuyable
     {
         public int Price
         {

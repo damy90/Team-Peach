@@ -1,0 +1,5 @@
+C:\Users\Kaloyan\Desktop\Telerik Homeworks 2014-15\0.Other\Team Works\OOP - Team Peach\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Kaloyan\Desktop\Telerik Homeworks 2014-15\0.Other\Team Works\OOP - Team Peach\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
+C:\Users\Kaloyan\Desktop\Telerik Homeworks 2014-15\0.Other\Team Works\OOP - Team Peach\Team-Peach\Tamagochi\Models\obj\Debug\Models.pdb
+C:\Users\Kaloyan\Desktop\Telerik Homeworks 2014-15\0.Other\Team Works\OOP - Team Peach\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
+C:\Users\Kaloyan\Desktop\Telerik Homeworks 2014-15\0.Other\Team Works\OOP - Team Peach\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
