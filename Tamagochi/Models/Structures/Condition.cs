@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Models
 {
     public struct Condition
     {
-        //TODO: encapsulate properties
-        public int Happiness { get; set; }
-        public int Feed { get; set; }
-        public int Cleanliness { get; set; }
-        public int Energy { get; set; }
+        public int Happiness { get; private set; }
+        public int Feed { get; private set; }
+        public int Cleanliness { get; private set; }
+        public int Energy { get; private set; }
 
         public Condition(int initialValue)
             : this()
@@ -59,7 +55,7 @@ namespace Models
         {
             int oldValueCleanliness = this.Cleanliness;
             this.Cleanliness = ChangeCondition(this.Cleanliness, increment);
-            //Energy relation to happiness
+            //Energy Cleanliness to happiness
             this.Happiness = ChangeCondition(this.Happiness, (oldValueCleanliness - this.Cleanliness) / 8);
         }
 
@@ -67,7 +63,7 @@ namespace Models
         {
             int oldValueFeed = this.Feed;
             this.Feed = ChangeCondition(this.Feed, increment);
-            //Energy relation to happiness
+            //Feed relation to happiness and energy
             this.Happiness = ChangeCondition(this.Happiness, (oldValueFeed - this.Feed) / 8);
             this.Energy = ChangeCondition(this.Energy, (oldValueFeed - this.Feed) / 3);
         }
