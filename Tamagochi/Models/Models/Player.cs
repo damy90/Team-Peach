@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Models
 {
-    public class Player
+    //singleton (only one player can be initialized)
+    public sealed class Player
     {
         const int StartCoins = 500;
 
@@ -13,13 +12,24 @@ namespace Models
         private int coins;
         private Animal pet;
         private List<IBuyable> food;
+        private static Player _instance;
 
-        public Player(string name, Animal animal)
+        private Player(string name, Animal animal)
         {
             this.coins = StartCoins;
             this.name = name;
             this.pet = animal;
             this.food = new List<IBuyable>();
+        }
+
+        public static Player Initialize(string name, Animal animal)
+        {
+            if (_instance == null)
+            {
+                _instance = new Player(name, animal);
+            }
+
+            return _instance;
         }
 
         public int Coins

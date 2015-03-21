@@ -28,7 +28,7 @@ namespace Models
             Energy = initialValue;
         }
 
-        private int ChangeCondition(int conditionValue, int increment)//example input: Condidion.Feed
+        private int ChangeCondition(int conditionValue, int increment)
         {
             conditionValue = Math.Min(conditionValue + increment, 100);
             conditionValue = Math.Max(conditionValue, 0);
