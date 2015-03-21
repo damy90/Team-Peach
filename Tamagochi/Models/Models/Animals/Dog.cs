@@ -2,19 +2,51 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Media;
 
 namespace Models
 {
-    public class Dog : Mammal, ICarnivorous
+    public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
     {
+        private const string dogSoundPath = @"...\...\Resourses\Sound\DogSound.wav";
+
+        private List<Meat> food;
+
+        public Dog()
+        {
+
+        }
+        public Dog(List<Meat> initialFood)
+            :this()
+        {
+            this.Food = initialFood;
+        }
+
         public List<Meat> Food
         {
-            get { throw new NotImplementedException(); }
+            get 
+            {
+                return this.food; 
+            }
+            private set
+            {
+                if (value.Count == 0)
+                {
+                    throw new ArgumentNullException("List cannot has 0 arguments.");
+                }
+                this.food = value;
+            }
         }
 
         public void Hunt()
         {
             throw new NotImplementedException();
+        }
+
+        public void MakeSound()
+        {
+            SoundPlayer playSound = new SoundPlayer(dogSoundPath);
+            playSound.Play();
         }
     }
 }
