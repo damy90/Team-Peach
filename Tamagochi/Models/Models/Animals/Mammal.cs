@@ -5,13 +5,8 @@ using System.Text;
 
 namespace Models
 {
-    public abstract class Mammal : Animal, ISoundable, IPlayable
+    public abstract class Mammal : Animal, IPlayable
     {
-        public void MakeSound()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Play()
         {
             throw new NotImplementedException();
