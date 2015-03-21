@@ -7,8 +7,18 @@ namespace Models
 {
     public class Shop
     {
-        List<Food> Items { get; set; }
+        public Shop()
+        {
 
+        }
 
+        public void BuyItem(IBuyable item, Player buyer)
+        {
+            if (item.Price <= buyer.Coins)
+            {
+                buyer.Coins -= item.Price;
+                buyer.AddItem(item);
+            }
+        }
     }
 }
