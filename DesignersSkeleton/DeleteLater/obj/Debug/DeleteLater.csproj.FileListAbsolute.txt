@@ -1,0 +1,9 @@
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\bin\Debug\DeleteLater.exe.config
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\bin\Debug\DeleteLater.exe
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\bin\Debug\DeleteLater.pdb
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.exe
+c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.pdb
+C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
