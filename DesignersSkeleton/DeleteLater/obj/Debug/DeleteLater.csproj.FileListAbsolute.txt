@@ -7,3 +7,12 @@ c:\users\dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\
 C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.Form1.resources
 C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
 C:\Users\Dragomir\documents\visual studio 2013\Projects\DeleteLater\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.exe.config
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.exe
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.exe
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
