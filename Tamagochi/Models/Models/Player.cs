@@ -22,14 +22,28 @@ namespace Models
             this.food = new List<IBuyable>();
         }
 
+        //this singleton is somewhat ugly and unusual
         public static Player Initialize(string name, Animal animal)
         {
             if (_instance == null)
             {
-                _instance = new Player(name, animal);
+                return _instance = new Player(name, animal);
             }
 
-            return _instance;
+            throw new InvalidOperationException("A player already exists!");
+        }
+
+        public static Player GetInstance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    throw new ArgumentNullException("No player has been initialized!");
+                }
+
+                return _instance;
+            }
         }
 
         public int Coins
