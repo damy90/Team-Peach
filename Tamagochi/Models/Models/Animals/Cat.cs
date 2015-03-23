@@ -12,13 +12,20 @@ namespace Models
 
         private List<Meat> food;
 
-        public Cat()
+        public Cat(Gender sex, string name)
+            : base(sex, name)
         {
-
+            //this.Food = new List<Meat>();
         }
 
-        public Cat(List<Meat> initialFood)
-            :this()
+        public Cat(Gender sex, string name, int initialPoints)
+            : base(sex, name, initialPoints)
+        {
+            //this.Food = new List<Meat>();
+        }
+
+        public Cat(Gender sex, string name, int initialPoints, List<Meat> initialFood)
+            : this(sex, name, initialPoints)
         {
             this.Food = initialFood;
         }
@@ -27,7 +34,7 @@ namespace Models
         {
             get 
             {
-                return this.food;
+                return new List<Meat>(this.food);
             }
             set
             {
@@ -47,7 +54,9 @@ namespace Models
 
         public void Hunt()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+            int huntingPoints = rnd.Next(2, 20);
+            AddPoints(huntingPoints);
         }
 
         public void MakeSound()

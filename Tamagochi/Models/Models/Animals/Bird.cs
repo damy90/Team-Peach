@@ -22,7 +22,7 @@ namespace Models
             get { throw new NotImplementedException(); }
         }
 
-        public void AddPoints()
+        public void AddPoints(int aditionalPoints)
         {
             throw new NotImplementedException();
         }

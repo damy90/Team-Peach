@@ -10,6 +10,6 @@ namespace Models
         int Points { get; }
 
         void Play();
-        void AddPoints();
+        void AddPoints(int aditionalPoints);
     }
 }

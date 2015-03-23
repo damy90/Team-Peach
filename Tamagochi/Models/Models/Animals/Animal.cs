@@ -9,22 +9,13 @@ namespace Models
     public abstract class Animal
     {
         const int MaxValue = 100;
-        const int StartPoints = 0;
-
-
-        private int point;
+        
         private Condition initialCondition;
         private Gender sex;
         private string name;
 
-        public Animal()
-        {
-
-        }
-
         public Animal(Gender sex, string name)
         {
-            this.point = StartPoints;
             this.Name = name;
             this.sex = sex;
             this.initialCondition = new Condition(MaxValue);

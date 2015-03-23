@@ -12,13 +12,20 @@ namespace Models
 
         private List<Plant> food;
 
-        public Camelopard()
+        public Camelopard(Gender sex, string name)
+            :base(sex,name)
         {
-            
+           // this.Food = new List<Plant>();
         }
 
-        public Camelopard(List<Plant> initialFood)
-            :this()
+        public Camelopard(Gender sex, string name, int initialPoints)
+            : base(sex, name, initialPoints)
+        {
+            // this.Food = new List<Plant>();
+        }
+
+        public Camelopard(Gender sex, string name, int initialPoints, List<Plant> initialFood)
+            : this(sex, name, initialPoints)
         {
             this.Food = initialFood;
         }
@@ -27,7 +34,7 @@ namespace Models
         {
             get 
             {
-                return this.food;
+                return new List<Plant>(this.food);
             }
             private set
             {
