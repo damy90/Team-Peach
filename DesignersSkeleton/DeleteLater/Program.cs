@@ -15,8 +15,8 @@ namespace DeleteLater
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form1 form = new Form1();
-            form.Size = new Size(512, 384);
-            form.Location = new Point(0, 0);
+            form.Size = new Size(640, 480);
+            form.Location = new Point(0, 0);           
             Application.Run(form);
            
             

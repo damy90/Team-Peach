@@ -9,7 +9,8 @@ namespace DeleteLater
         public Form1()
         {
             InitializeComponent();
-            button4.Padding = new Padding(0, 0, 0, 0);
+            MaximizeBox = false;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,15 +26,19 @@ namespace DeleteLater
             }
             int tryer=0;
             
-            if (int.TryParse(textBox1.Text, out tryer) && (MaleButton.Checked || FemaleButton.Checked))
+            if (int.TryParse(textBox1.Text, out tryer) && textBox2.Text!="" && (MaleButton.Checked || FemaleButton.Checked))
             {
                 Soldier soldier1 = new Soldier((gender)currentGender, int.Parse(textBox1.Text));
                 SetGameplayWindow();
                 
             }
-            else
+            else if (textBox1.Text == "" || textBox2.Text == "" || (!MaleButton.Checked && !FemaleButton.Checked))
             {
                 MessageBox.Show("You need to fill all fields!", "Invalid data", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else if ((int.TryParse(textBox1.Text, out tryer)) == false)
+            {
+                MessageBox.Show("Please enter a correct age!", "Invalid data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         
@@ -100,12 +105,28 @@ namespace DeleteLater
             button2.Enabled = false;
             button1.Visible = true;
             button1.Enabled = true;
+            groupBox1.Visible = true;
+            groupBox1.Enabled = true;
             textBox1.Visible = true;
             textBox1.Enabled = true;
             MaleButton.Enabled = true;
             MaleButton.Visible = true;
             FemaleButton.Enabled = true;
             FemaleButton.Visible = true;
+            textBox2.Visible = true;
+            textBox2.Enabled = true;
+            groupBox2.Visible = true;
+            groupBox2.Enabled = true;
+            textBox3.Visible = true;
+            textBox3.Enabled = true;
+            comboBox1.Visible = true;
+            comboBox1.Enabled = true;
+            radioButton1.Visible = true;
+            radioButton1.Enabled = true;
+            radioButton2.Visible = true;
+            radioButton2.Enabled = true;
+            textBox2.Focus();
+
 
         }
 
@@ -113,6 +134,8 @@ namespace DeleteLater
 
         private void SetGameplayWindow()
         {
+            textBox2.Visible = false;
+            textBox2.Enabled = false;
             button1.Visible = false;
             button1.Enabled = false;
             textBox1.Visible = false;
@@ -121,6 +144,18 @@ namespace DeleteLater
             MaleButton.Visible = false;
             FemaleButton.Enabled = false;
             FemaleButton.Visible = false;
+            groupBox1.Enabled = false;
+            groupBox1.Visible = false;
+            textBox3.Enabled = false;
+            textBox3.Visible = false;
+            radioButton1.Enabled = false;
+            radioButton1.Visible = false;
+            radioButton2.Enabled = false;
+            radioButton2.Visible = false;
+            comboBox1.Enabled = false;
+            comboBox1.Visible = false;
+            groupBox2.Enabled = false;
+            groupBox2.Visible = false;
             BackgroundImage = null;
             pictureBox1.Visible = true;
             timer1.Enabled = true;
@@ -137,18 +172,18 @@ namespace DeleteLater
 
 
         private void button5_Click(object sender, EventArgs e)
-        {
+        {//FEED BUTTON
             ChangeProgressBar(progressBar1, 5);
             pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\eat.png");
         }
 
         private void button6_Click(object sender, EventArgs e)
-        {
+        {//CLEAN BUTTON
             ChangeProgressBar(progressBar2, 5);
         }
 
         private void button7_Click(object sender, EventArgs e)
-        {
+        {//PLAY BUTTON
             ChangeProgressBar(progressBar3, 5);
             pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\play.png");
         }
@@ -170,11 +205,12 @@ namespace DeleteLater
 
         private void ChangeProgressBar(ProgressBar progressBar, int increment)
         {
+            //COLORS OF BARS WHEN DECREASING
             if (progressBar.Value <= 20)
             {
                 progressBar.ForeColor = Color.Red;
             }
-            else if (progressBar.Value > 20 && progressBar.Value <= 60)
+            else if (progressBar.Value <= 60)
             {
                 progressBar.ForeColor = Color.DarkOrange;
             }

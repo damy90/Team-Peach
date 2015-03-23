@@ -16,3 +16,12 @@ D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\Delete
 D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Form1.resources
 D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 D:\Work\C#OOP\Teamwork\Team-Peach\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+D:\TEST\DeleteLater\bin\Debug\DeleteLater.exe.config
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.exe
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.pdb
+D:\TEST\DeleteLater\bin\Debug\DeleteLater.exe
+D:\TEST\DeleteLater\bin\Debug\DeleteLater.pdb
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+D:\TEST\DeleteLater\obj\Debug\DeleteLater.Form1.resources
