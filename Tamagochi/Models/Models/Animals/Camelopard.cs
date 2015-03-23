@@ -12,20 +12,14 @@ namespace Models
 
         private List<Plant> food;
 
-        public Camelopard(Gender sex, string name)
-            :base(sex,name)
+       public Camelopard(Gender sex, string name)
+            : base(sex, name)
         {
            // this.Food = new List<Plant>();
         }
 
-        public Camelopard(Gender sex, string name, int initialPoints)
-            : base(sex, name, initialPoints)
-        {
-            // this.Food = new List<Plant>();
-        }
-
-        public Camelopard(Gender sex, string name, int initialPoints, List<Plant> initialFood)
-            : this(sex, name, initialPoints)
+        public Camelopard(Gender sex, string name, int initialPoints,Condition initialCondition, List<Plant> initialFood)
+            : base(sex, name,initialCondition, initialPoints)
         {
             this.Food = initialFood;
         }

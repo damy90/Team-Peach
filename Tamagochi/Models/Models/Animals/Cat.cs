@@ -15,17 +15,11 @@ namespace Models
         public Cat(Gender sex, string name)
             : base(sex, name)
         {
-            //this.Food = new List<Meat>();
+           // this.Food = new List<Meat>();
         }
 
-        public Cat(Gender sex, string name, int initialPoints)
-            : base(sex, name, initialPoints)
-        {
-            //this.Food = new List<Meat>();
-        }
-
-        public Cat(Gender sex, string name, int initialPoints, List<Meat> initialFood)
-            : this(sex, name, initialPoints)
+        public Cat(Gender sex, string name, int initialPoints,Condition initialCondition, List<Meat> initialFood)
+            : base(sex, name,initialCondition, initialPoints)
         {
             this.Food = initialFood;
         }

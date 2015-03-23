@@ -13,11 +13,11 @@ namespace Models
         public Mammal(Gender sex, string name)
             : base(sex, name)
         {
-            this.Points = 0;
+            this.Points = StartPoints;
         }
 
-        public Mammal(Gender sex, string name, int initialPoints)
-            : this(sex, name)
+        public Mammal(Gender sex, string name,Condition initialCondition, int initialPoints)
+            : base(sex, name, initialCondition)
         {
             AddPoints(initialPoints);
         }

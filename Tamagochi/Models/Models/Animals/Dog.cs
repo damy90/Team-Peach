@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Media;
 
+
 namespace Models
 {
     public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
@@ -18,14 +19,8 @@ namespace Models
            // this.Food = new List<Meat>();
         }
 
-        public Dog(Gender sex, string name, int initialPoints)
-            : base(sex, name, initialPoints)
-        {
-            //this.Food = new List<Meat>();
-        }
-
-        public Dog(Gender sex, string name, int initialPoints, List<Meat> initialFood)
-            : this(sex, name, initialPoints)
+        public Dog(Gender sex, string name, int initialPoints,Condition initialCondition, List<Meat> initialFood)
+            : base(sex, name,initialCondition, initialPoints)
         {
             this.Food = initialFood;
         }

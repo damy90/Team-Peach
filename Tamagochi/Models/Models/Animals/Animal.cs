@@ -8,8 +8,8 @@ namespace Models
 {
     public abstract class Animal
     {
-        const int MaxValue = 100;
-        
+        private const int MaxValue = 100;
+
         private Condition initialCondition;
         private Gender sex;
         private string name;
@@ -19,6 +19,12 @@ namespace Models
             this.Name = name;
             this.sex = sex;
             this.initialCondition = new Condition(MaxValue);
+        }
+
+        public Animal(Gender sex, string name, Condition initialCondition)
+            : this(sex, name)
+        {
+            this.initialCondition = initialCondition;
         }
 
         public string Name
