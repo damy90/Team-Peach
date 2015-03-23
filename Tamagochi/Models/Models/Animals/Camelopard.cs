@@ -18,7 +18,7 @@ namespace Models
            // this.Food = new List<Plant>();
         }
 
-        public Camelopard(Gender sex, string name, int initialPoints,Condition initialCondition, List<Plant> initialFood)
+        public Camelopard(Gender sex, string name,Condition initialCondition, int initialPoints, List<Plant> initialFood)
             : base(sex, name,initialCondition, initialPoints)
         {
             this.Food = initialFood;

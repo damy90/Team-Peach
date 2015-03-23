@@ -18,7 +18,7 @@ namespace Models
            // this.Food = new List<Meat>();
         }
 
-        public Cat(Gender sex, string name, int initialPoints,Condition initialCondition, List<Meat> initialFood)
+        public Cat(Gender sex, string name,Condition initialCondition, int initialPoints, List<Meat> initialFood)
             : base(sex, name,initialCondition, initialPoints)
         {
             this.Food = initialFood;
