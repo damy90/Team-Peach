@@ -5,16 +5,16 @@ using System.Text;
 
 namespace Models
 {
-    public abstract class Bird : Animal, ISoundable, IPlayable
+    public abstract class Bird : Animal
     {
-        public void MakeSound()
+        public Bird(Gender sex, string name)
+            : base(sex, name)
         {
-            throw new NotImplementedException();
         }
 
-        public void Play()
+        public Bird(Gender sex, string name, Condition condition)
+            : base(sex, name, condition)
         {
-            throw new NotImplementedException();
         }
 
         public int Points
@@ -22,7 +22,7 @@ namespace Models
             get { throw new NotImplementedException(); }
         }
 
-        public void AddPoints(int aditionalPoints)
+        public void AddPoints()
         {
             throw new NotImplementedException();
         }

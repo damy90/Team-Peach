@@ -44,5 +44,17 @@ namespace Models
             }
         }
 
+        public Condition CurrentCondition
+        {
+            get
+            {
+                return this.initialCondition;
+            }
+            set
+            {
+                this.initialCondition = value;
+            }
+        }
+
     }
 }
