@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Models
 {
@@ -22,7 +24,6 @@ namespace Models
             this.food = new List<IBuyable>();
         }
 
-        //this singleton is somewhat ugly and unusual
         public static Player Initialize(string name, Animal animal)
         {
             if (_instance == null)
@@ -83,5 +84,22 @@ namespace Models
             this.Food.Add(item);
         }
 
+        //cannot be tested until a game can be started
+        public void Serialize(string path = "../../")
+        {
+            XmlSerializer xml = new XmlSerializer(this.GetType());
+            StreamWriter file = new StreamWriter(path + this.name + ".xml");
+            xml.Serialize(file, this);
+            file.Close();
+        }
+
+        public Player Deserialize(string path = "../../player.xml")
+        {
+            XmlSerializer xml = new XmlSerializer(this.GetType());
+            StreamReader file = new StreamReader(path);
+            _instance = (Player)xml.Deserialize(file);
+            file.Close();
+            return _instance;
+        }
     }
 }
