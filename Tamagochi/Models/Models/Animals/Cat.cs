@@ -48,8 +48,7 @@ namespace Models
 
         public void Hunt()
         {
-            Random rnd = new Random();
-            int huntingPoints = rnd.Next(2, 20);
+            int huntingPoints = this.random.Next(2, 20);
             AddPoints(huntingPoints);
         }
 

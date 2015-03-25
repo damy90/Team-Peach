@@ -13,12 +13,15 @@ namespace Models
         private Condition initialCondition;
         private Gender sex;
         private string name;
+        protected readonly Random random;
 
         public Animal(Gender sex, string name)
         {
             this.Name = name;
             this.sex = sex;
             this.initialCondition = new Condition(MaxValue);
+            if (this is ICarnivorous)
+                random = new Random();
         }
 
         public Animal(Gender sex, string name, Condition initialCondition)
