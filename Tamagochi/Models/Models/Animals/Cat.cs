@@ -52,9 +52,17 @@ namespace Models
             AddPoints(huntingPoints);
         }
 
+        public string SoundPath
+        {
+            get
+            {
+                return @"...\...\Resourses\Sound\CatSound.wav";
+            }
+        }
+
         public void MakeSound()
         {
-            SoundPlayer playSound = new SoundPlayer(catSoundPath);
+            SoundPlayer playSound = new SoundPlayer(this.SoundPath);
             playSound.Play();
         }
     }

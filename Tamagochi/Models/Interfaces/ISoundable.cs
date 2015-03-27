@@ -7,7 +7,7 @@ namespace Models
 {
     public interface ISoundable
     {
-        //string sound{get;}
+        string SoundPath{get;}
         void MakeSound();
     }
 }
