@@ -7,9 +7,21 @@ namespace Models
 {
     public class Shop
     {
-        public Shop()
+        private static Shop _instance;
+
+        private Shop()
         {
 
+        }
+
+        public static Shop Instance()
+        {
+            if (_instance == null)
+            {
+                _instance = new Shop();
+            }
+
+            return _instance;
         }
 
         public void BuyItem(IBuyable item, Player buyer)
