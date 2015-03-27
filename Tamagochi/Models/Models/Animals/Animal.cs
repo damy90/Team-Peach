@@ -18,9 +18,12 @@ namespace Models
         private string name;
         protected readonly Random random;
 
-        public Animal() { }
+        public Animal()
+        {
+ 
+        }
 
-        public Animal(Gender sex, string name)
+        public Animal(Gender sex, string name) : this()
         {
             this.Name = name;
             this.sex = sex;

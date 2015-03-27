@@ -11,9 +11,10 @@ namespace Models.Tests
     public class AnimalTests
     {
         [TestMethod()]
-        public void AnimalTest()
+        public void AnimalFoodIsInitializedTest()
         {
-            Assert.Fail();
+            var pet = new Cat(Gender.Male, "Wiskers");
+            Assert.AreEqual(pet.Food.Count(), 1);
         }
 
         [TestMethod()]

@@ -3,31 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Media;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Models
 {
-    public class Cat : Mammal, ICarnivorous,ISoundable
+    public class Cat : Mammal, ICarnivorous, ISoundable
     {
         private const string catSoundPath = @"...\...\Resourses\Sound\CatSound.wav";
-
+        [XmlIgnore]
         private List<Meat> food;
 
-        public Cat() :base(){ }
+        //Needed for serialization
+        public Cat()
+            : base()
+        {
+            this.food = new List<Meat>() { new Pizza() };
+        }
+
         public Cat(Gender sex, string name)
             : base(sex, name)
         {
-           this.food = new List<Meat>();
+            this.food = new List<Meat>() { new Pizza() };
         }
 
-        public Cat(Gender sex, string name,Condition initialCondition, int initialPoints, List<Meat> initialFood)
-            : base(sex, name,initialCondition, initialPoints)
+        public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
+            : base(sex, name, initialCondition, initialPoints)
         {
             this.Food = initialFood;
         }
 
         public List<Meat> Food
         {
-            get 
+            get
             {
                 return new List<Meat>(this.food);
             }
