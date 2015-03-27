@@ -4,10 +4,10 @@ namespace Models
 {
     public struct Condition
     {
-        public int Happiness { get; private set; }
-        public int Feed { get; private set; }
-        public int Cleanliness { get; private set; }
-        public int Energy { get; private set; }
+        public int Happiness { get; set; }
+        public int Feed { get; set; }
+        public int Cleanliness { get; set; }
+        public int Energy { get; set; }
 
         public Condition(int initialValue)
             : this()

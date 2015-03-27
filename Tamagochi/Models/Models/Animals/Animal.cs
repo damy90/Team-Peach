@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Models
 {
+    [Serializable]
     public abstract class Animal
     {
         private const int MaxValue = 100;
@@ -14,6 +17,8 @@ namespace Models
         private Gender sex;
         private string name;
         protected readonly Random random;
+
+        public Animal() { }
 
         public Animal(Gender sex, string name)
         {
@@ -36,7 +41,7 @@ namespace Models
             {
                 return this.name;
             }
-            private set
+            set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -59,5 +64,21 @@ namespace Models
             }
         }
 
+        public void Serialize(string path = "../../")
+        {
+            XmlSerializer xml = new XmlSerializer(this.GetType());
+            StreamWriter file = new StreamWriter(path + this.name + ".xml");
+            xml.Serialize(file, this);
+            file.Close();
+        }
+
+        public Animal Deserialize(string path = "../../player.xml")
+        {
+            XmlSerializer xml = new XmlSerializer(this.GetType());
+            StreamReader file = new StreamReader(path);
+            Animal _instance = (Animal)xml.Deserialize(file);
+            file.Close();
+            return _instance;
+        }
     }
 }

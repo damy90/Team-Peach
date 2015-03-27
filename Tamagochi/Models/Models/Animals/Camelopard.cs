@@ -40,6 +40,15 @@ namespace Models
             }
         }
 
+        public string SoundPath
+        {
+            get
+            {
+                // TODO: Implement this property getter
+                throw new NotImplementedException();
+            }
+        }
+
         public void MakeSound()
         {
             SoundPlayer playSound = new SoundPlayer(camelopardSoundPath);

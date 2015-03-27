@@ -10,6 +10,12 @@ namespace Models
         private const int StartPoints = 0;
 
         private int points;
+        public Mammal()
+            : base()
+        {
+
+        }
+
         public Mammal(Gender sex, string name)
             : base(sex, name)
         {
@@ -33,7 +39,7 @@ namespace Models
             {
                 return this.points;
             }
-            private set
+            set
             {
                 if (value < 0)
                 {

@@ -12,10 +12,11 @@ namespace Models
 
         private List<Meat> food;
 
+        public Cat() :base(){ }
         public Cat(Gender sex, string name)
             : base(sex, name)
         {
-           // this.Food = new List<Meat>();
+           this.food = new List<Meat>();
         }
 
         public Cat(Gender sex, string name,Condition initialCondition, int initialPoints, List<Meat> initialFood)
