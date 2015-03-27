@@ -16,6 +16,11 @@ namespace Models
         private List<IBuyable> food;
         private static Player _instance;
 
+        private Player()
+        {
+
+        }
+
         private Player(string name, Animal animal)
         {
             this.coins = StartCoins;
