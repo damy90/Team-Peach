@@ -3,16 +3,18 @@
     using System;
     using System.Collections.Generic;
     using System.Media;
-
+    
     public class Parrot : Bird, IHerbivorous, IPlayable, ISoundable
     {
         #region Constants
         private const string ParrotSoundPath = @"...\...\Resourses\Sound\ParrotSound.wav";
         private const int HappinessIncrement = 20;
+        private const int PlayPointsIncrement = 20;
         #endregion
 
         #region Fields
-        private IList<Plant> plantFoodAllowed = new List<Plant>();
+        private List<Plant> plantFoodAllowed = new List<Plant>();
+        private int points;
         #endregion
 
         #region Constructors
@@ -34,7 +36,21 @@
         
         public List<Plant> PlantFoodAllowed
         {
-            get { throw new NotImplementedException(); }
+            get
+            {
+                return this.plantFoodAllowed;
+            }
+            private set
+            {
+                if (value != null)
+                {
+                    this.plantFoodAllowed = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("List of allowed foods cannot be null");
+                }
+            }
         }
 
 
@@ -60,6 +76,12 @@
         {
             SoundPlayer playSound = new SoundPlayer(SoundPath);
             playSound.Play();
+        }
+
+        public int Points
+        {
+            get { return this.points; }
+            set { this.points = value; }
         }
     }
 }

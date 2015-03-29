@@ -11,22 +11,26 @@ namespace Models
     [Serializable]
     public abstract class Animal
     {
+        #region Constants
         private const int ConditionMaxValue = 100;
+        #endregion
 
-        private Condition initialCondition;
+        #region Fields
+        private Condition condition;
         private Gender sex;
         private string name;
         protected readonly Random random;
-        private IList<Food> foodsAllowed = new List<Food>();
+        private List<Food> foodsAllowed = new List<Food>();
         private Dictionary<Food, int> foodsAvailable = new Dictionary<Food, int>();
-        private IList<Food> foodsInfinite  = new List<Food>();
+        private List<Food> foodsInfinite = new List<Food>();
+        #endregion
 
         #region Constructors
         public Animal()
         {
             this.name = this.GetType().Name;
             this.Sex = Gender.Male;
-            this.initialCondition = new Condition(ConditionMaxValue);
+            this.CurrentCondition = new Condition(ConditionMaxValue);
         }
 
         public Animal(Gender sex, string name)
@@ -43,7 +47,7 @@ namespace Models
         public Animal(Gender sex, string name, Condition initialCondition)
             : this(sex, name)
         {
-            this.initialCondition = initialCondition;
+            this.CurrentCondition = initialCondition;
         }
         #endregion
 
@@ -73,10 +77,7 @@ namespace Models
             }
             private set
             {
-                if (value != null)
-                {
-                    this.sex = value;
-                }
+                this.sex = value;
             }
         }
 
@@ -84,11 +85,11 @@ namespace Models
         {
             get
             {
-                return this.initialCondition;
+                return this.condition;
             }
             set
             {
-                this.initialCondition = value;
+               this.condition = value;
             }
         }
 
@@ -111,7 +112,7 @@ namespace Models
             }
         }
 
-        public IList<Food> FoodsInfinite
+        public List<Food> FoodsInfinite
         {
             get
             {
@@ -126,25 +127,6 @@ namespace Models
                 else
                 {
                     throw new ArgumentNullException("List of infinite foods cannot be null");
-                }
-            }
-        }
-
-        public IList<Food> FoodsAllowed
-        {
-            get
-            {
-                return this.foodsAllowed;
-            }
-            private set
-            {
-                if (value != null)
-                {
-                    this.foodsAllowed = value;
-                }
-                else
-                {
-                    throw new ArgumentNullException("List of allowed foods cannot be null");
                 }
             }
         }
@@ -183,7 +165,7 @@ namespace Models
             }
         }
         #endregion
-       
+
         public void Serialize(string path = "../../")
         {
             XmlSerializer xml = new XmlSerializer(this.GetType());

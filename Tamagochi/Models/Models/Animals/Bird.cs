@@ -24,11 +24,6 @@ namespace Models
         }
         #endregion
 
-        public int Points
-        {
-            get { throw new NotImplementedException(); }
-        }
-
         public void AddPoints()
         {
             throw new NotImplementedException();
