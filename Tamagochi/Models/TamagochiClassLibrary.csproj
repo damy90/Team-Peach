@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Animals\Animal.cs" />
+    <Compile Include="Models\Animals\Carp.cs" />
+    <Compile Include="Models\Animals\Piranha.cs" />
     <Compile Include="Models\Foods\Apple.cs" />
     <Compile Include="Models\Foods\Banana.cs" />
     <Compile Include="Models\Animals\Bird.cs" />
@@ -71,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="Models\Animals\AnimalDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resourses\" />

@@ -12,10 +12,15 @@
         #endregion
 
         #region Fields
-        private List<Meat> food;
+        private IList<Plant> plantFoodAllowed = new List<Plant>();
         #endregion
 
         #region Constructors
+        public Parrot()
+            : base()
+        {
+        }
+
         public Parrot(Gender sex, string name)
             : base(sex, name)
         {
@@ -27,7 +32,7 @@
         }
         #endregion
         
-        public List<Plant> Food
+        public List<Plant> PlantFoodAllowed
         {
             get { throw new NotImplementedException(); }
         }
@@ -47,14 +52,13 @@
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return this.SoundPath;
             }
         }
 
         public void MakeSound()
         {
-            SoundPlayer playSound = new SoundPlayer(ParrotSoundPath);
+            SoundPlayer playSound = new SoundPlayer(SoundPath);
             playSound.Play();
         }
     }

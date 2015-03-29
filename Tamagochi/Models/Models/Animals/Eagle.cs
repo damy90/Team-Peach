@@ -13,6 +13,11 @@
         #endregion
 
         #region Constructors
+        public Eagle()
+            : base()
+        {
+        }
+
         public Eagle(Gender sex, string name)
             : base(sex, name)
         {
@@ -24,7 +29,7 @@
         }
         #endregion
 
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get { throw new NotImplementedException(); }
         }

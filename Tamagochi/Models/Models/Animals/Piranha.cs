@@ -2,34 +2,34 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Models
+namespace Models.Models.Animals
 {
-    public abstract class Bird : Animal
+    class Piranha : Fish, ICarnivorous
     {
         #region Constructors
-        public Bird()
+        public Piranha()
             : base()
         {
         }
 
-        public Bird(Gender sex, string name)
+        public Piranha(Gender  sex, string name)
             : base(sex, name)
         {
         }
 
-        public Bird(Gender sex, string name, Condition condition)
+        public Piranha(Gender sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }
         #endregion
-
-        public int Points
+        public List<Meat> MeatFoodAllowed
         {
             get { throw new NotImplementedException(); }
         }
 
-        public void AddPoints()
+        public void Hunt()
         {
             throw new NotImplementedException();
         }

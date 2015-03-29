@@ -29,10 +29,10 @@ namespace Models
         public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
             : base(sex, name, initialCondition, initialPoints)
         {
-            this.Food = initialFood;
+            this.MeatFoodAllowed = initialFood;
         }
 
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get
             {
@@ -50,7 +50,7 @@ namespace Models
 
         public void AddFood(Meat aditionalDood)
         {
-            this.Food.Add(aditionalDood);
+            this.MeatFoodAllowed.Add(aditionalDood);
         }
 
 
