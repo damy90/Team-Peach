@@ -4,10 +4,10 @@ namespace Models
 {
     public struct Condition
     {
-        public int Happiness { get; set; }
-        public int Feed { get; set; }
-        public int Cleanliness { get; set; }
-        public int Energy { get; set; }
+        private int happiness;
+        private int feed;
+        private int cleanliness;
+        private int energy;
 
         public Condition(int initialValue)
             : this()
@@ -22,10 +22,58 @@ namespace Models
                 initialValue = 1;
             }
 
-            Happiness = initialValue;
-            Feed = initialValue;
-            Cleanliness = initialValue;
-            Energy = initialValue;
+            happiness = initialValue;
+            feed = initialValue;
+            cleanliness = initialValue;
+            energy = initialValue;
+        }
+
+        public int Happiness
+        {
+            get
+            {
+                return this.happiness;
+            }
+            set
+            {
+                this.happiness = ChangeCondition(0, value);
+            }
+        }
+
+        public int Feed
+        {
+            get
+            {
+                return this.feed;
+            }
+            set
+            {
+                this.feed = ChangeCondition(0, value);
+            }
+        }
+
+        public int Cleanliness
+        {
+            get
+            {
+                return this.cleanliness;
+            }
+            set
+            {
+                this.cleanliness = ChangeCondition(0, value);
+            }
+        }
+
+        public int Energy
+        {
+            get
+            {
+                return this.energy;
+            }
+            set
+            {
+                this.energy=ChangeCondition(0, value);
+            }
         }
 
         private int ChangeCondition(int conditionValue, int increment)
@@ -37,35 +85,35 @@ namespace Models
 
         public void ChangeHappiness(int increment)
         {
-            int oldValueHappiness = this.Happiness;
-            this.Happiness = ChangeCondition(this.Happiness, increment);
+            //int oldValueHappiness = this.Happiness;
+            this.happiness = ChangeCondition(this.happiness, increment);
             //Happiness relation to energy
-            this.Energy = ChangeCondition(this.Energy, (oldValueHappiness - this.Happiness) / 4);
+            //this.Energy = ChangeCondition(this.Energy, (oldValueHappiness - this.Happiness) / 4);
         }
 
         public void ChangeEnergy(int increment)
         {
-            int oldValueEnergy = this.Energy;
-            this.Energy = ChangeCondition(this.Energy, increment);
+            //int oldValueEnergy = this.Energy;
+            this.energy = ChangeCondition(this.energy, increment);
             //Energy relation to happiness
-            this.Happiness = ChangeCondition(this.Happiness, (oldValueEnergy - this.Energy) / 8);
+            //this.Happiness = ChangeCondition(this.Happiness, (oldValueEnergy - this.Energy) / 8);
         }
 
         public void ChangeCleanliness(int increment)
         {
-            int oldValueCleanliness = this.Cleanliness;
-            this.Cleanliness = ChangeCondition(this.Cleanliness, increment);
+            //int oldValueCleanliness = this.Cleanliness;
+            this.cleanliness = ChangeCondition(this.cleanliness, increment);
             //Energy Cleanliness to happiness
-            this.Happiness = ChangeCondition(this.Happiness, (oldValueCleanliness - this.Cleanliness) / 8);
+            //this.Happiness = ChangeCondition(this.Happiness, (oldValueCleanliness - this.Cleanliness) / 8);
         }
 
         public void ChangeFeed(int increment)
         {
-            int oldValueFeed = this.Feed;
-            this.Feed = ChangeCondition(this.Feed, increment);
+            //int oldValueFeed = this.Feed;
+            this.feed = ChangeCondition(this.feed, increment);
             //Feed relation to happiness and energy
-            this.Happiness = ChangeCondition(this.Happiness, (oldValueFeed - this.Feed) / 8);
-            this.Energy = ChangeCondition(this.Energy, (oldValueFeed - this.Feed) / 3);
+            //this.Happiness = ChangeCondition(this.Happiness, (oldValueFeed - this.Feed) / 8);
+            //this.Energy = ChangeCondition(this.Energy, (oldValueFeed - this.Feed) / 3);
         }
     }
 }
