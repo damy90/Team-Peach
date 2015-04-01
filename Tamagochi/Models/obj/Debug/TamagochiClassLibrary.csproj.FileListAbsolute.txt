@@ -17,3 +17,8 @@ E:\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAsse
 E:\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
 C:\Users\wizard\Desktop\New folder (2)\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\wizard\Desktop\New folder (2)\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
+F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
+F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
+F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
+F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
+F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\obj\Debug\Models.pdb

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Models.Animal">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAEAAAIBAEACAQRAAQAACBEAAAAAEQkAAAAAAg=</HashCode>
+      <FileName>Models\Animals\Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Bird">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Animals\Bird.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Camelopard">
+    <Position X="13.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAACCAAIAAAAAAAAAI=</HashCode>
+      <FileName>Models\Animals\Camelopard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Cat">
+    <Position X="15.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAACAAIAAAAAIAkAI=</HashCode>
+      <FileName>Models\Animals\Cat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Dog">
+    <Position X="11" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAACAAAAAAAAAAAAAACAAIAAAAAAAgAI=</HashCode>
+      <FileName>Models\Animals\Dog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Eagle">
+    <Position X="4.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAAIAQgACAAAAAAAAAAAAAgCAAoAAAAAAgiAA=</HashCode>
+      <FileName>Models\Animals\Eagle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Fish">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Animals\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Mammal">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAQgAAAAAAAAAAAAABAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Animals\Mammal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Parrot">
+    <Position X="2" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAAABQgEAAAAAgAAAAAIAADCAAoAAAAAAgABA=</HashCode>
+      <FileName>Models\Animals\Parrot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Models.Animals.Carp">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Animals\Carp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Models.Animals.Piranha">
+    <Position X="8.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Animals\Piranha.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Models.IBuyable" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBuyable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Models.ICarnivorous" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Interfaces\ICarnivorous.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Models.IHerbivorous" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHerbivorous.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Models.IPlayable" Collapsed="true">
+    <Position X="18" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPlayable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Models.ISoundable" Collapsed="true">
+    <Position X="19.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISoundable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

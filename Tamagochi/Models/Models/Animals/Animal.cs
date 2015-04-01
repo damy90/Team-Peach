@@ -11,33 +11,48 @@ namespace Models
     [Serializable]
     public abstract class Animal
     {
-        private const int MaxValue = 100;
+        #region Constants
+        private const int ConditionMaxValue = 100;
+        #endregion
 
-        private Condition initialCondition;
+        #region Fields
+        private string[] pictures;
+        private Condition condition;
         private Gender sex;
         private string name;
         protected readonly Random random;
+        private List<Food> foodsAllowed = new List<Food>();
+        private Dictionary<Food, int> foodsAvailable = new Dictionary<Food, int>();
+        private List<Food> foodsInfinite = new List<Food>();
+        #endregion
 
+        #region Constructors
         public Animal()
         {
- 
+            this.name = this.GetType().Name;
+            this.Sex = Gender.Male;
+            this.CurrentCondition = new Condition(ConditionMaxValue);
         }
 
-        public Animal(Gender sex, string name) : this()
+        public Animal(Gender sex, string name)
+            : this()
         {
             this.Name = name;
             this.sex = sex;
-            this.initialCondition = new Condition(MaxValue);
             if (this is ICarnivorous)
+            {
                 random = new Random();
+            }
         }
 
         public Animal(Gender sex, string name, Condition initialCondition)
             : this(sex, name)
         {
-            this.initialCondition = initialCondition;
+            this.CurrentCondition = initialCondition;
         }
+        #endregion
 
+        #region Properties
         public string Name
         {
             get
@@ -55,17 +70,119 @@ namespace Models
             }
         }
 
+        public Gender Sex
+        {
+            get
+            {
+                return this.sex;
+            }
+            private set
+            {
+                this.sex = value;
+            }
+        }
+
         public Condition CurrentCondition
         {
             get
             {
-                return this.initialCondition;
+                return this.condition;
             }
             set
             {
-                this.initialCondition = value;
+               this.condition = value;
             }
         }
+
+        public Dictionary<Food, int> FoodsAvailable
+        {
+            get
+            {
+                return this.foodsAvailable;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.foodsAvailable = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("List of available foods cannot be null");
+                }
+            }
+        }
+
+        public List<Food> FoodsInfinite
+        {
+            get
+            {
+                return this.foodsInfinite;
+            }
+            private set
+            {
+                if (value != null)
+                {
+                    this.foodsInfinite = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("List of infinite foods cannot be null");
+                }
+            }
+        }
+
+        public string[] Pictures 
+        { 
+            get
+            {
+                return this.pictures;
+            }
+            protected set
+            {
+                if (pictures == null)
+                {
+                    throw new ArgumentException("Pictures array cannot be null");
+                }
+
+                this.pictures = value;
+            }
+        }
+        #endregion
+
+        #region Public Methods
+        public void AddToAvailableFoods(Food food, int quantity)
+        {
+            if (this.FoodsAvailable.ContainsKey(food))
+            {
+                this.FoodsAvailable[food] += quantity;
+            }
+            else
+            {
+                this.FoodsAvailable.Add(food, quantity);
+            }
+        }
+
+        // Cheks if there is enough of the quantity demanded and removes it from the dictioanry value
+        public void RemoveFromAvailableFoods(Food food, int quantity)
+        {
+            if (this.FoodsAvailable.ContainsKey(food))
+            {
+                if (this.FoodsAvailable[food] >= quantity)
+                {
+                    this.FoodsAvailable[food] -= quantity;
+                }
+                else
+                {
+                    throw new ArgumentException("Not enough quantity of food");
+                }
+            }
+            else
+            {
+                throw new ArgumentException("This food is missing from the list");
+            }
+        }
+        #endregion
 
         public void Serialize(string path = "../../")
         {

@@ -3,19 +3,31 @@
     using System;
     using System.Collections.Generic;
     using System.Media;
-
+    
     public class Parrot : Bird, IHerbivorous, IPlayable, ISoundable
     {
         #region Constants
         private const string ParrotSoundPath = @"...\...\Resourses\Sound\ParrotSound.wav";
+        private const string ParrotPictureDefault = @"...\...\Resourses\Pictures\ParrotPicture_01.jpg";
+        private const string ParrotPictureUnahppy = @"...\...\Resourses\Pictures\ParrotPicture_02.jpg";
+        private const string ParrotPictureEating = @"...\...\Resourses\Pictures\ParrotPicture_03.jpg";
+        private const string ParrotPicturePlaying = @"...\...\Resourses\Pictures\ParrotPicture_04.jpg";
         private const int HappinessIncrement = 20;
+        private const int PlayPointsIncrement = 20;
         #endregion
 
         #region Fields
-        private List<Meat> food;
+        private List<Plant> plantFoodAllowed = new List<Plant>();
+        private int points;
         #endregion
 
         #region Constructors
+        public Parrot()
+            : base()
+        {
+            base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureUnahppy, ParrotPictureEating, ParrotPicturePlaying};
+        }
+
         public Parrot(Gender sex, string name)
             : base(sex, name)
         {
@@ -27,9 +39,23 @@
         }
         #endregion
         
-        public List<Plant> Food
+        public List<Plant> PlantFoodAllowed
         {
-            get { throw new NotImplementedException(); }
+            get
+            {
+                return this.plantFoodAllowed;
+            }
+            private set
+            {
+                if (value != null)
+                {
+                    this.plantFoodAllowed = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("List of allowed foods cannot be null");
+                }
+            }
         }
 
 
@@ -47,15 +73,20 @@
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return this.SoundPath;
             }
         }
 
         public void MakeSound()
         {
-            SoundPlayer playSound = new SoundPlayer(ParrotSoundPath);
+            SoundPlayer playSound = new SoundPlayer(SoundPath);
             playSound.Play();
+        }
+
+        public int Points
+        {
+            get { return this.points; }
+            set { this.points = value; }
         }
     }
 }

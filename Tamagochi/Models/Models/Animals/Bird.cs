@@ -7,6 +7,12 @@ namespace Models
 {
     public abstract class Bird : Animal
     {
+        #region Constructors
+        public Bird()
+            : base()
+        {
+        }
+
         public Bird(Gender sex, string name)
             : base(sex, name)
         {
@@ -16,11 +22,7 @@ namespace Models
             : base(sex, name, condition)
         {
         }
-
-        public int Points
-        {
-            get { throw new NotImplementedException(); }
-        }
+        #endregion
 
         public void AddPoints()
         {

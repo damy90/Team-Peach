@@ -8,12 +8,11 @@ namespace Models
     public abstract class Mammal : Animal, IPlayable
     {
         private const int StartPoints = 0;
-
         private int points;
-        public Mammal()
+        
+        public Mammal() 
             : base()
         {
-
         }
 
         public Mammal(Gender sex, string name)

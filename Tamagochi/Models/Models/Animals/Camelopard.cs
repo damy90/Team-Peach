@@ -21,10 +21,10 @@ namespace Models
         public Camelopard(Gender sex, string name,Condition initialCondition, int initialPoints, List<Plant> initialFood)
             : base(sex, name,initialCondition, initialPoints)
         {
-            this.Food = initialFood;
+            this.PlantFoodAllowed = initialFood;
         }
 
-        public List<Plant> Food
+        public List<Plant> PlantFoodAllowed
         {
             get 
             {

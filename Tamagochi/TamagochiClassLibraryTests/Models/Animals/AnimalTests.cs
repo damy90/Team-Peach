@@ -14,7 +14,7 @@ namespace Models.Tests
         public void AnimalFoodIsInitializedTest()
         {
             var pet = new Cat(Gender.Male, "Wiskers");
-            Assert.AreEqual(pet.Food.Count(), 1);
+            Assert.AreEqual(pet.MeatFoodAllowed.Count(), 1);
         }
 
         [TestMethod()]

@@ -22,10 +22,10 @@ namespace Models
         public Dog(Gender sex, string name,Condition initialCondition,int initialPoints, List<Meat> initialFood)
             : base(sex, name,initialCondition, initialPoints)
         {
-            this.Food = initialFood;
+            this.MeatFoodAllowed = initialFood;
         }
 
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get 
             {
