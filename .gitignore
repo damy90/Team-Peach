@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Tamagochi/Models/obj/Debug
+/Tamagochi/TamagochiClassLibraryTests/bin/Debug
+/Tamagochi/TamagochiClassLibraryTests/obj/Debug
