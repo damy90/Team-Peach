@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
+//using TamagochiClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace Models.Tests
 {
     [TestClass()]
@@ -18,23 +20,27 @@ namespace Models.Tests
         }
 
         [TestMethod()]
-        public void AnimalTest1()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
         public void AnimalSerializeTest()
         {
             Animal pet = new Cat(Gender.Male, "wiskers");
             pet.Serialize();
-            
         }
 
         [TestMethod()]
         public void AnimalDeserializeTest()
         {
             Assert.Fail();
+        }
+
+        [TestMethod()]
+        public void AnimalChangeConditionTest()
+        {
+            Animal pet = new Cat(Gender.Male, "wiskers");
+            pet.CurrentCondition.ChangeHappiness(-10);
+            Assert.AreEqual(pet.CurrentCondition.Happiness, 90);
+            pet.CurrentCondition.ChangeFeed(10);
+            Assert.AreEqual(pet.CurrentCondition.Feed, 100);
+            //Assert.AreEqual(pet.CurrentCondition.Happiness, 90);
         }
     }
 }

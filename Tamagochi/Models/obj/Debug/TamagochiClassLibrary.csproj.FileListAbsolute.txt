@@ -22,3 +22,8 @@ F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
 F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
 F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
 F:\Telerik\03_C# OOP\Team-Peach\Tamagochi\Models\obj\Debug\Models.pdb
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Models.dll
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Models.pdb
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\Models.dll
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\Models.pdb

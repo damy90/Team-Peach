@@ -17,7 +17,15 @@ namespace Models
 
         #region Fields
         private string[] pictures;
-        private Condition condition;
+
+        public Condition CurrentCondition
+        {
+            get { return CurrentCondition; }
+            set
+            {
+                this.CurrentCondition = value;
+            }
+        }
         private Gender sex;
         private string name;
         protected readonly Random random;
@@ -82,18 +90,6 @@ namespace Models
             }
         }
 
-        public Condition CurrentCondition
-        {
-            get
-            {
-                return this.condition;
-            }
-            set
-            {
-               this.condition = value;
-            }
-        }
-
         public Dictionary<Food, int> FoodsAvailable
         {
             get
@@ -132,8 +128,8 @@ namespace Models
             }
         }
 
-        public string[] Pictures 
-        { 
+        public string[] Pictures
+        {
             get
             {
                 return this.pictures;
