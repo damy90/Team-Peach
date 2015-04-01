@@ -8,6 +8,10 @@
     {
         #region Constants
         private const string ParrotSoundPath = @"...\...\Resourses\Sound\ParrotSound.wav";
+        private const string ParrotPictureDefault = @"...\...\Resourses\Pictures\ParrotPicture_01.jpg";
+        private const string ParrotPictureUnahppy = @"...\...\Resourses\Pictures\ParrotPicture_02.jpg";
+        private const string ParrotPictureEating = @"...\...\Resourses\Pictures\ParrotPicture_03.jpg";
+        private const string ParrotPicturePlaying = @"...\...\Resourses\Pictures\ParrotPicture_04.jpg";
         private const int HappinessIncrement = 20;
         private const int PlayPointsIncrement = 20;
         #endregion
@@ -21,6 +25,7 @@
         public Parrot()
             : base()
         {
+            base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureUnahppy, ParrotPictureEating, ParrotPicturePlaying};
         }
 
         public Parrot(Gender sex, string name)

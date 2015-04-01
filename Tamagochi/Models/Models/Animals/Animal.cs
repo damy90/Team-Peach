@@ -16,6 +16,7 @@ namespace Models
         #endregion
 
         #region Fields
+        private string[] pictures;
         private Condition condition;
         private Gender sex;
         private string name;
@@ -128,6 +129,23 @@ namespace Models
                 {
                     throw new ArgumentNullException("List of infinite foods cannot be null");
                 }
+            }
+        }
+
+        public string[] Pictures 
+        { 
+            get
+            {
+                return this.pictures;
+            }
+            protected set
+            {
+                if (pictures == null)
+                {
+                    throw new ArgumentException("Pictures array cannot be null");
+                }
+
+                this.pictures = value;
             }
         }
         #endregion

@@ -8,10 +8,17 @@ namespace Models.Models.Animals
 {
     class Piranha : Fish, ICarnivorous
     {
+        #region Constants
+        private const string PiranhaPictureDefault = @"...\...\Resourses\Pictures\PiranhaPicture_01.jpg";
+        private const string PiranhaPictureUnahppy = @"...\...\Resourses\Pictures\PiranhaPicture_02.jpg";
+        private const string PiranhaPictureEating =  @"...\...\Resourses\Pictures\PiranhaPicture_03.jpg";
+	    #endregion
+
         #region Constructors
         public Piranha()
             : base()
         {
+            base.Pictures = new string[3] { PiranhaPictureDefault, PiranhaPictureUnahppy, PiranhaPictureEating};
         }
 
         public Piranha(Gender  sex, string name)
