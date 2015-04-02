@@ -23,13 +23,19 @@ namespace Models.Tests
         public void AnimalSerializeTest()
         {
             Animal pet = new Cat(Gender.Male, "wiskers");
+            var pizza = new Pizza();
+            var steak = new Steak();
+            pet.AddToAvailableFoods(pizza, 3);
+            pet.AddToAvailableFoods(steak, 5);
+            pet.FoodsInfinite = new List<Food> { pizza, steak };
             pet.Serialize();
         }
 
         [TestMethod()]
         public void AnimalDeserializeTest()
         {
-            Assert.Fail();
+            var pet = Animal.Deserialize("../../wiskers.xml");
+            //TODO check all properties
         }
 
         [TestMethod()]

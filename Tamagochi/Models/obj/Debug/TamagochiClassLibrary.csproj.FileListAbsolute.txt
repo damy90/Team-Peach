@@ -27,3 +27,7 @@ C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Models.pdb
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\Models.dll
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\obj\Debug\Models.pdb
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\PowerCollections.dll
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\PowerCollections.xml
