@@ -17,13 +17,13 @@ namespace Models
         public Cat()
             : base()
         {
-            this.food = new List<Meat>() { new Pizza() };
+            this.food = new List<Meat>() { new Pizza(), new Steak() };
         }
 
         public Cat(Gender sex, string name)
             : base(sex, name)
         {
-            this.food = new List<Meat>() { new Pizza() };
+            this.food = new List<Meat>() { new Pizza(), new Steak() };
         }
 
         public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
@@ -32,6 +32,7 @@ namespace Models
             this.MeatFoodAllowed = initialFood;
         }
 
+        [XmlIgnore]
         public List<Meat> MeatFoodAllowed
         {
             get

@@ -6,3 +6,5 @@ C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\bin\
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.csprojResolveAssemblyReference.cache
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.dll
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.pdb
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Polenter.SharpSerializer.xml

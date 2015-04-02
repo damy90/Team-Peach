@@ -5,12 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using Polenter.Serialization;
+using Wintellect.PowerCollections;
 
 namespace Models
 {
-    [Serializable]
+    //[Serializable]
     public abstract class Animal
     {
+        //Wintellect.PowerCollections. d;
         #region Constants
         private const int ConditionMaxValue = 100;
         #endregion
@@ -18,14 +21,9 @@ namespace Models
         #region Fields
         private string[] pictures;
 
-        public Condition CurrentCondition
-        {
-            get { return CurrentCondition; }
-            set
-            {
-                this.CurrentCondition = value;
-            }
-        }
+        // Cannot encapsulate because it would break the serialization or the methods for changing conditions
+        public Condition CurrentCondition;
+
         private Gender sex;
         private string name;
         protected readonly Random random;
@@ -84,7 +82,7 @@ namespace Models
             {
                 return this.sex;
             }
-            private set
+            set
             {
                 this.sex = value;
             }
@@ -115,7 +113,7 @@ namespace Models
             {
                 return this.foodsInfinite;
             }
-            private set
+            set
             {
                 if (value != null)
                 {
@@ -134,7 +132,7 @@ namespace Models
             {
                 return this.pictures;
             }
-            protected set
+            set
             {
                 if (pictures == null)
                 {
@@ -180,21 +178,33 @@ namespace Models
         }
         #endregion
 
+        #region Serialization
+        //[XmlArray("FoodsAvailable")]
+        //public List<Pair<Food, int>> SerializeDictionary
+        //{
+        //    get
+        //    {
+        //        var test=this.FoodsAvailable.Select(x=>new Pair<Food, int>(x.Key, x.Value)).ToList();
+        //        return test;
+        //    }
+        //    set
+        //    {
+        //        this.FoodsAvailable = value.ToDictionary(x=>x.ToKeyValuePair().Key, x=>x.ToKeyValuePair().Value);
+        //    }
+        //}
+
         public void Serialize(string path = "../../")
         {
-            XmlSerializer xml = new XmlSerializer(this.GetType());
-            StreamWriter file = new StreamWriter(path + this.name + ".xml");
-            xml.Serialize(file, this);
-            file.Close();
+            var serializer = new SharpSerializer();
+            serializer.Serialize(this, path + this.name + ".xml");
         }
 
-        public Animal Deserialize(string path = "../../player.xml")
+        public static Animal Deserialize(string path = "../../player.xml")
         {
-            XmlSerializer xml = new XmlSerializer(this.GetType());
-            StreamReader file = new StreamReader(path);
-            Animal _instance = (Animal)xml.Deserialize(file);
-            file.Close();
-            return _instance;
+            var serializer = new SharpSerializer();
+            return (Animal)serializer.Deserialize(path); ;
         }
+
+        #endregion
     }
 }

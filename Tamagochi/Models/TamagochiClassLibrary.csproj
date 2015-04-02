@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Polenter.SharpSerializer">
+      <HintPath>..\packages\SharpSerializer.2.20\lib\net20\Polenter.SharpSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections">
+      <HintPath>..\..\..\..\..\Dropbox\telerik\QC\1\homework1\ptoblem 1 c#\ConsoleApplication1\bin\Debug\PowerCollections.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -74,6 +80,7 @@
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
     <None Include="Models\Animals\AnimalDiagram.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resourses\" />
