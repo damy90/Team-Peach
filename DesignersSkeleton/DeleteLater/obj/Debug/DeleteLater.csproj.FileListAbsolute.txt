@@ -25,3 +25,12 @@ D:\TEST\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
 D:\TEST\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 D:\TEST\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
 D:\TEST\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.exe.config
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.exe
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\bin\Debug\DeleteLater.pdb
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.exe
+C:\Users\dany\Source\Repos\Team-Peach2\DesignersSkeleton\DeleteLater\obj\Debug\DeleteLater.pdb
