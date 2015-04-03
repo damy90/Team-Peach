@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 using Polenter.Serialization;
-using Wintellect.PowerCollections;
 
 namespace Models
 {
@@ -134,11 +128,6 @@ namespace Models
             }
             set
             {
-                if (pictures == null)
-                {
-                    throw new ArgumentException("Pictures array cannot be null");
-                }
-
                 this.pictures = value;
             }
         }

@@ -1,1 +1,13 @@
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb

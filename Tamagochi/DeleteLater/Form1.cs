@@ -43,7 +43,7 @@ namespace DeleteLater
                 MessageBox.Show("Please enter a correct age!", "Invalid data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-
+            timer1.Enabled = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -178,7 +178,7 @@ namespace DeleteLater
             pet.CurrentCondition.ChangeFeed(5);
             progressBar1.Value = pet.CurrentCondition.Feed;
             //ChangeProgressBar(progressBar1, 5);
-            pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\eat.png");
+            pictureBox1.BackgroundImage = Image.FromFile(pet.Pictures[1]);
         }
 
         private void CleanClick(object sender, EventArgs e)
@@ -193,7 +193,7 @@ namespace DeleteLater
             pet.CurrentCondition.ChangeHappiness(5);
             progressBar3.Value = pet.CurrentCondition.Happiness;
             //ChangeProgressBar(progressBar3, 5);
-            pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\play.png");
+            pictureBox1.BackgroundImage = Image.FromFile(pet.Pictures[3]);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -201,24 +201,25 @@ namespace DeleteLater
             if (pet != null)
             {
                 pet.CurrentCondition.ChangeAll(-5);
-                progressBar1.Value = pet.CurrentCondition.Feed;
-                progressBar2.Value = pet.CurrentCondition.Cleanliness;
-                progressBar3.Value = pet.CurrentCondition.Happiness;
-                //TODO: add sleep
 
-                //ChangeProgressBar(progressBar1, -5);
-                //ChangeProgressBar(progressBar2, -5);
-                //ChangeProgressBar(progressBar3, -5);
+                //TODO: add sleep
             }
 
-            if (progressBar1.Value > 20 && progressBar2.Value > 20 && progressBar3.Value > 20)
+            if (pet.CurrentCondition.Feed > 20 && pet.CurrentCondition.Cleanliness > 20 && pet.CurrentCondition.Happiness > 20)
             {
-                pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\initial.png");
+                pictureBox1.BackgroundImage = Image.FromFile(pet.Pictures[0]);
             }
             else
             {
-                pictureBox1.BackgroundImage = Image.FromFile(@"..\..\Icons\Cat\sad.png");
+                pictureBox1.BackgroundImage = Image.FromFile(pet.Pictures[2]);
             }
+            progressBar1.Value = pet.CurrentCondition.Feed;
+            progressBar2.Value = pet.CurrentCondition.Cleanliness;
+            progressBar3.Value = pet.CurrentCondition.Happiness;
+            ChangeProgressBar(progressBar1, -5);
+            ChangeProgressBar(progressBar2, -5);
+            ChangeProgressBar(progressBar3, -5);
+            
         }
 
         private void ChangeProgressBar(ProgressBar progressBar, int increment)

@@ -9,7 +9,8 @@ namespace Models
 {
     public class Cat : Mammal, ICarnivorous, ISoundable
     {
-        private const string catSoundPath = @"...\...\Resourses\Sound\CatSound.wav";
+        private const string catSoundPath = @"..\..\Resourses\Sound\CatSound.wav";
+        private string[] pictures;
         [XmlIgnore]
         private List<Meat> food;
 
@@ -24,6 +25,13 @@ namespace Models
             : base(sex, name)
         {
             this.food = new List<Meat>() { new Pizza(), new Steak() };
+            this.Pictures = new string[]
+            {
+                @"..\..\..\Models\Resourses\Pictures\Cat\initial.png",
+                @"..\..\..\Models\Resourses\Pictures\Cat\eat.png",
+                @"..\..\..\Models\\Resourses\Pictures\Cat\sad.png",
+                @"..\..\..\Models\\Resourses\Pictures\Cat\play.png"
+            };
         }
 
         public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
@@ -65,7 +73,7 @@ namespace Models
         {
             get
             {
-                return @"...\...\Resourses\Sound\CatSound.wav";
+                return @"..\..\Resourses\Sound\CatSound.wav";
             }
         }
 

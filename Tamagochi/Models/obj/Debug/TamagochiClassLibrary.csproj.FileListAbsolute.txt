@@ -31,3 +31,10 @@ C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Polenter.Sharp
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\PowerCollections.dll
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.xml
 C:\Users\dany\Source\Repos\Team-Peach2\Tamagochi\Models\bin\Debug\PowerCollections.xml
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\obj\Debug\Models.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.xml
