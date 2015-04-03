@@ -30,18 +30,8 @@ namespace DeleteLater
 
             if (int.TryParse(textBox1.Text, out tryer) && textBox3.Text != "" && (MaleButton.Checked || FemaleButton.Checked) && comboBox1.SelectedItem != null)
             {
-                switch (comboBox1.SelectedItem.ToString())
-                {
-                    case "Cat":
-                        pet = new Cat(currentGender, textBox3.Text);
-                        break;
-                    case "Dog":
-                        pet = new Dog(currentGender, textBox3.Text);
-                        break;
-                    //etc...
-                    default:
-                        throw new ArgumentException();
-                }
+                pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, textBox3.Text);
+
                 SetGameplayWindow();
             }
             else if (textBox1.Text == "" || textBox2.Text == "" || (!MaleButton.Checked && !FemaleButton.Checked))
