@@ -1,27 +1,52 @@
 ﻿using System;
-using Models;
 
 namespace Models
 {
     public static class AnimalFactory
     {
+        public static Animal Pet;
+
         public static Animal CreateAnimal(string species, Gender gender, string name)
         {
-            Animal pet;
+            if (Pet != null)
+            {
+                throw new ApplicationException("You can only have one pet!");
+            }
+
             switch (species)
                 {
                     case "Cat":
-                        pet = new Cat(gender, name);
+                        Pet = new Cat(gender, name);
                         break;
                     case "Dog":
-                        pet = new Dog(gender, name);
+                        Pet = new Dog(gender, name);
+                        break;
+                    case "Camelopard":
+                        Pet = new Camelopard(gender, name);
+                        break;
+                    case "Carp":
+                        Pet = new Carp(gender, name);
+                        break;
+                    case "Eagle":
+                        Pet = new Eagle(gender, name);
+                        break;
+                    case "Parrot":
+                        Pet = new Parrot(gender, name);
+                        break;
+                    case "Piranha":
+                        Pet = new Piranha(gender, name);
                         break;
                     //etc...
                     default:
-                        throw new ArgumentException("Animal does not exist!");
+                        throw new ArgumentException(String.Format("Animal {0} does not exist!", species));
                 }
 
-            return pet;
+            return Pet;
+        }
+
+        public static void KillPet()
+        {
+            Pet = null;
         }
     }
 }
