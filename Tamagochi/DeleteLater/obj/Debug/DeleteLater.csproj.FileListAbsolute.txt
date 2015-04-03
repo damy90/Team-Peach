@@ -11,3 +11,16 @@ D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.pdb
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.dll
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml

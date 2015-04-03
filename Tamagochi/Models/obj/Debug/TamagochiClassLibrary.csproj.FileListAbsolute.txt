@@ -38,3 +38,10 @@ D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.dll
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\bin\Debug\Models.dll
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\bin\Debug\Models.pdb
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\obj\Debug\TamagochiClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\obj\Debug\Models.dll
+C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\Models\obj\Debug\Models.pdb

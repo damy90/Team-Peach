@@ -15,32 +15,17 @@ namespace DeleteLater
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void CreateAnimal_Click(object sender, EventArgs e)
         {
-            Gender currentGender = Gender.Male;
-            if (MaleButton.Checked)
-            {
-                currentGender = Gender.Male;
-            }
-            if (FemaleButton.Checked)
-            {
-                currentGender = Gender.Female;
-            }
-            int tryer = 0;
+            var gender =  MaleButton.Checked ? MaleButton.Text :FemaleButton.Text;
 
-            if (int.TryParse(textBox1.Text, out tryer) && textBox3.Text != "" && (MaleButton.Checked || FemaleButton.Checked) && comboBox1.SelectedItem != null)
+            Gender currentGender = (Gender)(Enum.Parse(typeof(Gender), gender));
+            
+            if ( textBox3.Text != "" && comboBox1.SelectedItem != null)
             {
-                pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, textBox3.Text);
+                pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, textBox3.Text); 
 
                 SetGameplayWindow();
-            }
-            else if (textBox1.Text == "" || textBox2.Text == "" || (!MaleButton.Checked && !FemaleButton.Checked))
-            {
-                MessageBox.Show("You need to fill all fields!", "Invalid data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if ((int.TryParse(textBox1.Text, out tryer)) == false)
-            {
-                MessageBox.Show("Please enter a correct age!", "Invalid data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             timer1.Enabled = true;
@@ -105,29 +90,18 @@ namespace DeleteLater
             button3.Enabled = false;
             button2.Visible = false;
             button2.Enabled = false;
-            button1.Visible = true;
-            button1.Enabled = true;
-            groupBox1.Visible = true;
-            groupBox1.Enabled = true;
-            textBox1.Visible = true;
-            textBox1.Enabled = true;
-            MaleButton.Enabled = true;
-            MaleButton.Visible = true;
-            FemaleButton.Enabled = true;
-            FemaleButton.Visible = true;
-            textBox2.Visible = true;
-            textBox2.Enabled = true;
+            CreateAnimal.Visible = true;
+            CreateAnimal.Enabled = true;         
             groupBox2.Visible = true;
             groupBox2.Enabled = true;
             textBox3.Visible = true;
             textBox3.Enabled = true;
             comboBox1.Visible = true;
             comboBox1.Enabled = true;
-            radioButton1.Visible = true;
-            radioButton1.Enabled = true;
-            radioButton2.Visible = true;
-            radioButton2.Enabled = true;
-            textBox2.Focus();
+            MaleButton.Visible = true;
+            MaleButton.Enabled = true;
+            FemaleButton.Visible = true;
+            FemaleButton.Enabled = true;           
 
 
         }
@@ -135,25 +109,15 @@ namespace DeleteLater
         //STARTING NEW GAME
 
         private void SetGameplayWindow()
-        {
-            textBox2.Visible = false;
-            textBox2.Enabled = false;
-            button1.Visible = false;
-            button1.Enabled = false;
-            textBox1.Visible = false;
-            textBox1.Enabled = false;
+        {           
+            CreateAnimal.Visible = false;
+            CreateAnimal.Enabled = false;        
+            textBox3.Enabled = false;
+            textBox3.Visible = false;
             MaleButton.Enabled = false;
             MaleButton.Visible = false;
             FemaleButton.Enabled = false;
             FemaleButton.Visible = false;
-            groupBox1.Enabled = false;
-            groupBox1.Visible = false;
-            textBox3.Enabled = false;
-            textBox3.Visible = false;
-            radioButton1.Enabled = false;
-            radioButton1.Visible = false;
-            radioButton2.Enabled = false;
-            radioButton2.Visible = false;
             comboBox1.Enabled = false;
             comboBox1.Visible = false;
             groupBox2.Enabled = false;
