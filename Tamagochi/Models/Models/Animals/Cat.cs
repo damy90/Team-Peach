@@ -10,7 +10,6 @@ namespace Models
     public class Cat : Mammal, ICarnivorous, ISoundable
     {
         private const string catSoundPath = @"..\..\Resourses\Sound\CatSound.wav";
-        private string[] pictures;
         [XmlIgnore]
         private List<Meat> food;
 

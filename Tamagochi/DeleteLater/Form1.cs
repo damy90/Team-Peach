@@ -1,4 +1,6 @@
-﻿using Models;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Models;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -8,6 +10,8 @@ namespace DeleteLater
     public partial class Form1 : Form
     {
         private Animal pet;
+        private Player player;
+
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +28,8 @@ namespace DeleteLater
             if ( textBox3.Text != "" && comboBox1.SelectedItem != null)
             {
                 pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, textBox3.Text); 
+
+                player = new Player(pet);
 
                 SetGameplayWindow();
             }
@@ -134,15 +140,48 @@ namespace DeleteLater
             progressBar1.Visible = true;
             progressBar2.Visible = true;
             progressBar3.Visible = true;
+            FillFoodList();
         }
 
 
         private void FeedClick(object sender, EventArgs e)
         {//FEED BUTTON
+
+            ChooseFood();
+
             pet.CurrentCondition.ChangeFeed(5);
             progressBar1.Value = pet.CurrentCondition.Feed;
             //ChangeProgressBar(progressBar1, 5);
             pictureBox1.BackgroundImage = Image.FromFile(pet.Pictures[1]);
+        }
+
+        private void ChooseFood()
+        {
+            if (comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Choose Food");
+            }
+
+            string selectedFood = "";
+
+            if (comboBox2.SelectedItem != null)
+            {
+                selectedFood = comboBox2.SelectedItem.ToString();
+            }
+            
+
+            if (selectedFood != "Pizza")
+            {
+                player.RemoveFood(selectedFood);
+            }
+
+            FillFoodList();
+        }
+
+        private void FillFoodList()
+        {
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(player.AvailableFood.Select(x => x.GetType().Name).ToArray());
         }
 
         private void CleanClick(object sender, EventArgs e)
@@ -208,6 +247,6 @@ namespace DeleteLater
             }
         }
 
-
+        
     }
 }

@@ -24,13 +24,13 @@ namespace Models
             return _instance;
         }
 
-        public void BuyItem(IBuyable item, Player buyer)
-        {
-            if (item.Price <= buyer.Coins)
-            {
-                buyer.Coins -= item.Price;
-                buyer.AddItem(item);
-            }
-        }
+        //public void BuyItem(IBuyable item, Player buyer)
+        //{
+        //    if (item.Price <= buyer.Coins)
+        //    {
+        //        buyer.Coins -= item.Price;
+        //        buyer.AddItem(item);
+        //    }
+        //}
     }
 }
