@@ -16,7 +16,7 @@ namespace Models
         private string[] pictures;
 
         // Cannot encapsulate because it would break the serialization or the methods for changing conditions
-        public Condition CurrentCondition;
+        public Condition CurrentCondition{ get; set; }
 
         private Gender sex;
         private string name;

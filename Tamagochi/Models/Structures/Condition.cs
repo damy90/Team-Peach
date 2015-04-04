@@ -72,7 +72,7 @@ namespace Models
             }
             set
             {
-                this.energy=ChangeCondition(0, value);
+                this.energy = ChangeCondition(0, value);
             }
         }
 
@@ -118,9 +118,9 @@ namespace Models
 
         public void ChangeAll(int increment)
         {
-            this.cleanliness=ChangeCondition(this.cleanliness, increment);
+            this.cleanliness = ChangeCondition(this.cleanliness, increment);
             this.feed = ChangeCondition(this.feed, increment);
-            this.energy=ChangeCondition(this.energy, increment);
+            this.energy = ChangeCondition(this.energy, increment);
             this.happiness = ChangeCondition(this.happiness, increment);
         }
     }
