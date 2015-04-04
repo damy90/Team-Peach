@@ -39,11 +39,11 @@ namespace Models
             };
         }
 
-        public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
-            : base(sex, name, initialCondition, initialPoints)
-        {
-            this.MeatFoodAllowed = initialFood;
-        }
+        //public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
+        //    : base(sex, name, initialCondition, initialPoints)
+        //{
+        //    this.MeatFoodAllowed = initialFood;
+        //}
 
         [XmlIgnore]
         public List<Meat> MeatFoodAllowed

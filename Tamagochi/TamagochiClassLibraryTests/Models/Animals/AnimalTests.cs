@@ -25,8 +25,6 @@ namespace Models.Tests
             Animal pet = new Cat(Gender.Male, "wiskers");
             var pizza = new Pizza();
             var steak = new Steak();
-            pet.AddToAvailableFoods(pizza, 3);
-            pet.AddToAvailableFoods(steak, 5);
             pet.FoodsInfinite = new List<Food> { pizza, steak };
             pet.Serialize();
         }

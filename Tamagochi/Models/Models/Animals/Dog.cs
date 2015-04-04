@@ -9,27 +9,47 @@ namespace Models
 {
     public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
     {
-        private const string dogSoundPath = @"...\...\Resourses\Sound\DogSound.wav";
+        private const string DogSoundPath = @"...\...\Resourses\Sound\DogSound.wav";
+        private const string InitialDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\initial.png";
+        private const string EatDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\eat.png";
+        private const string SadDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\sad.png";
+        private const string PlayDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\play.png";
+        private const string SleapyDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\sleep.png";
+        private List<Meat> InitialAllowedFoods = new List<Meat> { new Drumstick(), new FishMeat(), new Steak(), new Pizza() };
+
+
 
         private List<Meat> food;
 
         public Dog(Gender sex, string name)
             : base(sex, name)
         {
-           // this.Food = new List<Meat>();
+           this.MeatFoodAllowed = InitialAllowedFoods;
+           this.Pictures = new string[]
+            {
+                Dog.InitialDogPicture,
+                Dog.EatDogPicture,
+                Dog.SadDogPicture,
+                Dog.PlayDogPicture,
+                Dog.SleapyDogPicture
+
+            };
+            
         }
 
-        public Dog(Gender sex, string name,Condition initialCondition,int initialPoints, List<Meat> initialFood)
-            : base(sex, name,initialCondition, initialPoints)
-        {
-            this.MeatFoodAllowed = initialFood;
-        }
+        //public Dog(Gender sex, string name,Condition initialCondition,int initialPoints, List<Meat> initialFood)
+        //    : base(sex, name,initialCondition, initialPoints)
+        //{
+        //    this.MeatFoodAllowed = initialFood;
+        //}
+
+        public string[] Pictures { get; private set; }
 
         public List<Meat> MeatFoodAllowed
         {
-            get 
+            get
             {
-                return new List<Meat>(this.food); 
+                return new List<Meat>(this.food);
             }
             private set
             {
@@ -51,14 +71,13 @@ namespace Models
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return DogSoundPath;
             }
         }
 
         public void MakeSound()
         {
-            SoundPlayer playSound = new SoundPlayer(dogSoundPath);
+            SoundPlayer playSound = new SoundPlayer(DogSoundPath);
             playSound.Play();
         }
     }
