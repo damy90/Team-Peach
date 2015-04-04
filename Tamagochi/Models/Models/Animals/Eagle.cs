@@ -9,8 +9,8 @@
         #region Constants
         private const string EagleSoundPath = @"...\...\Resourses\Sound\EagleSound.wav";
         private const string EaglePictureDefault = @"...\...\Resourses\Pictures\EaglePicture_01.jpg";
-        private const string EaglePictureUnahppy = @"...\...\Resourses\Pictures\EaglePicture_02.jpg";
-        private const string EaglePictureEating =  @"...\...\Resourses\Pictures\EaglePicture_03.jpg";
+        private const string EaglePictureEating = @"...\...\Resourses\Pictures\EaglePicture_02.jpg";
+        private const string EaglePictureUnhappy =  @"...\...\Resourses\Pictures\EaglePicture_03.jpg";
         private const string EaglePicturePlaying = @"...\...\Resourses\Pictures\EaglePicture_04.jpg";
         private const int HappinessIncrement = 20;
         private const int FeedIncrement = 20;
@@ -26,7 +26,8 @@
         public Eagle()
             : base()
         {
-            base.Pictures = new string[4] {EaglePictureDefault, EaglePictureUnahppy, EaglePictureEating, EaglePicturePlaying };
+            base.Pictures = new string[4] {EaglePictureDefault, EaglePictureEating, EaglePictureUnhappy, EaglePicturePlaying };
+            this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
         }
 
         public Eagle(Gender sex, string name)

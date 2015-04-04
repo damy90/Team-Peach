@@ -3,14 +3,15 @@
     using System;
     using System.Collections.Generic;
     using System.Media;
+    using Food;
     
     public class Parrot : Bird, IHerbivorous, IPlayable, ISoundable
     {
         #region Constants
         private const string ParrotSoundPath = @"...\...\Resourses\Sound\ParrotSound.wav";
         private const string ParrotPictureDefault = @"...\...\Resourses\Pictures\ParrotPicture_01.png";
-        private const string ParrotPictureUnahppy = @"...\...\Resourses\Pictures\ParrotPicture_02.png";
-        private const string ParrotPictureSleeping = @"...\...\Resourses\Pictures\ParrotPicture_03.png";
+        private const string ParrotPictureEating = @"...\...\Resourses\Pictures\ParrotPicture_02.png";
+        private const string ParrotPictureUnahppy = @"...\...\Resourses\Pictures\ParrotPicture_03.png";
         private const string ParrotPicturePlaying = @"...\...\Resourses\Pictures\ParrotPicture_04.png";
         private const int HappinessIncrement = 20;
         private const int PlayPointsIncrement = 20;
@@ -25,7 +26,8 @@
         public Parrot()
             : base()
         {
-            base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureUnahppy, ParrotPictureSleeping, ParrotPicturePlaying};
+            base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureEating, ParrotPictureUnahppy, ParrotPicturePlaying};
+            this.plantFoodAllowed = new List<Plant>{new Apple(), new Banana()};
         }
 
         public Parrot(Gender sex, string name)
@@ -39,7 +41,7 @@
         }
         #endregion
         
-        public List<Plant> PlantFoodAllowed
+        public List<Plant> PlantsFoodAllowed
         {
             get
             {

@@ -7,6 +7,6 @@ namespace Models
 {
     public interface IHerbivorous
     {
-        List<Plant> PlantFoodAllowed { get; }
+        List<Plant> PlantsFoodAllowed { get; }
     }
 }

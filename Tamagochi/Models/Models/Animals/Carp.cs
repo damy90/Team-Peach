@@ -7,8 +7,8 @@ namespace Models
     {
         #region Constants
         private const string CarpPictureDefault = @"...\...\Resourses\Pictures\ParrotPicture_01.jpg";
-        private const string CarpPictureUnahppy = @"...\...\Resourses\Pictures\ParrotPicture_02.jpg";
-        private const string CarpPictureEating =  @"...\...\Resourses\Pictures\ParrotPicture_03.jpg";
+        private const string CarpPictureEating = @"...\...\Resourses\Pictures\ParrotPicture_02.jpg";
+        private const string CarpPictureUnahppy =  @"...\...\Resourses\Pictures\ParrotPicture_03.jpg";
         #endregion
         #region Fileds
         private List<Plant> plantsFoodAllowed = new List<Plant>();
@@ -18,7 +18,8 @@ namespace Models
         public Carp()
             : base()
         {
-            base.Pictures = new string[3] { CarpPictureDefault, CarpPictureUnahppy, CarpPictureEating };
+            base.Pictures = new string[3] { CarpPictureDefault, CarpPictureEating, CarpPictureUnahppy };
+            this.PlantsFoodAllowed = new List<Plant> { new Apple(), new Banana() };
         }
 
         public Carp(Gender  sex, string name)
@@ -32,9 +33,10 @@ namespace Models
         }
         #endregion
 
-        public List<Plant> PlantFoodAllowed
+        public List<Plant> PlantsFoodAllowed
         {
             get { return this.plantsFoodAllowed; }
+            private set { this.plantsFoodAllowed = value; }
         }
     }
 }
