@@ -10,7 +10,12 @@ namespace Models
     public class Cat : Mammal, ICarnivorous, ISoundable
     {
         private const string catSoundPath = @"..\..\Resourses\Sound\CatSound.wav";
-        private string[] pictures;
+        private const string InitialCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\initial.png";
+        private const string EatCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\eat.png";
+        private const string SadCatPicture = @"..\..\..\Models\\Resourses\Pictures\Cat\sad.png";
+        private const string PlayCatPicture = @"..\..\..\Models\\Resourses\Pictures\Cat\play.png";
+        private List<Meat> InitialAllowedFoods = new List<Meat> { new Drumstick(), new FishMeat(), new Steak(), new Pizza() };
+
         [XmlIgnore]
         private List<Meat> food;
 
@@ -18,19 +23,19 @@ namespace Models
         public Cat()
             : base()
         {
-            this.food = new List<Meat>() { new Pizza(), new Steak() };
+            this.food = InitialAllowedFoods;
         }
 
         public Cat(Gender sex, string name)
             : base(sex, name)
         {
-            this.food = new List<Meat>() { new Pizza(), new Steak() };
+            this.food = InitialAllowedFoods;
             this.Pictures = new string[]
             {
-                @"..\..\..\Models\Resourses\Pictures\Cat\initial.png",
-                @"..\..\..\Models\Resourses\Pictures\Cat\eat.png",
-                @"..\..\..\Models\\Resourses\Pictures\Cat\sad.png",
-                @"..\..\..\Models\\Resourses\Pictures\Cat\play.png"
+                Cat.InitialCatPicture,
+                Cat.EatCatPicture,
+                Cat.SadCatPicture,
+                Cat.PlayCatPicture 
             };
         }
 
