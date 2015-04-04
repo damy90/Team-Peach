@@ -22,13 +22,13 @@ namespace Models
             : base()
         {
             base.Pictures = new string[3] { PiranhaPictureDefault, PiranhaPictureEating, PiranhaPictureUnhappy};
-            this.Food = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
+            this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
         }
 
         public Piranha(Gender  sex, string name)
             : base(sex, name)
         {
-            this.Food = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
+            this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
         }
 
         public Piranha(Gender sex, string name, Condition condition)
@@ -36,7 +36,7 @@ namespace Models
         {
         }
         #endregion
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get
             {

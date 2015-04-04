@@ -6,28 +6,27 @@ using System.Media;
 
 namespace Models
 {
-    public class Camelopard : Mammal, IHerbivorous, ISoundable
+    public class Camelopard : Mammal, IHerbivorous,ISoundable
     {
         private const string camelopardSoundPath = @"...\...\Resourses\Sound\CamelopardSound.wav";
-        private const List<Plant> DefaultFoods = new List<Plant> { new Apple() };
 
         private List<Plant> food;
 
-        public Camelopard(Gender sex, string name)
+       public Camelopard(Gender sex, string name)
             : base(sex, name)
         {
-            this.Food = DefaultFoods;
+           // this.Food = new List<Plant>();
         }
 
-        public Camelopard(Gender sex, string name, Condition initialCondition, int initialPoints, List<Plant> initialFood)
-            : base(sex, name, initialCondition, initialPoints)
+        public Camelopard(Gender sex, string name,Condition initialCondition, int initialPoints, List<Plant> initialFood)
+            : base(sex, name,initialCondition, initialPoints)
         {
-            this.Food = initialFood;
+            this.PlantsFoodAllowed = initialFood;
         }
 
-        public List<Plant> Food
+        public List<Plant> PlantsFoodAllowed
         {
-            get
+            get 
             {
                 return new List<Plant>(this.food);
             }

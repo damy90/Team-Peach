@@ -19,7 +19,7 @@ namespace Models
             : base()
         {
             base.Pictures = new string[3] { CarpPictureDefault, CarpPictureEating, CarpPictureUnahppy };
-            this.Food = new List<Plant> { new Apple(), new Banana() };
+            this.PlantsFoodAllowed = new List<Plant> { new Apple(), new Banana() };
         }
 
         public Carp(Gender  sex, string name)
@@ -33,7 +33,7 @@ namespace Models
         }
         #endregion
 
-        public List<Plant> Food
+        public List<Plant> PlantsFoodAllowed
         {
             get { return this.plantsFoodAllowed; }
             private set { this.plantsFoodAllowed = value; }

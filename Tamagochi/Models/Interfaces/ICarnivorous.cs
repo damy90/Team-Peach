@@ -7,7 +7,7 @@ namespace Models
 {
     public interface ICarnivorous
     {
-        List<Meat> Food { get; }
+        List<Meat> MeatFoodAllowed { get; }
 
         void Hunt();
     }

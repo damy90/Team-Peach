@@ -27,7 +27,7 @@
             : base()
         {
             base.Pictures = new string[4] {EaglePictureDefault, EaglePictureEating, EaglePictureUnhappy, EaglePicturePlaying };
-            this.Food = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
+            this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
         }
 
         public Eagle(Gender sex, string name)
@@ -41,7 +41,7 @@
         }
         #endregion
 
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get
             {

@@ -10,11 +10,6 @@ namespace Models
     public class Cat : Mammal, ICarnivorous, ISoundable
     {
         private const string catSoundPath = @"..\..\Resourses\Sound\CatSound.wav";
-        private const string InitialCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\initial.png";
-        private const string EatCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\eat.png";
-        private const string SadCatPicture = @"..\..\..\Models\\Resourses\Pictures\Cat\sad.png";
-        private const string PlayCatPicture = @"..\..\..\Models\\Resourses\Pictures\Cat\play.png";
-
         private string[] pictures;
         [XmlIgnore]
         private List<Meat> food;
@@ -32,21 +27,21 @@ namespace Models
             this.food = new List<Meat>() { new Pizza(), new Steak() };
             this.Pictures = new string[]
             {
-                InitialCatPicture,
-                EatCatPicture,
-                SadCatPicture,
-                PlayCatPicture
+                @"..\..\..\Models\Resourses\Pictures\Cat\initial.png",
+                @"..\..\..\Models\Resourses\Pictures\Cat\eat.png",
+                @"..\..\..\Models\\Resourses\Pictures\Cat\sad.png",
+                @"..\..\..\Models\\Resourses\Pictures\Cat\play.png"
             };
         }
 
         public Cat(Gender sex, string name, Condition initialCondition, int initialPoints, List<Meat> initialFood)
             : base(sex, name, initialCondition, initialPoints)
         {
-            this.Food = initialFood;
+            this.MeatFoodAllowed = initialFood;
         }
 
         [XmlIgnore]
-        public List<Meat> Food
+        public List<Meat> MeatFoodAllowed
         {
             get
             {
@@ -64,7 +59,7 @@ namespace Models
 
         public void AddFood(Meat aditionalDood)
         {
-            this.Food.Add(aditionalDood);
+            this.MeatFoodAllowed.Add(aditionalDood);
         }
 
 
