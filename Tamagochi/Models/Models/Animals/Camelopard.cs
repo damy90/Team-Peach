@@ -13,13 +13,14 @@ namespace Models
         private const string EatCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\eat.png";
         private const string SadCamelopardPicture = @"..\..\..\Models\\Resourses\Pictures\Camelopard\sad.png";
         private const string PlayCamelopardPicture = @"..\..\..\Models\\Resourses\Pictures\Camelopard\play.png";
+        private List<Plant> InitialAllowedFoods = new List<Plant> { new Apple(), new Banana(), new Pear() };    
 
         private List<Plant> food;
 
        public Camelopard(Gender sex, string name)
             : base(sex, name)
         {
-           // this.Food = new List<Plant>();
+            this.PlantsFoodAllowed = InitialAllowedFoods;
             this.Pictures = new string[]
            {
                Camelopard.InitialCamelopardPicture,
@@ -57,8 +58,7 @@ namespace Models
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return camelopardSoundPath;
             }
         }
 
