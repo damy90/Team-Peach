@@ -24,3 +24,16 @@ C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.dll
 C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.dll
 C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
 C:\Users\Dragomir\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.pdb
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.dll
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache

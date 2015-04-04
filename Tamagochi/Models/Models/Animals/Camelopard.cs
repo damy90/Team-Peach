@@ -9,20 +9,34 @@ namespace Models
     public class Camelopard : Mammal, IHerbivorous,ISoundable
     {
         private const string camelopardSoundPath = @"...\...\Resourses\Sound\CamelopardSound.wav";
+        private const string InitialCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\initial.png";
+        private const string EatCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\eat.png";
+        private const string SadCamelopardPicture = @"..\..\..\Models\\Resourses\Pictures\Camelopard\sad.png";
+        private const string PlayCamelopardPicture = @"..\..\..\Models\\Resourses\Pictures\Camelopard\play.png";
+        private List<Plant> InitialAllowedFoods = new List<Plant> { new Apple(), new Banana(), new Pear() };    
 
         private List<Plant> food;
 
        public Camelopard(Gender sex, string name)
             : base(sex, name)
         {
-           // this.Food = new List<Plant>();
+            this.PlantsFoodAllowed = InitialAllowedFoods;
+            this.Pictures = new string[]
+           {
+               Camelopard.InitialCamelopardPicture,
+               Camelopard.EatCamelopardPicture,
+               Camelopard.SadCamelopardPicture,
+               Camelopard.PlayCamelopardPicture
+           };
         }
 
-        public Camelopard(Gender sex, string name,Condition initialCondition, int initialPoints, List<Plant> initialFood)
-            : base(sex, name,initialCondition, initialPoints)
-        {
-            this.PlantsFoodAllowed = initialFood;
-        }
+        //public Camelopard(Gender sex, string name,Condition initialCondition, int initialPoints, List<Plant> initialFood)
+        //    : base(sex, name,initialCondition, initialPoints)
+        //{
+        //    this.PlantsFoodAllowed = initialFood;
+        //}
+
+       public string[] Pictures { get; private set; }
 
         public List<Plant> PlantsFoodAllowed
         {
@@ -44,8 +58,7 @@ namespace Models
         {
             get
             {
-                // TODO: Implement this property getter
-                throw new NotImplementedException();
+                return camelopardSoundPath;
             }
         }
 

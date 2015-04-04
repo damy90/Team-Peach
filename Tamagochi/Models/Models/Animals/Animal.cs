@@ -82,25 +82,6 @@ namespace Models
             }
         }
 
-        public Dictionary<Food, int> FoodsAvailable
-        {
-            get
-            {
-                return this.foodsAvailable;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    this.foodsAvailable = value;
-                }
-                else
-                {
-                    throw new ArgumentNullException("List of available foods cannot be null");
-                }
-            }
-        }
-
         public List<Food> FoodsInfinite
         {
             get
@@ -133,39 +114,7 @@ namespace Models
         }
         #endregion
 
-        #region Public Methods
-        public void AddToAvailableFoods(Food food, int quantity)
-        {
-            if (this.FoodsAvailable.ContainsKey(food))
-            {
-                this.FoodsAvailable[food] += quantity;
-            }
-            else
-            {
-                this.FoodsAvailable.Add(food, quantity);
-            }
-        }
-
-        // Cheks if there is enough of the quantity demanded and removes it from the dictioanry value
-        public void RemoveFromAvailableFoods(Food food, int quantity)
-        {
-            if (this.FoodsAvailable.ContainsKey(food))
-            {
-                if (this.FoodsAvailable[food] >= quantity)
-                {
-                    this.FoodsAvailable[food] -= quantity;
-                }
-                else
-                {
-                    throw new ArgumentException("Not enough quantity of food");
-                }
-            }
-            else
-            {
-                throw new ArgumentException("This food is missing from the list");
-            }
-        }
-        #endregion
+        
 
         #region Serialization
         //[XmlArray("FoodsAvailable")]
