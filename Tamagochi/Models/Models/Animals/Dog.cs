@@ -10,22 +10,23 @@ namespace Models
     public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
     {
         private const string dogSoundPath = @"...\...\Resourses\Sound\DogSound.wav";
+        private const List<Meat> DefaultFoods = new List<Meat> { new Steak() };
 
         private List<Meat> food;
 
         public Dog(Gender sex, string name)
             : base(sex, name)
         {
-           // this.Food = new List<Meat>();
+            this.Food = DefaultFoods;
         }
 
         public Dog(Gender sex, string name,Condition initialCondition,int initialPoints, List<Meat> initialFood)
             : base(sex, name,initialCondition, initialPoints)
         {
-            this.MeatFoodAllowed = initialFood;
+            this.Food = initialFood;
         }
 
-        public List<Meat> MeatFoodAllowed
+        public List<Meat> Food
         {
             get 
             {

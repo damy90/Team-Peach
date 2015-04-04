@@ -41,7 +41,7 @@
         }
         #endregion
         
-        public List<Plant> PlantsFoodAllowed
+        public List<Plant> Food
         {
             get
             {
