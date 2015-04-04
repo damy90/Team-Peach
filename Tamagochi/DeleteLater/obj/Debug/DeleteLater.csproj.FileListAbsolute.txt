@@ -37,3 +37,6 @@ C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Deb
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+C:\Users\Kaloyan\Desktop\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
+C:\Users\Kaloyan\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
+C:\Users\Kaloyan\Desktop\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb

@@ -2,6 +2,7 @@
 {
     public abstract class Food
     {
+        private decimal price;
         public Food()
         {
         }
@@ -12,6 +13,7 @@
         }
         //The increase in Feed
         public int FoodValue { get; set; }
+
         //The time until the same food can be given to the animaml in seconds
         public int FeedInterval { get; set; }
     }

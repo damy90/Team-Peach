@@ -7,9 +7,10 @@ namespace Models
 {
     public class Banana : Plant, IBuyable
     {
+        const int defaultPrice = 10;
         public int Price
         {
-            get { throw new NotImplementedException(); }
+            get { return Banana.defaultPrice; }
         }
     }
 }
