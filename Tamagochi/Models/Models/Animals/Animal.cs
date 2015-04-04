@@ -16,7 +16,7 @@ namespace Models
         private string[] pictures;
 
         // Cannot encapsulate because it would break the serialization or the methods for changing conditions
-        public Condition CurrentCondition{ get; set; }
+        public virtual Condition CurrentCondition{ get; set; }
 
         private Gender sex;
         private string name;
@@ -113,8 +113,6 @@ namespace Models
             }
         }
         #endregion
-
-        
 
         #region Serialization
         //[XmlArray("FoodsAvailable")]

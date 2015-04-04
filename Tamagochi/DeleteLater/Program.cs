@@ -14,7 +14,7 @@ namespace DeleteLater
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 form = new Form1();
+            TamagotchiMainForm form = new TamagotchiMainForm();
             form.Size = new Size(640, 480);
             form.Location = new Point(0, 0);           
             Application.Run(form);

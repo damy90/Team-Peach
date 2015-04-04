@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    public struct Condition
+    public class Condition
     {
         private int happiness;
         private int feed;
@@ -10,7 +10,7 @@ namespace Models
         private int energy;
 
         public Condition(int initialValue)
-            : this()
+            //: this()
         {
             if (initialValue > 100)
             {

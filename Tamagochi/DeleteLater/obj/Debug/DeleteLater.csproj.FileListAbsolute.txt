@@ -1,6 +1,5 @@
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
-D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe
@@ -37,3 +36,4 @@ C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Deb
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Form1.resources
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.TamagotchiMainForm.resources

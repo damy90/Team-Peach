@@ -108,5 +108,10 @@ namespace Models
         //}
 
         public int Points { get; set; }
+
+        internal void AddItem(IBuyable food)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
