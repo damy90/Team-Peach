@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Bird">
-    <Position X="3.25" Y="6.25" Width="1.5" />
+    <Position X="3.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Bird.cs</FileName>
@@ -17,7 +17,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Camelopard">
-    <Position X="13.25" Y="9.75" Width="1.5" />
+    <Position X="13.25" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAABAIAAAAAAAAAAAABAAAACAAIAAAIAAAAUI=</HashCode>
       <FileName>Models\Animals\Camelopard.cs</FileName>
@@ -25,7 +25,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Cat">
-    <Position X="15.5" Y="9.75" Width="1.5" />
+    <Position X="15.5" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAABAAAACAAQAAAACAAAAAACAAIAACAAIAkAI=</HashCode>
       <FileName>Models\Animals\Cat.cs</FileName>
@@ -33,7 +33,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Dog">
-    <Position X="11" Y="9.75" Width="1.5" />
+    <Position X="11" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAACAAAAAAAAAAAAQAGAEYAEAACAAgAI=</HashCode>
       <FileName>Models\Animals\Dog.cs</FileName>
@@ -41,7 +41,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Eagle">
-    <Position X="4.25" Y="8.5" Width="1.5" />
+    <Position X="4.25" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAggiAAIAQgACAAAAAAAAAAAAAgiAAoAAAAIAgiAA=</HashCode>
       <FileName>Models\Animals\Eagle.cs</FileName>
@@ -49,7 +49,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Fish">
-    <Position X="7.75" Y="6.25" Width="1.5" />
+    <Position X="7.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Fish.cs</FileName>
@@ -57,7 +57,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Mammal">
-    <Position X="13.25" Y="6.25" Width="1.5" />
+    <Position X="13.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAQgAAAAAAAAAAAAABAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Mammal.cs</FileName>
@@ -65,7 +65,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Parrot">
-    <Position X="2" Y="8.5" Width="1.5" />
+    <Position X="2" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAwCAAABQgEAAAAAgAAAAAIAABCAAoAAAAAAgABA=</HashCode>
       <FileName>Models\Animals\Parrot.cs</FileName>
@@ -73,17 +73,17 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Carp">
-    <Position X="6.5" Y="8.25" Width="1.5" />
+    <Position X="8.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAEAAAAAAAAAAAAAAAAAAEBgAAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Carp.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Models.Models.Animals.Piranha">
-    <Position X="8.75" Y="8.25" Width="1.5" />
+  <Class Name="Models.Piranha" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAACAAAAAAAAAAAAAAAAIAgAAAAAAgAA=</HashCode>
+      <HashCode>AgAAAAAAAIAAAACAAAAAAAAAAAAAAAAIAgAAAAAgiAA=</HashCode>
       <FileName>Models\Animals\Piranha.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
