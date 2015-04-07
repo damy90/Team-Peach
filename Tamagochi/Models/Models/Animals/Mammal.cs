@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    public abstract class Mammal : Animal, IPlayable
+    public abstract class Mammal : Animal, IAnimal, IPlayable
     {
         private const int StartPoints = 0;
         private int points;

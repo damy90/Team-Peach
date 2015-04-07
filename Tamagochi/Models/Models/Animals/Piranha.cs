@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models
 {
-	class Piranha : Fish, ICarnivorous
+    class Piranha : Fish, IAnimal, ICarnivorous
 	{
 		#region Constants
 		private const string PiranhaPictureDefault = @"..\..\..\Models\Resourses\Pictures\PiranhaPicture_01.jpg";

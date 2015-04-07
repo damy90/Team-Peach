@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Media;
 
-    public class Eagle : Bird, ICarnivorous, IPlayable, ISoundable
+    public class Eagle : Bird, IAnimal, ICarnivorous, IPlayable, ISoundable
     {
         #region Constants
         private const string EagleSoundPath = @"..\..\..\Models\Resourses\Sound\EagleSound.wav";

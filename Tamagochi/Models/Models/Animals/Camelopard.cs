@@ -6,7 +6,7 @@ using System.Media;
 
 namespace Models
 {
-    public class Camelopard : Mammal, IHerbivorous,ISoundable
+    public class Camelopard : Mammal, IAnimal, IHerbivorous,ISoundable
     {
         private const string camelopardSoundPath = @"..\..\..\Models\Resourses\Sound\CamelopardSound.wav";
         private const string InitialCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\initial.png";

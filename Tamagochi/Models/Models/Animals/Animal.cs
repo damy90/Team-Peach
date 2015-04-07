@@ -4,7 +4,7 @@ using Polenter.Serialization;
 
 namespace Models
 {
-    public abstract class Animal
+    public abstract class Animal : IAnimal
     {
         //TODO: encapsulate all set properties protected or internal (whichever works with the serialization)
         //TODO: make all animal constructors internal (other projects will only use the factory)

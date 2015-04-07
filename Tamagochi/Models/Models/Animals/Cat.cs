@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace Models
 {
-    public class Cat : Mammal, ICarnivorous, ISoundable
+    public class Cat : Mammal, IAnimal, ICarnivorous, ISoundable
     {
         private const string catSoundPath = @"..\..\..\Models\Resourses\Sound\CatSound.wav";
         private const string InitialCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\initial.png";

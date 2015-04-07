@@ -4,8 +4,8 @@
     using System.Collections.Generic;
     using System.Media;
     //using Food;
-    
-    public class Parrot : Bird, IHerbivorous, IPlayable, ISoundable
+
+    public class Parrot : Bird, IAnimal, IHerbivorous, IPlayable, ISoundable
     {
         #region Constants
         private const string ParrotSoundPath = @"..\..\..\Models\Resourses\Sound\ParrotSound.wav";

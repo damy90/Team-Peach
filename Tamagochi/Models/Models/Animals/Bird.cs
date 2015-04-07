@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models
 {
-    public abstract class Bird : Animal
+    public abstract class Bird : Animal, IAnimal
     {
         #region Constructors
         protected Bird()

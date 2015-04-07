@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models
 {
-    public class Carp : Fish, IHerbivorous
+    public class Carp : Fish, IAnimal, IHerbivorous
     {
         #region Constants
         private const string CarpPictureDefault = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_01.jpg";

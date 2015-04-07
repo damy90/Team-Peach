@@ -7,7 +7,7 @@ using System.Media;
 
 namespace Models
 {
-    public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
+    public class Dog : Mammal, IAnimal, ICarnivorous, ISoundable, IPlayable
     {
         private const string DogSoundPath = @"..\..\..\Models\Resourses\Sound\DogSound.wav";
         private const string InitialDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\initial.png";
