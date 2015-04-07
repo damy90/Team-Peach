@@ -16,3 +16,12 @@ C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\TamagochiClassLibraryTest
 C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.csprojResolveAssemblyReference.cache
 C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.dll
 C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\TamagochiClassLibraryTests.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\TamagochiClassLibraryTests.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Models.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Polenter.SharpSerializer.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Models.pdb
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\bin\Debug\Polenter.SharpSerializer.xml
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.csprojResolveAssemblyReference.cache
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.dll
+D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\TamagochiClassLibraryTests\obj\Debug\TamagochiClassLibraryTests.pdb
