@@ -8,17 +8,17 @@ namespace Models
     public abstract class Bird : Animal
     {
         #region Constructors
-        public Bird()
+        internal Bird()
             : base()
         {
         }
 
-        public Bird(Gender sex, string name)
+        internal Bird(Gender sex, string name)
             : base(sex, name)
         {
         }
 
-        public Bird(Gender sex, string name, Condition condition)
+        internal Bird(Gender sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }
