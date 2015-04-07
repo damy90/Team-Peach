@@ -8,11 +8,11 @@
     public class Parrot : Bird, IAnimal, IHerbivorous, IPlayable, ISoundable
     {
         #region Constants
-        private const string ParrotSoundPath = @"..\..\..\Models\Resourses\Sound\ParrotSound.wav";
-        private const string ParrotPictureDefault = @"..\..\..\Models\Resourses\Pictures\Parrot\Picture_01.png";
-        private const string ParrotPictureEating = @"..\..\..\Models\Resourses\Pictures\Parrot\Picture_02.png";
-        private const string ParrotPictureUnahppy = @"..\..\..\Models\Resourses\Pictures\Parrot\Picture_03.png";
-        private const string ParrotPicturePlaying = @"..\..\..\Models\Resourses\Pictures\Parrot\Picture_04.png";
+        private const string ParrotSoundPath =      @"..\..\..\Models\Resourses\Sound\ParrotSound.wav";
+        private const string ParrotPictureDefault = @"..\..\..\Models\Resourses\Pictures\Cat\initial.png";
+        private const string ParrotPictureEating =  @"..\..\..\Models\Resourses\Pictures\Cat\eat.png";
+        private const string ParrotPictureUnahppy = @"..\..\..\Models\Resourses\Pictures\Cat\sad.png";
+        private const string ParrotPicturePlaying = @"..\..\..\Models\Resourses\Pictures\Cat\play.png";
         private const int HappinessIncrement = 20;
         private const int PlayPointsIncrement = 20;
         #endregion
