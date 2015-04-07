@@ -1,5 +1,0 @@
-C:\Users\wizard\Desktop\Tamagochi\Models\bin\Debug\Models.dll
-C:\Users\wizard\Desktop\Tamagochi\Models\bin\Debug\Models.pdb
-C:\Users\wizard\Desktop\Tamagochi\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
-C:\Users\wizard\Desktop\Tamagochi\Models\obj\Debug\Models.dll
-C:\Users\wizard\Desktop\Tamagochi\Models\obj\Debug\Models.pdb
