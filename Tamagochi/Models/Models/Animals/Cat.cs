@@ -14,7 +14,7 @@ namespace Models
         private const string EatCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\eat.png";
         private const string SadCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\sad.png";
         private const string PlayCatPicture = @"..\..\..\Models\Resourses\Pictures\Cat\play.png";
-        private List<Meat> InitialAllowedFoods = new List<Meat> { new Drumstick(4), new FishMeat(4), new Steak(4), new Pizza(4) };
+        private List<Meat> InitialAllowedFoods = new List<Meat> { new Drumstick(), new FishMeat(), new Steak(), new Pizza() };
 
         [XmlIgnore]
         private List<Meat> food;

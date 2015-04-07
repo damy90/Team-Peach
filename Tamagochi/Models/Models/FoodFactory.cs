@@ -8,15 +8,15 @@
             switch (foodName.ToLower())
             {
                 case "banana":
-                    return new Banana(foodValue);
+                    return new Banana();
                 case "fishmeat":
-                    return new FishMeat(foodValue);
+                    return new FishMeat();
                 case "pear":
-                    return new Pear(foodValue);
+                    return new Pear();
                 case "pizza":
-                    return new Pizza(foodValue);
+                    return new Pizza();
                 case "steak":
-                    return new Steak(foodValue);
+                    return new Steak();
                 default:
                     throw new ArgumentException("This food does not exist!");
             }
