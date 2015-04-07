@@ -32,21 +32,11 @@
 
         private IBuyable GetFood(string foodName)
         {
-            switch (foodName.ToLower())
-            {
-                case "banana":
-                    return new Banana();
-                case "fishmeat":
-                    return new FishMeat();
-                case "pear":
-                    return new Pear();
-                case "pizza":
-                    return new Pizza();
-                case "steak":
-                    return new Steak();
-                default:
-                    throw new ArgumentException("This food does not exist!");
-            }
+            Random rand = new Random();
+            int foodValue = rand.Next(1, 15);
+
+            IBuyable createdFood =  FoodFactory.CreateFood(foodName, foodValue);
+            return createdFood;
         }
 
         public void BuyItem(string item, Player buyer)
