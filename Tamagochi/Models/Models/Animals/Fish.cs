@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Models
 {
-    public class Fish : Animal
+    public abstract class Fish : Animal
     {
         #region Constructors
         public Fish()
