@@ -37,3 +37,16 @@ C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Deb
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
 C:\Users\Pavilion\Desktop\Telerik\C#OOP\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
 D:\Work\C#OOP\Teamwork\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.TamagotchiMainForm.resources
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe.config
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.exe
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\DeleteLater.pdb
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.dll
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.dll
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Models.pdb
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\bin\Debug\Polenter.SharpSerializer.xml
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csprojResolveAssemblyReference.cache
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.TamagotchiMainForm.resources
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.Properties.Resources.resources
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.csproj.GenerateResource.Cache
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.exe
+C:\Users\wizard\Desktop\Tamagochi\Team-Peach\Tamagochi\DeleteLater\obj\Debug\DeleteLater.pdb

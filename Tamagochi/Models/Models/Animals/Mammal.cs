@@ -10,18 +10,18 @@ namespace Models
         private const int StartPoints = 0;
         private int points;
         
-        public Mammal() 
+        protected Mammal() 
             : base()
         {
         }
 
-        public Mammal(Gender sex, string name)
+        protected Mammal(Gender sex, string name)
             : base(sex, name)
         {
             this.Points = StartPoints;
         }
 
-        public Mammal(Gender sex, string name,Condition initialCondition, int initialPoints)
+        protected Mammal(Gender sex, string name, Condition initialCondition, int initialPoints)
             : base(sex, name, initialCondition)
         {
             AddPoints(initialPoints);

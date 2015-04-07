@@ -7,17 +7,17 @@ namespace Models
     public abstract class Fish : Animal
     {
         #region Constructors
-        public Fish()
+        protected Fish()
             : base()
         {
         }
 
-        public Fish(Gender sex, string name)
+        protected Fish(Gender sex, string name)
             : base(sex, name)
         { 
         }
 
-        public Fish(Gender sex, string name, Condition condition)
+        protected Fish(Gender sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }
