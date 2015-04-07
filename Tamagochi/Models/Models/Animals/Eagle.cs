@@ -7,11 +7,11 @@
     public class Eagle : Bird, ICarnivorous, IPlayable, ISoundable
     {
         #region Constants
-        private const string EagleSoundPath = @"...\...\Resourses\Sound\EagleSound.wav";
-        private const string EaglePictureDefault = @"...\...\Resourses\Pictures\EaglePicture_01.jpg";
-        private const string EaglePictureEating = @"...\...\Resourses\Pictures\EaglePicture_02.jpg";
-        private const string EaglePictureUnhappy =  @"...\...\Resourses\Pictures\EaglePicture_03.jpg";
-        private const string EaglePicturePlaying = @"...\...\Resourses\Pictures\EaglePicture_04.jpg";
+        private const string EagleSoundPath = @"..\..\..\Models\Resourses\Sound\EagleSound.wav";
+        private const string EaglePictureDefault = @"..\..\..\Models\Resourses\Pictures\Eagle\Picture_01.jpg";
+        private const string EaglePictureEating = @"..\..\..\Models\Resourses\Pictures\Eagle\Picture_02.jpg";
+        private const string EaglePictureUnhappy = @"..\..\..\Models\Resourses\Pictures\Eagle\Picture_03.jpg";
+        private const string EaglePicturePlaying = @"..\..\..\Models\Resourses\Pictures\Eagle\Picture_04.jpg";
         private const int HappinessIncrement = 20;
         private const int FeedIncrement = 20;
         private const int PlayPointsIncrement = 20;

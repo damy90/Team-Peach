@@ -8,7 +8,7 @@ namespace Models
 {
     public class Camelopard : Mammal, IHerbivorous,ISoundable
     {
-        private const string camelopardSoundPath = @"...\...\Resourses\Sound\CamelopardSound.wav";
+        private const string camelopardSoundPath = @"..\..\..\Models\Resourses\Sound\CamelopardSound.wav";
         private const string InitialCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\initial.png";
         private const string EatCamelopardPicture = @"..\..\..\Models\Resourses\Pictures\Camelopard\eat.png";
         private const string SadCamelopardPicture = @"..\..\..\Models\\Resourses\Pictures\Camelopard\sad.png";

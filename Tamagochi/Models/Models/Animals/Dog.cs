@@ -9,12 +9,12 @@ namespace Models
 {
     public class Dog : Mammal, ICarnivorous, ISoundable, IPlayable
     {
-        private const string DogSoundPath = @"...\...\Resourses\Sound\DogSound.wav";
+        private const string DogSoundPath = @"..\..\..\Models\Resourses\Sound\DogSound.wav";
         private const string InitialDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\initial.png";
         private const string EatDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\eat.png";
-        private const string SadDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\sad.png";
-        private const string PlayDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\play.png";
-        private const string SleapyDogPicture = @"..\..\..\Models\\Resourses\Pictures\Dog\sleep.png";
+        private const string SadDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\sad.png";
+        private const string PlayDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\play.png";
+        private const string SleapyDogPicture = @"..\..\..\Models\Resourses\Pictures\Dog\sleep.png";
         private List<Meat> InitialAllowedFoods = new List<Meat> { new Drumstick(), new FishMeat(), new Steak(), new Pizza() };
 
 

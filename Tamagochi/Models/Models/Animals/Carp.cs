@@ -6,9 +6,9 @@ namespace Models
     public class Carp : Fish, IHerbivorous
     {
         #region Constants
-        private const string CarpPictureDefault = @"...\...\Resourses\Pictures\ParrotPicture_01.jpg";
-        private const string CarpPictureEating = @"...\...\Resourses\Pictures\ParrotPicture_02.jpg";
-        private const string CarpPictureUnahppy =  @"...\...\Resourses\Pictures\ParrotPicture_03.jpg";
+        private const string CarpPictureDefault = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_01.jpg";
+        private const string CarpPictureEating = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_02.jpg";
+        private const string CarpPictureUnahppy = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_03.jpg";
         #endregion
         #region Fileds
         private List<Plant> plantsFoodAllowed = new List<Plant>();
