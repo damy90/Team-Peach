@@ -27,14 +27,14 @@ namespace Models
         #endregion
 
         #region Constructors
-        internal Animal()
+        protected Animal()
         {
             this.name = this.GetType().Name;
             this.Sex = Gender.Male;
             this.CurrentCondition = new Condition(ConditionMaxValue);
         }
 
-        internal Animal(Gender sex, string name)
+        protected Animal(Gender sex, string name)
             : this()
         {
             this.Name = name;
@@ -45,7 +45,7 @@ namespace Models
             }
         }
 
-        internal Animal(Gender sex, string name, Condition initialCondition)
+        protected Animal(Gender sex, string name, Condition initialCondition)
             : this(sex, name)
         {
             this.CurrentCondition = initialCondition;
@@ -59,7 +59,7 @@ namespace Models
             {
                 return this.name;
             }
-            set
+            protected set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -76,7 +76,7 @@ namespace Models
             {
                 return this.sex;
             }
-            set
+            protected set
             {
                 this.sex = value;
             }
