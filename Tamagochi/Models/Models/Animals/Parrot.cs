@@ -26,13 +26,13 @@
         internal Parrot()
             : base()
         {
-            base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureEating, ParrotPictureUnahppy, ParrotPicturePlaying};
-            this.plantFoodAllowed = new List<Plant>{new Apple(), new Banana()};
         }
 
         internal Parrot(Gender sex, string name)
             : base(sex, name)
         {
+            base.Pictures = new string[4] { ParrotPictureDefault, ParrotPictureEating, ParrotPictureUnahppy, ParrotPicturePlaying };
+            this.plantFoodAllowed = new List<Plant> { new Apple(), new Banana() };
         }
 
         internal Parrot(Gender sex, string name, Condition condition)
