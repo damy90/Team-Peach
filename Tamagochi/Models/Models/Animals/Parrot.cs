@@ -47,7 +47,7 @@
             {
                 return this.plantFoodAllowed;
             }
-            private set
+            protected set
             {
                 if (value != null)
                 {
@@ -88,7 +88,7 @@
         public int Points
         {
             get { return this.points; }
-            private set { this.points = value; }
+            protected set { this.points = value; }
         }
     }
 }

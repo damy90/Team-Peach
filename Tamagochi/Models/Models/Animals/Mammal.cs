@@ -38,7 +38,7 @@ namespace Models
             {
                 return this.points;
             }
-            set
+            protected set
             {
                 if (value < 0)
                 {

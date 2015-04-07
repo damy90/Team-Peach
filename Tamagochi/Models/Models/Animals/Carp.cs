@@ -36,7 +36,7 @@ namespace Models
         public List<Plant> PlantsFoodAllowed
         {
             get { return this.plantsFoodAllowed; }
-            private set { this.plantsFoodAllowed = value; }
+            protected set { this.plantsFoodAllowed = value; }
         }
     }
 }

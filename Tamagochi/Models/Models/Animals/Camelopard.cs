@@ -42,7 +42,7 @@ namespace Models
             {
                 return new List<Plant>(this.food);
             }
-            private set
+            protected set
             {
                 if (value.Count == 0)
                 {

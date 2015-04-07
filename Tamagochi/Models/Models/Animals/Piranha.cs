@@ -42,7 +42,7 @@ namespace Models
 			{
 				return this.meatFoodAllowed;
 			}
-			private set
+			protected set
 			{
 				if (value != null)
 				{

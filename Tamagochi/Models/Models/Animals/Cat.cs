@@ -51,7 +51,7 @@ namespace Models
             {
                 return new List<Meat>(this.food);
             }
-            set
+            protected set
             {
                 if (value.Count == 0)
                 {

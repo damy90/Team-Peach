@@ -49,7 +49,7 @@ namespace Models
             {
                 return new List<Meat>(this.food);
             }
-            private set
+            protected set
             {
                 if (value.Count == 0)
                 {
