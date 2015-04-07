@@ -23,15 +23,25 @@ namespace DeleteLater
             var gender =  MaleButton.Checked ? MaleButton.Text :FemaleButton.Text;
 
             Gender currentGender = (Gender)(Enum.Parse(typeof(Gender), gender));
-            
-            if ( petNameTextBox.Text != "" && comboBox1.SelectedItem != null)
+
+            try
             {
-                pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, petNameTextBox.Text); 
+                if (comboBox1.SelectedItem == null || petNameTextBox.Text == "Pet Name")
+                {
+                    throw new CustomException("Please fill the form!");
+                }
+                pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, petNameTextBox.Text);
 
                 player = new Player(pet);
 
                 SetGameplayWindow();
             }
+            catch (CustomException)
+            {
+                MessageBox.Show("Please fill the form");
+                return;
+            }
+            
             
             gameTimer.Enabled = true;
         }
