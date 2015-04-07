@@ -36,7 +36,7 @@ namespace Models
         //    this.PlantsFoodAllowed = initialFood;
         //}
 
-       public string[] Pictures { get; private set; }
+       // string[] Pictures { get; private set; }
 
         public List<Plant> PlantsFoodAllowed
         {

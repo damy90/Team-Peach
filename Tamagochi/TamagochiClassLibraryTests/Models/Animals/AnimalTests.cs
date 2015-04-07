@@ -15,14 +15,15 @@ namespace Models.Tests
         [TestMethod()]
         public void AnimalFoodIsInitializedTest()
         {
-            var pet = new Cat(Gender.Male, "Wiskers");
+            var pet = (Cat)AnimalFactory.CreateAnimal("Cat", Gender.Male, "Wiskers");
+            //var pet = new Cat(Gender.Male, "Wiskers");
             Assert.AreEqual(pet.MeatFoodAllowed.Count(), 1);
         }
 
         [TestMethod()]
         public void AnimalSerializeTest()
         {
-            Animal pet = new Cat(Gender.Male, "wiskers");
+            var pet = AnimalFactory.CreateAnimal("Cat", Gender.Male, "Wiskers");
             var pizza = new Pizza();
             var steak = new Steak();
             pet.FoodsInfinite = new List<Food> { pizza, steak };
@@ -39,7 +40,7 @@ namespace Models.Tests
         [TestMethod()]
         public void AnimalChangeConditionTest()
         {
-            Animal pet = new Cat(Gender.Male, "wiskers");
+            var pet = AnimalFactory.CreateAnimal("Cat", Gender.Male, "Wiskers");
             pet.CurrentCondition.ChangeHappiness(-10);
             Assert.AreEqual(pet.CurrentCondition.Happiness, 90);
             pet.CurrentCondition.ChangeFeed(10);

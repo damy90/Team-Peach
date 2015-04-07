@@ -43,7 +43,7 @@ namespace Models
         //    this.MeatFoodAllowed = initialFood;
         //}
 
-        public string[] Pictures { get; private set; }
+        //public string[] Pictures { get; private set; }
 
         public List<Meat> MeatFoodAllowed
         {

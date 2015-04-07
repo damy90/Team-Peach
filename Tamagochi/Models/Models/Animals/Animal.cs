@@ -4,10 +4,10 @@ using Polenter.Serialization;
 
 namespace Models
 {
-    //[Serializable]
     public abstract class Animal
     {
-        //Wintellect.PowerCollections. d;
+        //TODO: encapsulate all set properties protected or internal (whichever works with the serialization)
+        //TODO: make all animal constructors internal (other projects will only use the factory)
         #region Constants
         private const int ConditionMaxValue = 100;
         #endregion
@@ -115,20 +115,6 @@ namespace Models
         #endregion
 
         #region Serialization
-        //[XmlArray("FoodsAvailable")]
-        //public List<Pair<Food, int>> SerializeDictionary
-        //{
-        //    get
-        //    {
-        //        var test=this.FoodsAvailable.Select(x=>new Pair<Food, int>(x.Key, x.Value)).ToList();
-        //        return test;
-        //    }
-        //    set
-        //    {
-        //        this.FoodsAvailable = value.ToDictionary(x=>x.ToKeyValuePair().Key, x=>x.ToKeyValuePair().Value);
-        //    }
-        //}
-
         public void Serialize(string path = "../../")
         {
             var serializer = new SharpSerializer();
