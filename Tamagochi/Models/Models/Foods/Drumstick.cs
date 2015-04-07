@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Models
+﻿namespace Models
 {
     public class Drumstick : Meat
     {
+        public Drumstick()
+        {
+        }
+        public Drumstick(int foodValue)
+            : base(foodValue)
+        {
+        }
     }
 }
