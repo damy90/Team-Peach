@@ -32,7 +32,7 @@ namespace DeleteLater
 
                 SetGameplayWindow();
             }
-
+            
             gameTimer.Enabled = true;
         }
 
@@ -151,18 +151,20 @@ namespace DeleteLater
                 pet.CurrentCondition.ChangeFeed(5);
             }
             energyStatusBar.Value = pet.CurrentCondition.Feed;
-            //ChangeProgressBar(progressBar1, 5);
+            pet.CurrentCondition.ChangeFeed(5);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[1]);
         }
 
         private void ChooseFood()
         {
-            if (chooseFoodDropComboBox.SelectedItem == null)
-            {
-                MessageBox.Show("Choose Food");
-            }
+            //if (chooseFoodDropComboBox.SelectedItem == null)
+            //{
+            //    MessageBox.Show("Choose Food");
+            //}
 
-            string selectedFood = "";
+            chooseFoodDropComboBox.SelectedItem = chooseFoodDropComboBox.Items[0];
+
+            string selectedFood = chooseFoodDropComboBox.SelectedItem.ToString();
 
             if (chooseFoodDropComboBox.SelectedItem != null)
             {
@@ -202,6 +204,14 @@ namespace DeleteLater
         private void GameTimerTickEvents(object sender, EventArgs e)
         {
             pet.CurrentCondition.ChangeAll(-5);
+
+            if (pet is ISoundable && 
+                (pet.CurrentCondition.Feed < 20 
+                || pet.CurrentCondition.Cleanliness < 20 
+                || pet.CurrentCondition.Happiness < 20))
+            {
+                (pet as ISoundable).MakeSound();
+            }
 
             energyStatusBar.Value = pet.CurrentCondition.Feed;
             hygieneStatusBar.Value = pet.CurrentCondition.Cleanliness;
