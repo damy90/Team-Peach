@@ -15,8 +15,8 @@ namespace Models
         #region Fields
         private string[] pictures;
 
-        
-        public virtual Condition CurrentCondition{ get; protected set; }
+
+        public Condition CurrentCondition;
 
         private Gender sex;
         private string name;
