@@ -15,19 +15,19 @@ namespace Models
         #endregion
 
         #region Constructors
-        public Carp()
+        internal Carp()
             : base()
         {
             base.Pictures = new string[3] { CarpPictureDefault, CarpPictureEating, CarpPictureUnahppy };
             this.PlantsFoodAllowed = new List<Plant> { new Apple(), new Banana() };
         }
 
-        public Carp(Gender  sex, string name)
+        internal Carp(Gender  sex, string name)
             : base(sex, name)
         {
         }
 
-        public Carp(Gender  sex, string name, Condition condition)
+        internal Carp(Gender  sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }

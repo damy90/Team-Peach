@@ -15,8 +15,8 @@ namespace Models
         #region Fields
         private string[] pictures;
 
-        // Cannot encapsulate because it would break the serialization or the methods for changing conditions
-        public virtual Condition CurrentCondition{ get; set; }
+        
+        public virtual Condition CurrentCondition{ get; protected set; }
 
         private Gender sex;
         private string name;
@@ -110,7 +110,7 @@ namespace Models
             {
                 return this.pictures;
             }
-            set
+            protected set
             {
                 this.pictures = value;
             }

@@ -20,13 +20,13 @@ namespace Models
         private List<Meat> food;
 
         //Needed for serialization
-        public Cat()
+        internal Cat()
             : base()
         {
             this.food = InitialAllowedFoods;
         }
 
-        public Cat(Gender sex, string name)
+        internal Cat(Gender sex, string name)
             : base(sex, name)
         {
             this.food = InitialAllowedFoods;
@@ -45,7 +45,6 @@ namespace Models
         //    this.MeatFoodAllowed = initialFood;
         //}
 
-        [XmlIgnore]
         public List<Meat> MeatFoodAllowed
         {
             get

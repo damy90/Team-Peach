@@ -23,19 +23,19 @@
         #endregion
 
         #region Constructors
-        public Parrot()
+        internal Parrot()
             : base()
         {
             base.Pictures = new string[4]{ParrotPictureDefault, ParrotPictureEating, ParrotPictureUnahppy, ParrotPicturePlaying};
             this.plantFoodAllowed = new List<Plant>{new Apple(), new Banana()};
         }
 
-        public Parrot(Gender sex, string name)
+        internal Parrot(Gender sex, string name)
             : base(sex, name)
         {
         }
 
-        public Parrot(Gender sex, string name, Condition condition)
+        internal Parrot(Gender sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }

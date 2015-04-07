@@ -17,7 +17,7 @@ namespace Models
 
         private List<Plant> food;
 
-       public Camelopard(Gender sex, string name)
+       internal Camelopard(Gender sex, string name)
             : base(sex, name)
         {
             this.PlantsFoodAllowed = InitialAllowedFoods;

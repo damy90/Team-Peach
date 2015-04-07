@@ -18,7 +18,7 @@ namespace Models
 		#endregion
 
 		#region Constructors
-		public Piranha()
+		internal Piranha()
 			: base()
 		{
 			base.Pictures = new string[3] { PiranhaPictureDefault, PiranhaPictureEating, PiranhaPictureUnhappy};
@@ -31,7 +31,7 @@ namespace Models
 			this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
 		}
 
-		public Piranha(Gender sex, string name, Condition condition)
+		internal Piranha(Gender sex, string name, Condition condition)
 			: base(sex, name, condition)
 		{
 		}

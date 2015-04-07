@@ -23,19 +23,19 @@
         #endregion
 
         #region Constructors
-        public Eagle()
+        internal Eagle()
             : base()
         {
             base.Pictures = new string[4] {EaglePictureDefault, EaglePictureEating, EaglePictureUnhappy, EaglePicturePlaying };
             this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
         }
 
-        public Eagle(Gender sex, string name)
+        internal Eagle(Gender sex, string name)
             : base(sex, name)
         {
         }
 
-        public Eagle(Gender sex, string name, Condition condition)
+        internal Eagle(Gender sex, string name, Condition condition)
             : base(sex, name, condition)
         {
         }

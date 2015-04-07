@@ -21,7 +21,7 @@ namespace Models
 
         private List<Meat> food;
 
-        public Dog(Gender sex, string name)
+        internal Dog(Gender sex, string name)
             : base(sex, name)
         {
            this.MeatFoodAllowed = InitialAllowedFoods;
