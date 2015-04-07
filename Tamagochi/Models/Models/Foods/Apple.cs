@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Models
+﻿namespace Models
 {
     public class Apple : Plant
     {
+        public Apple()
+        {
+        }
+        public Apple(int foodValue)
+            : base(foodValue)
+        {
+        }
     }
 }

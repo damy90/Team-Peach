@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Models
+﻿namespace Models
 {
+    using Models.Foods;
+
     public class Banana : Plant, IBuyable
     {
+        public Banana()
+        {
+        }
+        public Banana(int foodValue)
+            : base(foodValue)
+        {
+        }
         public int Price
         {
-            get { throw new NotImplementedException(); }
+            get { return PricesConstants.BananaPrice; }
         }
     }
 }

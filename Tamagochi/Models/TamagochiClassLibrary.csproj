@@ -46,6 +46,7 @@
     <Compile Include="Models\Animals\Animal.cs" />
     <Compile Include="Models\Animals\Carp.cs" />
     <Compile Include="Models\Animals\Piranha.cs" />
+    <Compile Include="Models\FoodFactory.cs" />
     <Compile Include="Models\Foods\Apple.cs" />
     <Compile Include="Models\Foods\Banana.cs" />
     <Compile Include="Models\Animals\Bird.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Models\Animals\Cat.cs" />
     <Compile Include="Models\Animals\Dog.cs" />
     <Compile Include="Interfaces\IHerbivorous.cs" />
+    <Compile Include="Models\Foods\PricesConstants.cs" />
     <Compile Include="Structures\Condition.cs" />
     <Compile Include="Interfaces\IPlayable.cs" />
     <Compile Include="Interfaces\ISoundable.cs" />
