@@ -38,7 +38,7 @@ namespace DeleteLater
             }
             catch (CustomException)
             {
-                MessageBox.Show("Please fill the form");
+                MessageBox.Show("Please fill the form", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             
