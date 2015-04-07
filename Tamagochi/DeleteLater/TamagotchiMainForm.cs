@@ -12,6 +12,7 @@ namespace DeleteLater
         private Animal pet;
         private Player player;
         private int overallConditions;
+        private Shop shop = Shop.Instance();
 
         public TamagotchiMainForm()
         {
@@ -35,6 +36,9 @@ namespace DeleteLater
                 pet = AnimalFactory.CreateAnimal(comboBox1.SelectedItem.ToString(), currentGender, petNameTextBox.Text);
 
                 player = new Player(pet);
+
+                shop.LoadStore(pet);
+                shopList.Items.AddRange(shop.FoodsInStore.Select(x => x.GetType().Name).ToArray());
 
                 petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[0]);
 
@@ -154,6 +158,7 @@ namespace DeleteLater
             chooseFoodDropComboBox.Enabled = true;
             chooseFoodDropComboBox.Visible = true;
             pointsAndCoins.Visible = true;
+            shopList.Visible = true;
 
             FillFoodList();
         }
@@ -165,28 +170,31 @@ namespace DeleteLater
             var food =
                 player.AvailableFood.FirstOrDefault(
                     x => x.GetType().Name == chooseFoodDropComboBox.Text.ToString());
-            if (chooseFoodDropComboBox.SelectedItem != null)
+            if (chooseFoodDropComboBox.Text != "FOOD LIST")
             {
                 pet.CurrentCondition.ChangeFeed(food.FoodValue);
             }
             energyStatusBar.Value = pet.CurrentCondition.Feed;
-            pet.CurrentCondition.ChangeFeed(food.FoodValue);
+            //pet.CurrentCondition.ChangeFeed(food.FoodValue);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[1]);
             player.AddPoints(5);
         }
 
         private void ChooseFood()
         {
-            //if (chooseFoodDropComboBox.SelectedItem == null)
-            //{
-            //    MessageBox.Show("Choose Food");
-            //}
+            FillFoodList();
 
-            chooseFoodDropComboBox.SelectedItem = chooseFoodDropComboBox.Items[0];
+            if (chooseFoodDropComboBox.Text == "FOOD LIST")
+            {
+                MessageBox.Show("Choose Food");
+                return;
+            }
 
-            string selectedFood = chooseFoodDropComboBox.SelectedItem.ToString();
 
-            if (chooseFoodDropComboBox.SelectedItem != null)
+
+            string selectedFood = chooseFoodDropComboBox.Text;
+
+            if (chooseFoodDropComboBox.Text != "FOOD LIST")
             {
                 selectedFood = chooseFoodDropComboBox.SelectedItem.ToString();
             }
@@ -196,8 +204,6 @@ namespace DeleteLater
             {
                 player.RemoveFood(selectedFood);
             }
-
-            FillFoodList();
         }
 
         private void FillFoodList()
@@ -228,11 +234,14 @@ namespace DeleteLater
             overallConditions = (pet.CurrentCondition.Feed + pet.CurrentCondition.Cleanliness +
                                     pet.CurrentCondition.Happiness) / 30;
 
-            player.ChangeCoins(overallConditions);
-            player.AddPoints(5);
+            if (overallConditions > 5)
+            {
+                player.ChangeCoins(overallConditions);
+                player.AddPoints(5);
+            }
+            
             actualPointsLabel.Text = player.Points.ToString();
             actualCoinsLabel.Text = player.Coins.ToString();
-
 
             pet.CurrentCondition.ChangeAll(-5);
             
@@ -284,6 +293,11 @@ namespace DeleteLater
         private void LoadGame(object sender, EventArgs e)
         {
             // TODO
+        }
+
+        private void shopList_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            shop.BuyItem(shopList.Text, player);
         }
 
         

@@ -3,7 +3,7 @@
     using System;
     public static class FoodFactory
     {
-        public static IBuyable CreateFood(string foodName, int foodValue)
+        public static IBuyable CreateFood(string foodName)
         {
             switch (foodName.ToLower())
             {

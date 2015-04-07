@@ -9,7 +9,7 @@
 
         private Shop()
         {
-
+            this.FoodsInStore = new List<Food>();
         }
 
         public static Shop Instance()
@@ -22,20 +22,11 @@
             return _instance;
         }
 
-        public List<string> FoodsInStore
-        {
-            get
-            {
-                return new List<string> { "Banana", "Pear", "FishMeat", "Pizza", "Steak" };
-            }
-        }
+        public List<Food> FoodsInStore { get; private set; }
 
         private IBuyable GetFood(string foodName)
         {
-            Random rand = new Random();
-            int foodValue = rand.Next(1, 15);
-
-            IBuyable createdFood =  FoodFactory.CreateFood(foodName, foodValue);
+            IBuyable createdFood =  FoodFactory.CreateFood(foodName);
             return createdFood;
         }
 
@@ -46,6 +37,18 @@
             {
                 buyer.Coins -= food.Price;
                 buyer.AddItem(food);
+            }
+        }
+
+        public void LoadStore(IAnimal animal)
+        {
+            if (animal is ICarnivorous)
+            {
+                this.FoodsInStore.AddRange((animal as ICarnivorous).MeatFoodAllowed);
+            }
+            else
+            {
+                this.FoodsInStore.AddRange((animal as IHerbivorous).PlantsFoodAllowed);
             }
         }
     }

@@ -54,6 +54,7 @@
             this.pointsAndCoins = new System.Windows.Forms.GroupBox();
             this.coinsLabel = new System.Windows.Forms.Label();
             this.actualCoinsLabel = new System.Windows.Forms.Label();
+            this.shopList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.petPictureBox)).BeginInit();
             this.newPetMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -384,12 +385,26 @@
             this.actualCoinsLabel.TabIndex = 15;
             this.actualCoinsLabel.Text = "100";
             // 
+            // shopList
+            // 
+            this.shopList.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.shopList.ForeColor = System.Drawing.Color.Navy;
+            this.shopList.FormattingEnabled = true;
+            this.shopList.ItemHeight = 23;
+            this.shopList.Location = new System.Drawing.Point(10, 190);
+            this.shopList.Name = "shopList";
+            this.shopList.Size = new System.Drawing.Size(120, 96);
+            this.shopList.TabIndex = 15;
+            this.shopList.Visible = false;
+            this.shopList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.shopList_MouseDoubleClick);
+            // 
             // TamagotchiMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(637, 472);
+            this.Controls.Add(this.shopList);
             this.Controls.Add(this.pointsAndCoins);
             this.Controls.Add(this.chooseFoodDropComboBox);
             this.Controls.Add(this.newPetMenu);
@@ -445,5 +460,6 @@
         private System.Windows.Forms.GroupBox pointsAndCoins;
         private System.Windows.Forms.Label actualCoinsLabel;
         private System.Windows.Forms.Label coinsLabel;
+        private System.Windows.Forms.ListBox shopList;
     }
 }

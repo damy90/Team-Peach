@@ -28,7 +28,7 @@ namespace Models
         {
             get
             {
-                return this.coins;
+                return Math.Max(coins, 0);
             }
             set
             {
@@ -112,7 +112,7 @@ namespace Models
 
         internal void AddItem(IBuyable food)
         {
-            throw new NotImplementedException();
+            this.AvailableFood.Add(food as Food);
         }
     }
 }
