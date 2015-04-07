@@ -4,10 +4,7 @@
     public class FishMeat : Meat, IBuyable
     {
         public FishMeat()
-        {
-        }
-        public FishMeat(int foodValue)
-            : base(foodValue)
+            : base(6)
         {
         }
         public int Price

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 using System.Linq;
+using Models.Models.Foods;
 
 namespace Models
 {
@@ -20,7 +21,7 @@ namespace Models
 
             this.Pet = animal;
             this.Points = 0;
-            this.AvailableFood = new List<Food>(){new Pizza()};
+            this.AvailableFood = new List<Food>(){new Bread()};
         }
 
         public int Coins

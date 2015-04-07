@@ -34,6 +34,8 @@ namespace DeleteLater
 
                 player = new Player(pet);
 
+                petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[0]);
+
                 SetGameplayWindow();
             }
             catch (CustomException)
@@ -156,12 +158,15 @@ namespace DeleteLater
         private void FeedClick(object sender, EventArgs e)
         {//FEED BUTTON
             ChooseFood();
+            var food =
+                player.AvailableFood.FirstOrDefault(
+                    x => x.GetType().Name == chooseFoodDropComboBox.Text.ToString());
             if (chooseFoodDropComboBox.SelectedItem != null)
             {
-                pet.CurrentCondition.ChangeFeed(5);
+                pet.CurrentCondition.ChangeFeed(food.FoodValue);
             }
             energyStatusBar.Value = pet.CurrentCondition.Feed;
-            pet.CurrentCondition.ChangeFeed(5);
+            pet.CurrentCondition.ChangeFeed(food.FoodValue);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[1]);
         }
 
@@ -182,7 +187,7 @@ namespace DeleteLater
             }
             
 
-            if (selectedFood != "Pizza")
+            if (selectedFood != "Bread")
             {
                 player.RemoveFood(selectedFood);
             }

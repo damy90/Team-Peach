@@ -4,10 +4,7 @@
     public class Pear : Plant, IBuyable
     {
         public Pear()
-        {
-        }
-        public Pear(int foodValue)
-            : base(foodValue)
+            : base(5)
         {
         }
         public int Price
