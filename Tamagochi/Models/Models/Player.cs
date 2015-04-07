@@ -110,9 +110,9 @@ namespace Models
 
         public int Points { get; set; }
 
-        internal void AddItem(IBuyable food)
+        internal void AddItem(Food food)
         {
-            this.AvailableFood.Add(food as Food);
+            this.AvailableFood.Add(food);
         }
     }
 }

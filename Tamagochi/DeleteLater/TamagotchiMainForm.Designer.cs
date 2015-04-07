@@ -48,13 +48,17 @@
             this.FemaleButton = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.petNameTextBox = new System.Windows.Forms.TextBox();
-            this.chooseFoodDropComboBox = new System.Windows.Forms.ComboBox();
             this.pointsLabel = new System.Windows.Forms.Label();
             this.actualPointsLabel = new System.Windows.Forms.Label();
             this.pointsAndCoins = new System.Windows.Forms.GroupBox();
-            this.coinsLabel = new System.Windows.Forms.Label();
             this.actualCoinsLabel = new System.Windows.Forms.Label();
+            this.coinsLabel = new System.Windows.Forms.Label();
             this.shopList = new System.Windows.Forms.ListBox();
+            this.foodList = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.priceList = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.petPictureBox)).BeginInit();
             this.newPetMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -313,17 +317,6 @@
             this.petNameTextBox.Text = "Pet Name";
             this.petNameTextBox.Visible = false;
             // 
-            // chooseFoodDropComboBox
-            // 
-            this.chooseFoodDropComboBox.Enabled = false;
-            this.chooseFoodDropComboBox.FormattingEnabled = true;
-            this.chooseFoodDropComboBox.Location = new System.Drawing.Point(10, 20);
-            this.chooseFoodDropComboBox.Name = "chooseFoodDropComboBox";
-            this.chooseFoodDropComboBox.Size = new System.Drawing.Size(121, 21);
-            this.chooseFoodDropComboBox.TabIndex = 11;
-            this.chooseFoodDropComboBox.Text = "FOOD LIST";
-            this.chooseFoodDropComboBox.Visible = false;
-            // 
             // pointsLabel
             // 
             this.pointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -361,18 +354,6 @@
             this.pointsAndCoins.TabStop = false;
             this.pointsAndCoins.Visible = false;
             // 
-            // coinsLabel
-            // 
-            this.coinsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.coinsLabel.AutoSize = true;
-            this.coinsLabel.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.coinsLabel.ForeColor = System.Drawing.Color.Navy;
-            this.coinsLabel.Location = new System.Drawing.Point(6, 53);
-            this.coinsLabel.Name = "coinsLabel";
-            this.coinsLabel.Size = new System.Drawing.Size(57, 24);
-            this.coinsLabel.TabIndex = 14;
-            this.coinsLabel.Text = "Coins:";
-            // 
             // actualCoinsLabel
             // 
             this.actualCoinsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -385,18 +366,91 @@
             this.actualCoinsLabel.TabIndex = 15;
             this.actualCoinsLabel.Text = "100";
             // 
+            // coinsLabel
+            // 
+            this.coinsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.coinsLabel.AutoSize = true;
+            this.coinsLabel.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.coinsLabel.ForeColor = System.Drawing.Color.Navy;
+            this.coinsLabel.Location = new System.Drawing.Point(6, 53);
+            this.coinsLabel.Name = "coinsLabel";
+            this.coinsLabel.Size = new System.Drawing.Size(57, 24);
+            this.coinsLabel.TabIndex = 14;
+            this.coinsLabel.Text = "Coins:";
+            // 
             // shopList
             // 
             this.shopList.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.shopList.ForeColor = System.Drawing.Color.Navy;
             this.shopList.FormattingEnabled = true;
             this.shopList.ItemHeight = 23;
-            this.shopList.Location = new System.Drawing.Point(10, 190);
+            this.shopList.Location = new System.Drawing.Point(0, 164);
             this.shopList.Name = "shopList";
-            this.shopList.Size = new System.Drawing.Size(120, 96);
+            this.shopList.Size = new System.Drawing.Size(111, 96);
             this.shopList.TabIndex = 15;
             this.shopList.Visible = false;
             this.shopList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.shopList_MouseDoubleClick);
+            // 
+            // foodList
+            // 
+            this.foodList.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.foodList.ForeColor = System.Drawing.Color.Navy;
+            this.foodList.FormattingEnabled = true;
+            this.foodList.ItemHeight = 23;
+            this.foodList.Location = new System.Drawing.Point(0, 32);
+            this.foodList.Name = "foodList";
+            this.foodList.Size = new System.Drawing.Size(120, 96);
+            this.foodList.TabIndex = 16;
+            this.foodList.Visible = false;
+            this.foodList.SelectedIndexChanged += new System.EventHandler(this.foodList_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(9, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 18);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Available Food:";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(10, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Buy Food:";
+            this.label2.Visible = false;
+            // 
+            // priceList
+            // 
+            this.priceList.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceList.ForeColor = System.Drawing.Color.Navy;
+            this.priceList.FormattingEnabled = true;
+            this.priceList.ItemHeight = 23;
+            this.priceList.Location = new System.Drawing.Point(118, 164);
+            this.priceList.Name = "priceList";
+            this.priceList.Size = new System.Drawing.Size(44, 96);
+            this.priceList.TabIndex = 19;
+            this.priceList.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(115, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 18);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Price:";
+            this.label3.Visible = false;
             // 
             // TamagotchiMainForm
             // 
@@ -404,9 +458,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(637, 472);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.priceList);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.foodList);
             this.Controls.Add(this.shopList);
             this.Controls.Add(this.pointsAndCoins);
-            this.Controls.Add(this.chooseFoodDropComboBox);
             this.Controls.Add(this.newPetMenu);
             this.Controls.Add(this.petPictureBox);
             this.Controls.Add(this.exitGameButton);
@@ -431,6 +489,7 @@
             this.pointsAndCoins.ResumeLayout(false);
             this.pointsAndCoins.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -454,12 +513,16 @@
         private System.Windows.Forms.TextBox petNameTextBox;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox chooseFoodDropComboBox;
         private System.Windows.Forms.Label pointsLabel;
         private System.Windows.Forms.Label actualPointsLabel;
         private System.Windows.Forms.GroupBox pointsAndCoins;
         private System.Windows.Forms.Label actualCoinsLabel;
         private System.Windows.Forms.Label coinsLabel;
         private System.Windows.Forms.ListBox shopList;
+        private System.Windows.Forms.ListBox foodList;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox priceList;
+        private System.Windows.Forms.Label label3;
     }
 }

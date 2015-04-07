@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    public class Drumstick : Meat
+    public class Drumstick : Meat, IBuyable
     {
         private const int price = PricesConstants.DrumstickPrice;
 

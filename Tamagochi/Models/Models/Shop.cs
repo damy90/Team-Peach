@@ -24,18 +24,18 @@
 
         public List<Food> FoodsInStore { get; private set; }
 
-        private IBuyable GetFood(string foodName)
+        private Food GetFood(string foodName)
         {
-            IBuyable createdFood =  FoodFactory.CreateFood(foodName);
+            Food createdFood =  FoodFactory.CreateFood(foodName);
             return createdFood;
         }
 
         public void BuyItem(string item, Player buyer)
         {
             var food = this.GetFood(item);
-            if (food.Price <= buyer.Coins)
+            if ((food as IBuyable).Price <= buyer.Coins)
             {
-                buyer.Coins -= food.Price;
+                buyer.Coins -= (food as IBuyable).Price;
                 buyer.AddItem(food);
             }
         }

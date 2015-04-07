@@ -1,14 +1,18 @@
-﻿namespace Models
+﻿using Models.Models.Foods;
+
+namespace Models
 {
     using System;
     public static class FoodFactory
     {
-        public static IBuyable CreateFood(string foodName)
+        public static Food CreateFood(string foodName)
         {
             switch (foodName.ToLower())
             {
                 case "banana":
                     return new Banana();
+                case "drumstick":
+                    return new Drumstick();
                 case "fishmeat":
                     return new FishMeat();
                 case "pear":

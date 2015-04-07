@@ -4,6 +4,7 @@ using Models;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Models.Models.Foods;
 
 namespace DeleteLater
 {
@@ -13,6 +14,7 @@ namespace DeleteLater
         private Player player;
         private int overallConditions;
         private Shop shop = Shop.Instance();
+        private Food currentFood = new Bread();
 
         public TamagotchiMainForm()
         {
@@ -39,6 +41,7 @@ namespace DeleteLater
 
                 shop.LoadStore(pet);
                 shopList.Items.AddRange(shop.FoodsInStore.Select(x => x.GetType().Name).ToArray());
+                priceList.Items.AddRange(shop.FoodsInStore.Select(x => x as IBuyable).Select(x => x.Price.ToString()).ToArray());
 
                 petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[0]);
 
@@ -155,61 +158,35 @@ namespace DeleteLater
             energyStatusBar.Visible = true;
             hygieneStatusBar.Visible = true;
             happynessStatusBar.Visible = true;
-            chooseFoodDropComboBox.Enabled = true;
-            chooseFoodDropComboBox.Visible = true;
             pointsAndCoins.Visible = true;
             shopList.Visible = true;
+            foodList.Visible = true;
+            priceList.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
 
             FillFoodList();
         }
 
 
         private void FeedClick(object sender, EventArgs e)
-        {//FEED BUTTON
-            ChooseFood();
-            var food =
-                player.AvailableFood.FirstOrDefault(
-                    x => x.GetType().Name == chooseFoodDropComboBox.Text.ToString());
-            if (chooseFoodDropComboBox.Text != "FOOD LIST")
-            {
-                pet.CurrentCondition.ChangeFeed(food.FoodValue);
-            }
+        {//FEED BUTTON          
+            FillFoodList();
+            pet.CurrentCondition.ChangeFeed(currentFood.FoodValue);
             energyStatusBar.Value = pet.CurrentCondition.Feed;
-            //pet.CurrentCondition.ChangeFeed(food.FoodValue);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[1]);
             player.AddPoints(5);
         }
 
-        private void ChooseFood()
-        {
-            FillFoodList();
-
-            if (chooseFoodDropComboBox.Text == "FOOD LIST")
-            {
-                MessageBox.Show("Choose Food");
-                return;
-            }
-
-
-
-            string selectedFood = chooseFoodDropComboBox.Text;
-
-            if (chooseFoodDropComboBox.Text != "FOOD LIST")
-            {
-                selectedFood = chooseFoodDropComboBox.SelectedItem.ToString();
-            }
-            
-
-            if (selectedFood != "Bread")
-            {
-                player.RemoveFood(selectedFood);
-            }
-        }
-
         private void FillFoodList()
         {
-            chooseFoodDropComboBox.Items.Clear();
-            chooseFoodDropComboBox.Items.AddRange(player.AvailableFood.Select(x => x.GetType().Name).ToArray());
+            foodList.Items.Clear();
+            if (currentFood.GetType().Name != "Bread")
+            {
+                player.RemoveFood(currentFood.GetType().Name);
+            }
+            foodList.Items.AddRange((string[])player.AvailableFood.Select(x => x.GetType().Name).ToArray());
         }
 
         private void CleanClick(object sender, EventArgs e)
@@ -217,7 +194,6 @@ namespace DeleteLater
             pet.CurrentCondition.ChangeCleanliness(5);
             hygieneStatusBar.Value = pet.CurrentCondition.Cleanliness;
             player.AddPoints(5);
-            //ChangeProgressBar(progressBar2, 5);
         }
 
         private void PlayClick(object sender, EventArgs e)
@@ -298,8 +274,15 @@ namespace DeleteLater
         private void shopList_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             shop.BuyItem(shopList.Text, player);
+            FillFoodList();
         }
 
-        
+        private void foodList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (foodList.Text != "Bread")
+            {
+                currentFood = FoodFactory.CreateFood(foodList.Text) as Food;
+            }
+        }
     }
 }
