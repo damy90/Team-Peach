@@ -6,6 +6,7 @@
         private int foodValue;
         public Food()
         {
+            this.foodValue = 1;
         }
         public Food(int foodValue)
         {
