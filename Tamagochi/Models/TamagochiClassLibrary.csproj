@@ -83,12 +83,8 @@
     <None Include="Models\Animals\AnimalDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Resourses\Pictures\ParrotPicture_01.png" />
-    <Content Include="Resourses\Pictures\ParrotPicture_02.png" />
-    <Content Include="Resourses\Pictures\ParrotPicture_04.png" />
-    <Content Include="Resourses\Pictures\ParrotPicture_03.png" />
+    <Folder Include="Resourses\Pictures\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
