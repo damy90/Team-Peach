@@ -13,10 +13,11 @@ namespace Models.Tests
         [TestMethod()]
         public void InitializeTest()
         {
-            Animal pet = new Dog(Gender.Male, "Rex");
-            //Player player = Player.Initialize("dany", pet);
-            Assert.AreEqual(pet.Name, "Rex");
-            //Assert.AreEqual(player.Pet.Name, "Rex");
+            //Animal pet = new Dog(Gender.Male, "Rex");
+            ////Player player = Player.Initialize("dany", pet);
+            //Assert.AreEqual(pet.Name, "Rex");
+            ////Assert.AreEqual(player.Pet.Name, "Rex");
+            Assert.Fail();
         }
 
         [TestMethod()]
@@ -28,10 +29,10 @@ namespace Models.Tests
         [TestMethod()]
         public void SerializeTest()
         {
-            Animal pet = new Dog(Gender.Male, "Rex");
+            //Animal pet = new Dog(Gender.Male, "Rex");
             //Player player = Player.Initialize("dany", pet);
             //player.Serialize();
-            //Assert.Fail();
+            Assert.Fail();
         }
 
         [TestMethod()]
