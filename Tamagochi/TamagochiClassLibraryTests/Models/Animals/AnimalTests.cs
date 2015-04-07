@@ -47,5 +47,12 @@ namespace Models.Tests
             Assert.AreEqual(pet.CurrentCondition.Feed, 100);
             //Assert.AreEqual(pet.CurrentCondition.Happiness, 90);
         }
+
+        [TestMethod()]
+        public void AnimalInitializeWithoutFactoryTest()
+        {
+            //this should not compile if uncommented
+            //var pet = new Cat(Gender.Male, "Wiskers");
+        }
     }
 }
