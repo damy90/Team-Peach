@@ -49,9 +49,15 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.petNameTextBox = new System.Windows.Forms.TextBox();
             this.chooseFoodDropComboBox = new System.Windows.Forms.ComboBox();
+            this.pointsLabel = new System.Windows.Forms.Label();
+            this.actualPointsLabel = new System.Windows.Forms.Label();
+            this.pointsAndCoins = new System.Windows.Forms.GroupBox();
+            this.coinsLabel = new System.Windows.Forms.Label();
+            this.actualCoinsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.petPictureBox)).BeginInit();
             this.newPetMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.pointsAndCoins.SuspendLayout();
             this.SuspendLayout();
             // 
             // CreateAnimal
@@ -317,12 +323,74 @@
             this.chooseFoodDropComboBox.Text = "FOOD LIST";
             this.chooseFoodDropComboBox.Visible = false;
             // 
+            // pointsLabel
+            // 
+            this.pointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pointsLabel.AutoSize = true;
+            this.pointsLabel.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pointsLabel.ForeColor = System.Drawing.Color.Navy;
+            this.pointsLabel.Location = new System.Drawing.Point(6, 11);
+            this.pointsLabel.Name = "pointsLabel";
+            this.pointsLabel.Size = new System.Drawing.Size(63, 24);
+            this.pointsLabel.TabIndex = 12;
+            this.pointsLabel.Text = "Points:";
+            // 
+            // actualPointsLabel
+            // 
+            this.actualPointsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.actualPointsLabel.AutoSize = true;
+            this.actualPointsLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.actualPointsLabel.ForeColor = System.Drawing.Color.Navy;
+            this.actualPointsLabel.Location = new System.Drawing.Point(70, 12);
+            this.actualPointsLabel.Name = "actualPointsLabel";
+            this.actualPointsLabel.Size = new System.Drawing.Size(20, 23);
+            this.actualPointsLabel.TabIndex = 13;
+            this.actualPointsLabel.Text = "0";
+            // 
+            // pointsAndCoins
+            // 
+            this.pointsAndCoins.Controls.Add(this.actualCoinsLabel);
+            this.pointsAndCoins.Controls.Add(this.coinsLabel);
+            this.pointsAndCoins.Controls.Add(this.pointsLabel);
+            this.pointsAndCoins.Controls.Add(this.actualPointsLabel);
+            this.pointsAndCoins.Location = new System.Drawing.Point(492, 8);
+            this.pointsAndCoins.Name = "pointsAndCoins";
+            this.pointsAndCoins.Size = new System.Drawing.Size(146, 100);
+            this.pointsAndCoins.TabIndex = 14;
+            this.pointsAndCoins.TabStop = false;
+            this.pointsAndCoins.Visible = false;
+            // 
+            // coinsLabel
+            // 
+            this.coinsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.coinsLabel.AutoSize = true;
+            this.coinsLabel.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.coinsLabel.ForeColor = System.Drawing.Color.Navy;
+            this.coinsLabel.Location = new System.Drawing.Point(6, 53);
+            this.coinsLabel.Name = "coinsLabel";
+            this.coinsLabel.Size = new System.Drawing.Size(57, 24);
+            this.coinsLabel.TabIndex = 14;
+            this.coinsLabel.Text = "Coins:";
+            // 
+            // actualCoinsLabel
+            // 
+            this.actualCoinsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.actualCoinsLabel.AutoSize = true;
+            this.actualCoinsLabel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.actualCoinsLabel.ForeColor = System.Drawing.Color.Navy;
+            this.actualCoinsLabel.Location = new System.Drawing.Point(70, 55);
+            this.actualCoinsLabel.Name = "actualCoinsLabel";
+            this.actualCoinsLabel.Size = new System.Drawing.Size(37, 23);
+            this.actualCoinsLabel.TabIndex = 15;
+            this.actualCoinsLabel.Text = "100";
+            // 
             // TamagotchiMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(637, 472);
+            this.Controls.Add(this.pointsAndCoins);
             this.Controls.Add(this.chooseFoodDropComboBox);
             this.Controls.Add(this.newPetMenu);
             this.Controls.Add(this.petPictureBox);
@@ -345,6 +413,8 @@
             this.newPetMenu.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pointsAndCoins.ResumeLayout(false);
+            this.pointsAndCoins.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -370,5 +440,10 @@
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox chooseFoodDropComboBox;
+        private System.Windows.Forms.Label pointsLabel;
+        private System.Windows.Forms.Label actualPointsLabel;
+        private System.Windows.Forms.GroupBox pointsAndCoins;
+        private System.Windows.Forms.Label actualCoinsLabel;
+        private System.Windows.Forms.Label coinsLabel;
     }
 }

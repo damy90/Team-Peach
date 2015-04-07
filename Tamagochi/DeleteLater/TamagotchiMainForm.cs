@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Runtime.InteropServices;
 using Models;
 using System;
 using System.Drawing;
@@ -10,6 +11,7 @@ namespace DeleteLater
     {
         private Animal pet;
         private Player player;
+        private int overallConditions;
 
         public TamagotchiMainForm()
         {
@@ -151,6 +153,8 @@ namespace DeleteLater
             happynessStatusBar.Visible = true;
             chooseFoodDropComboBox.Enabled = true;
             chooseFoodDropComboBox.Visible = true;
+            pointsAndCoins.Visible = true;
+
             FillFoodList();
         }
 
@@ -168,6 +172,7 @@ namespace DeleteLater
             energyStatusBar.Value = pet.CurrentCondition.Feed;
             pet.CurrentCondition.ChangeFeed(food.FoodValue);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[1]);
+            player.AddPoints(5);
         }
 
         private void ChooseFood()
@@ -205,6 +210,7 @@ namespace DeleteLater
         {//CLEAN BUTTON
             pet.CurrentCondition.ChangeCleanliness(5);
             hygieneStatusBar.Value = pet.CurrentCondition.Cleanliness;
+            player.AddPoints(5);
             //ChangeProgressBar(progressBar2, 5);
         }
 
@@ -212,14 +218,24 @@ namespace DeleteLater
         {//PLAY BUTTON
             pet.CurrentCondition.ChangeHappiness(5);
             happynessStatusBar.Value = pet.CurrentCondition.Happiness;
+            player.AddPoints(5);
             //ChangeProgressBar(progressBar3, 5);
             petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[3]);
         }
 
         private void GameTimerTickEvents(object sender, EventArgs e)
         {
-            pet.CurrentCondition.ChangeAll(-5);
+            overallConditions = (pet.CurrentCondition.Feed + pet.CurrentCondition.Cleanliness +
+                                    pet.CurrentCondition.Happiness) / 30;
 
+            player.ChangeCoins(overallConditions);
+            player.AddPoints(5);
+            actualPointsLabel.Text = player.Points.ToString();
+            actualCoinsLabel.Text = player.Coins.ToString();
+
+
+            pet.CurrentCondition.ChangeAll(-5);
+            
             if (pet is ISoundable && 
                 (pet.CurrentCondition.Feed < 20 
                 || pet.CurrentCondition.Cleanliness < 20 
