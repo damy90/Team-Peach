@@ -8,7 +8,7 @@ namespace Models
         #region Constants
         private const string CarpPictureDefault = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_01.jpg";
         private const string CarpPictureEating = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_02.jpg";
-        private const string CarpPictureUnahppy = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_03.jpg";
+        private const string CarpPictureUnahppy = @"..\..\..\Models\Resourses\Pictures\Carp\Picture_03.png";
         #endregion
         #region Fileds
         private List<Plant> plantsFoodAllowed = new List<Plant>();
@@ -25,6 +25,8 @@ namespace Models
         internal Carp(Gender  sex, string name)
             : base(sex, name)
         {
+            base.Pictures = new string[3] { CarpPictureDefault, CarpPictureEating, CarpPictureUnahppy };
+            this.PlantsFoodAllowed = new List<Plant> { new Apple(), new Banana() };
         }
 
         internal Carp(Gender  sex, string name, Condition condition)

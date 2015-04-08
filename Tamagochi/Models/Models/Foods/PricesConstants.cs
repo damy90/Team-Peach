@@ -11,6 +11,7 @@ namespace Models.Models.Foods
         //Plants
         public const int PearPrice = 10;
         public const int BananaPrice = 12;
+        public const int ApplePrice = 10;
 
         //Meats
         public const int FishMeatPrice = 10;

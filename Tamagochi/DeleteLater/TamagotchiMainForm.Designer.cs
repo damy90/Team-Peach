@@ -481,6 +481,7 @@
             this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "TamagotchiMainForm";
             this.Text = "Tamagochi v1.0";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TamagotchiMainForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.petPictureBox)).EndInit();
             this.newPetMenu.ResumeLayout(false);
             this.newPetMenu.PerformLayout();

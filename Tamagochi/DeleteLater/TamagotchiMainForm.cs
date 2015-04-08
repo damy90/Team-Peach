@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Runtime.InteropServices;
+using System.Windows.Forms.VisualStyles;
 using Models;
 using System;
 using System.Drawing;
@@ -60,7 +61,12 @@ namespace DeleteLater
         private void ExitGame(object sender, EventArgs e)
         {
             DialogResult msg = MessageBox.Show("Do you really want to leave the game?", "Exit Game?", MessageBoxButtons.YesNo, MessageBoxIcon.None);
-            if (msg == DialogResult.Yes)
+
+            if (msg == DialogResult.No)
+            {
+                return;
+            }
+            else if (msg == DialogResult.Yes)
             {
                 DialogResult saveGame = MessageBox.Show("Do you  want to Save the current progress?", "Save Game?", MessageBoxButtons.YesNo, MessageBoxIcon.None);
                 if (saveGame == DialogResult.Yes)
@@ -69,8 +75,6 @@ namespace DeleteLater
                 }
                 Environment.Exit(0);
             }
-
-
         }
 
 
@@ -151,13 +155,17 @@ namespace DeleteLater
             gameTimer.Enabled = true;
             feedButton.Visible = true;
             cleanButton.Visible = true;
-            playButton.Visible = true;
+            if (pet is IPlayable)
+            {
+                playButton.Visible = true;
+                playButton.Enabled = true;
+                happynessStatusBar.Visible = true;
+            }
             feedButton.Enabled = true;
             cleanButton.Enabled = true;
-            playButton.Enabled = true;
             energyStatusBar.Visible = true;
             hygieneStatusBar.Visible = true;
-            happynessStatusBar.Visible = true;
+            
             pointsAndCoins.Visible = true;
             shopList.Visible = true;
             foodList.Visible = true;
@@ -208,6 +216,10 @@ namespace DeleteLater
 
         private void GameTimerTickEvents(object sender, EventArgs e)
         {
+            if (!(pet is IPlayable))
+            {
+                pet.CurrentCondition.ChangeHappiness(60);
+            }
             overallConditions = (pet.CurrentCondition.Feed + pet.CurrentCondition.Cleanliness +
                                     pet.CurrentCondition.Happiness) / 30;
 
@@ -232,14 +244,20 @@ namespace DeleteLater
 
             energyStatusBar.Value = pet.CurrentCondition.Feed;
             hygieneStatusBar.Value = pet.CurrentCondition.Cleanliness;
-            happynessStatusBar.Value = pet.CurrentCondition.Happiness;
-
+            if (pet is IPlayable)
+            {
+                happynessStatusBar.Value = pet.CurrentCondition.Happiness;    
+            }
+            
             //TODO: add sleep
 
             ChangeProgressBarColor(energyStatusBar);
             ChangeProgressBarColor(hygieneStatusBar);
-            ChangeProgressBarColor(happynessStatusBar);
-
+            if (pet is IPlayable)
+            {
+                ChangeProgressBarColor(happynessStatusBar);    
+            }
+            
             if (pet.CurrentCondition.Feed > 20 && pet.CurrentCondition.Cleanliness > 20 && pet.CurrentCondition.Happiness > 20)
             {
                 petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[0]);
@@ -296,6 +314,11 @@ namespace DeleteLater
             {
                 this.currentFood = FoodFactory.CreateFood(foodList.Text) as Food;
             }
+        }
+
+        private void TamagotchiMainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ExitGame(sender, e);
         }
     }
 }
