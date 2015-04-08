@@ -21,6 +21,10 @@ namespace Models
                     return new Pizza();
                 case "steak":
                     return new Steak();
+                case "apple":
+                    return new Apple();
+                case "bread":
+                    return new Bread();          
                 default:
                     throw new ArgumentException("This food does not exist!");
             }

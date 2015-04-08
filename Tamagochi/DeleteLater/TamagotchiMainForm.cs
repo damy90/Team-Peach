@@ -25,7 +25,7 @@ namespace DeleteLater
 
         private void CreateAnimal_Click(object sender, EventArgs e)
         {
-            var gender =  MaleButton.Checked ? MaleButton.Text :FemaleButton.Text;
+            var gender = MaleButton.Checked ? MaleButton.Text : FemaleButton.Text;
 
             Gender currentGender = (Gender)(Enum.Parse(typeof(Gender), gender));
 
@@ -52,8 +52,8 @@ namespace DeleteLater
                 MessageBox.Show("Please fill the form", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            
-            
+
+
             gameTimer.Enabled = true;
         }
 
@@ -117,7 +117,7 @@ namespace DeleteLater
             newGameButton.Visible = false;
             newGameButton.Enabled = false;
             CreateAnimal.Visible = true;
-            CreateAnimal.Enabled = true;         
+            CreateAnimal.Enabled = true;
             newPetMenu.Visible = true;
             newPetMenu.Enabled = true;
             petNameTextBox.Visible = true;
@@ -127,15 +127,15 @@ namespace DeleteLater
             MaleButton.Visible = true;
             MaleButton.Enabled = true;
             FemaleButton.Visible = true;
-            FemaleButton.Enabled = true;           
+            FemaleButton.Enabled = true;
         }
 
         //STARTING NEW GAME
 
         private void SetGameplayWindow()
-        {           
+        {
             CreateAnimal.Visible = false;
-            CreateAnimal.Enabled = false;        
+            CreateAnimal.Enabled = false;
             petNameTextBox.Enabled = false;
             petNameTextBox.Visible = false;
             MaleButton.Enabled = false;
@@ -171,7 +171,8 @@ namespace DeleteLater
 
 
         private void FeedClick(object sender, EventArgs e)
-        {//FEED BUTTON          
+        {//FEED BUTTON   
+            UpdateCurrentFood();
             FillFoodList();
             pet.CurrentCondition.ChangeFeed(currentFood.FoodValue);
             energyStatusBar.Value = pet.CurrentCondition.Feed;
@@ -215,15 +216,15 @@ namespace DeleteLater
                 player.ChangeCoins(overallConditions);
                 player.AddPoints(5);
             }
-            
+
             actualPointsLabel.Text = player.Points.ToString();
             actualCoinsLabel.Text = player.Coins.ToString();
 
             pet.CurrentCondition.ChangeAll(-5);
-            
-            if (pet is ISoundable && 
-                (pet.CurrentCondition.Feed < 20 
-                || pet.CurrentCondition.Cleanliness < 20 
+
+            if (pet is ISoundable &&
+                (pet.CurrentCondition.Feed < 20
+                || pet.CurrentCondition.Cleanliness < 20
                 || pet.CurrentCondition.Happiness < 20))
             {
                 (pet as ISoundable).MakeSound();
@@ -282,6 +283,18 @@ namespace DeleteLater
             if (foodList.Text != "Bread")
             {
                 currentFood = FoodFactory.CreateFood(foodList.Text) as Food;
+            }
+        }
+
+        private void UpdateCurrentFood()
+        {
+            if (string.IsNullOrEmpty(foodList.Text))
+            {
+                this.currentFood = FoodFactory.CreateFood("Bread");
+            }
+            else
+            {
+                this.currentFood = FoodFactory.CreateFood(foodList.Text) as Food;
             }
         }
     }
