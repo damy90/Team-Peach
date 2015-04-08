@@ -34,7 +34,7 @@ namespace Models
             {
                 return this.happiness;
             }
-            internal set
+            set
             {
                 this.happiness = ChangeCondition(0, value);
             }
@@ -46,7 +46,7 @@ namespace Models
             {
                 return this.feed;
             }
-            internal set
+            set
             {
                 this.feed = ChangeCondition(0, value);
             }
@@ -58,7 +58,7 @@ namespace Models
             {
                 return this.cleanliness;
             }
-            internal set
+            set
             {
                 this.cleanliness = ChangeCondition(0, value);
             }
@@ -70,7 +70,7 @@ namespace Models
             {
                 return this.energy;
             }
-            internal set
+            set
             {
                 this.energy = ChangeCondition(0, value);
             }

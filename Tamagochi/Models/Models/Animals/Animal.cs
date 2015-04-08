@@ -15,7 +15,9 @@ namespace Models
         #region Fields
         private string[] pictures;
 
-
+        //Changing the values of a structure with methods doesn't work with get; set;
+        //Serialization doesn't work without get;set;
+        //TODO: bugfix use class
         public Condition CurrentCondition;
 
         private Gender sex;
@@ -56,6 +58,18 @@ namespace Models
         #endregion
 
         #region Properties
+        public Condition SerializedCondition
+        {
+            get
+            {
+                return this.CurrentCondition;
+            }
+            set
+            {
+                this.CurrentCondition = value;
+            }
+        }
+
         public string Name
         {
             get
