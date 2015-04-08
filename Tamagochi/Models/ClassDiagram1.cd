@@ -1,38 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Models.Animal" Collapsed="true">
-    <Position X="7.25" Y="5.5" Width="1.5" />
+    <Position X="7.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAQAAAQAAAAEAAAAAAQgABAAAAg=</HashCode>
+      <HashCode>AAQAAAAEAAAABAEACAQRAAQAACBEAAAAAAQEAAAAAAg=</HashCode>
       <FileName>Models\Animals\Animal.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Cat" BaseTypeListCollapsed="true">
-    <Position X="6.25" Y="8.25" Width="1.5" />
+    <Position X="5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgIAkAI=</HashCode>
+      <HashCode>AAAAAAIAABAAAACAAQAAAACAAAAAACAAIAACAAIAkAI=</HashCode>
       <FileName>Models\Animals\Cat.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Dog" BaseTypeListCollapsed="true">
-    <Position X="1.75" Y="8.25" Width="1.5" />
+    <Position X="0.5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAgAAgAI=</HashCode>
+      <HashCode>AAAAAAAAABAAAACAAAAAAAAAAAAQAGAEYAEAACAAgAI=</HashCode>
       <FileName>Models\Animals\Dog.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Models.Camelopard" BaseTypeListCollapsed="true">
-    <Position X="4" Y="8.25" Width="1.5" />
+    <Position X="2.75" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAgAAAAI=</HashCode>
+      <HashCode>AAAAAQAAABAIAAAAAAAAAAAABAAAACAAIAAAIAAAAUI=</HashCode>
       <FileName>Models\Animals\Camelopard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.182" />
   </Class>
   <Class Name="Models.Mammal" Collapsed="true">
-    <Position X="4" Y="6.75" Width="1.5" />
+    <Position X="2.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAQgAAAAAAAAAAAAABAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Mammal.cs</FileName>
@@ -40,31 +41,33 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Bird" Collapsed="true">
-    <Position X="9.5" Y="6.75" Width="1.5" />
+    <Position X="8.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Bird.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Fish" Collapsed="true">
-    <Position X="13" Y="6.75" Width="1.5" />
+    <Position X="13" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Animals\Fish.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Eagle">
-    <Position X="10.75" Y="8.25" Width="1.5" />
+    <Position X="9.5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAgCAAgAAAAgAgiAA=</HashCode>
+      <HashCode>AAAAggiAAIAQgACAAAAAAAAAAAAAgiAAoAAAAIAgiAA=</HashCode>
       <FileName>Models\Animals\Eagle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Parrot" Collapsed="true">
-    <Position X="8.5" Y="8.25" Width="1.5" />
+    <Position X="7.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAIAAACAAgAAAAgAgAAI=</HashCode>
+      <HashCode>AAAAAwCAAABQgEAAAAAgAAAAAIAABCAAoAAAAAAgABA=</HashCode>
       <FileName>Models\Animals\Parrot.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -72,40 +75,41 @@
   <Class Name="Models.Food">
     <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Models\Foods\Food.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Models.Meat">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="6.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Meat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Models.Plant">
-    <Position X="13" Y="1.75" Width="1.5" />
+    <Position X="14.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Plant.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Models.Shop" Collapsed="true">
-    <Position X="19.5" Y="0.5" Width="1.5" />
+    <Position X="22.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAACAEAAAAAAAAAAAAAIAAAAAAACQAAAAAAAAAA=</HashCode>
       <FileName>Models\Shop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Models.Apple" Collapsed="true">
-    <Position X="10.75" Y="3.5" Width="1.5" />
+    <Position X="12" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Apple.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Pear" Collapsed="true">
-    <Position X="13" Y="3.5" Width="1.5" />
+    <Position X="14.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Pear.cs</FileName>
@@ -113,7 +117,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Banana" Collapsed="true">
-    <Position X="15.25" Y="3.5" Width="1.5" />
+    <Position X="16.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Banana.cs</FileName>
@@ -121,14 +125,15 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Drumstick">
-    <Position X="1.75" Y="3.5" Width="1.5" />
+    <Position X="3" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Drumstick.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Steak">
-    <Position X="8.5" Y="3.5" Width="1.5" />
+    <Position X="9.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Steak.cs</FileName>
@@ -136,7 +141,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.FishMeat">
-    <Position X="4" Y="3.5" Width="1.5" />
+    <Position X="5.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\FishMeat.cs</FileName>
@@ -144,7 +149,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Pizza">
-    <Position X="6.25" Y="3.5" Width="1.5" />
+    <Position X="7.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Foods\Pizza.cs</FileName>
@@ -152,56 +157,114 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Models.Player" Collapsed="true">
-    <Position X="17.75" Y="0.5" Width="1.5" />
+    <Position X="19" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAACQAIAAgACAAAhCBEAAAAAAAAAgAAEAI=</HashCode>
+      <HashCode>AAAAAAAAAAIQiggIAAgACAAAgCBAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Models\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="Models.Condition" Collapsed="true">
-    <Position X="17.75" Y="1.75" Width="1.5" />
+  <Class Name="Models.AnimalFactory" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAgAAAAAAQAAAAABEAgIIAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>gAAAAAAAAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AnimalFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Carp" Collapsed="true">
+    <Position X="11.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAEAAAAAAAAAAAAAAAAAAEBgAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Animals\Carp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.Piranha" Collapsed="true">
+    <Position X="14" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAACAAAAAAAAAAAAAAAAIAgAAAAAgiAA=</HashCode>
+      <FileName>Models\Animals\Piranha.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Models.FoodFactory" Collapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FoodFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Models.Foods.Bread" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Foods\Bread.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Models.Foods.PricesConstants" Collapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEEgAAAAAgAAAAAAAAAAIAAEAQAAA=</HashCode>
+      <FileName>Models\Foods\PricesConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.CustomException" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Models.Condition" Collapsed="true">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAABAAAQAQAAgBEAoIIAAAAACAAAAAAAAAAAAI=</HashCode>
       <FileName>Structures\Condition.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Interface Name="Models.ICarnivorous" Collapsed="true">
-    <Position X="19.5" Y="3" Width="1.5" />
+    <Position X="22.5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Interfaces\ICarnivorous.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Models.IHerbivorous" Collapsed="true">
-    <Position X="21.25" Y="3" Width="1.5" />
+    <Position X="19" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHerbivorous.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Models.ISoundable" Collapsed="true">
-    <Position X="19.5" Y="3.75" Width="1.5" />
+    <Position X="22.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ISoundable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Models.IPlayable" Collapsed="true">
-    <Position X="17.75" Y="3.75" Width="1.5" />
+    <Position X="20.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IPlayable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Models.IBuyable" Collapsed="true">
-    <Position X="17.75" Y="3" Width="1.5" />
+    <Position X="20.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IBuyable.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="Models.IAnimal" Collapsed="true">
+    <Position X="19" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAAABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAnimal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="Models.Gender" Collapsed="true">
-    <Position X="17.75" Y="4.75" Width="1.5" />
+    <Position X="19" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Enumerations\Gender.cs</FileName>
