@@ -15,12 +15,11 @@ Pay attention to your pet. You need to feed it, clean it and play with it.
 
 If you neglect it your pet will annoy you to death. Also you will be a horible person.
 ## Members
-                                                Git
-* dany90 - Даниел Попов               damy90                 
-* topalkata - Димитър Топалов       dtopalov
-* Dragomir.Tachev - Драгомир Тачев   DragomirTachev
-* g.yonchev - Георги Йончев          g-yonchev
-* vladko_sz - Владимир Димов        VladimirDimov
-* kamen_t - Камен Тодоров            kament
-* NEw358 - Калоян Маршалов          KaloyanMarshalov
+* dany90 - Даниел Попов: damy90                 
+* topalkata - Димитър Топалов: dtopalov
+* Dragomir.Tachev - Драгомир Тачев: DragomirTachev
+* g.yonchev - Георги Йончев:  g-yonchev
+* vladko_sz - Владимир Димов: VladimirDimov
+* kamen_t - Камен Тодоров: kament
+* NEw358 - Калоян Маршалов: KaloyanMarshalov
 * P.Alexandrov - Петър Александров

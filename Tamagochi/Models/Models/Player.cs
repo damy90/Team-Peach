@@ -4,6 +4,7 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Linq;
 using Models.Models.Foods;
+using Polenter.Serialization;
 
 namespace Models
 {
@@ -14,6 +15,10 @@ namespace Models
         private int coins;
         private Animal pet;
 
+        public Player()
+        {
+
+        }
 
         public Player(Animal animal)
         {
@@ -90,29 +95,26 @@ namespace Models
         //    this.Food.Add(item);
         //}
 
-        //cannot be tested until a game can be started
-        //public void Serialize(string path = "../../")
-        //{
-        //    XmlSerializer xml = new XmlSerializer(this.GetType());
-        //    StreamWriter file = new StreamWriter(path + this.name + ".xml");
-        //    xml.Serialize(file, this);
-        //    file.Close();
-        //}
-
-        //public Player Deserialize(string path = "../../player.xml")
-        //{
-        //    XmlSerializer xml = new XmlSerializer(this.GetType());
-        //    StreamReader file = new StreamReader(path);
-        //    _instance = (Player)xml.Deserialize(file);
-        //    file.Close();
-        //    return _instance;
-        //}
-
         public int Points { get; set; }
 
         internal void AddItem(Food food)
         {
             this.AvailableFood.Add(food);
         }
+
+        #region Serialization
+        public void Serialize(string path = "../../Saved Game.xml")
+        {
+            var serializer = new SharpSerializer();
+            serializer.Serialize(this, path);
+        }
+
+        public static Player Deserialize(string path = "../../Saved Game.xml")
+        {
+            var serializer = new SharpSerializer();
+            return (Player)serializer.Deserialize(path); ;
+        }
+
+        #endregion
     }
 }

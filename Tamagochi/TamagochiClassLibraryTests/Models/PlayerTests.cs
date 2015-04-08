@@ -29,16 +29,18 @@ namespace Models.Tests
         [TestMethod()]
         public void SerializeTest()
         {
-            //Animal pet = new Dog(Gender.Male, "Rex");
-            //Player player = Player.Initialize("dany", pet);
-            //player.Serialize();
-            Assert.Fail();
+            var pet = AnimalFactory.CreateAnimal("Cat", Gender.Male, "Wiskers");
+            var pizza = new Pizza();
+            var steak = new Steak();
+            pet.FoodsInfinite = new List<Food> { pizza, steak };
+            var player = new Player(pet);
+            player.Serialize();
         }
 
         [TestMethod()]
         public void DeserializeTest()
         {
-            Assert.Fail();
+            var player = Player.Deserialize();
         }
     }
 }
