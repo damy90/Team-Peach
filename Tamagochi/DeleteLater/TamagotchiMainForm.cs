@@ -71,7 +71,7 @@ namespace DeleteLater
                 DialogResult saveGame = MessageBox.Show("Do you  want to Save the current progress?", "Save Game?", MessageBoxButtons.YesNo, MessageBoxIcon.None);
                 if (saveGame == DialogResult.Yes)
                 {
-                    // USE SAVE GAME METHOD
+                    player.Serialize();
                 }
                 Environment.Exit(0);
             }
@@ -287,7 +287,8 @@ namespace DeleteLater
 
         private void LoadGame(object sender, EventArgs e)
         {
-            player = Player.Deserialize(@"../../");
+            player = Player.Deserialize(@"../../savedgame.xml");
+            pet = player.Pet;
             exitGameButton.Visible = false;
             exitGameButton.Enabled = false;
             loadGameButton.Visible = false;

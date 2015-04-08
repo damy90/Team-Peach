@@ -1,0 +1,66 @@
+﻿<Complex name="Root" type="Models.Player, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+  <Properties>
+    <Simple name="Coins" value="164" />
+    <Complex name="Pet" type="Models.Cat, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Properties>
+        <Collection name="MeatFoodAllowed">
+          <Properties>
+            <Simple name="Capacity" value="4" />
+          </Properties>
+          <Items>
+            <Complex type="Models.Drumstick, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+              <Properties>
+                <Simple name="FoodValue" value="20" />
+              </Properties>
+            </Complex>
+            <Complex type="Models.FishMeat, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+              <Properties>
+                <Simple name="FoodValue" value="20" />
+              </Properties>
+            </Complex>
+            <Complex type="Models.Steak, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+              <Properties>
+                <Simple name="FoodValue" value="25" />
+              </Properties>
+            </Complex>
+            <Complex type="Models.Pizza, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+              <Properties>
+                <Simple name="FoodValue" value="18" />
+              </Properties>
+            </Complex>
+          </Items>
+        </Collection>
+        <Simple name="Points" value="0" />
+        <Simple name="Name" value="ssdsd" />
+        <Simple name="Sex" value="Male" />
+        <Collection name="FoodsInfinite">
+          <Properties>
+            <Simple name="Capacity" value="0" />
+          </Properties>
+          <Items />
+        </Collection>
+        <SingleArray name="Pictures">
+          <Items>
+            <Simple value="..\..\..\Models\Resourses\Pictures\Cat\initial.png" />
+            <Simple value="..\..\..\Models\Resourses\Pictures\Cat\eat.png" />
+            <Simple value="..\..\..\Models\Resourses\Pictures\Cat\sad.png" />
+            <Simple value="..\..\..\Models\Resourses\Pictures\Cat\play.png" />
+          </Items>
+        </SingleArray>
+      </Properties>
+    </Complex>
+    <Collection name="AvailableFood" type="System.Collections.Generic.List`1[[Models.Food, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Properties>
+        <Simple name="Capacity" value="4" />
+      </Properties>
+      <Items>
+        <Complex type="Models.Models.Foods.Bread, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="FoodValue" value="3" />
+          </Properties>
+        </Complex>
+      </Items>
+    </Collection>
+    <Simple name="Points" value="40" />
+  </Properties>
+</Complex>

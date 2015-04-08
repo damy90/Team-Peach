@@ -103,7 +103,7 @@ namespace Models
         }
 
         #region Serialization
-        public void Serialize(string path = "../../Saved Game.xml")
+        public void Serialize(string path = "../../savedgame.xml")
         {
             var serializer = new SharpSerializer();
             serializer.Serialize(this, path);
