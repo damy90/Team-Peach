@@ -399,7 +399,7 @@
             this.foodList.ItemHeight = 23;
             this.foodList.Location = new System.Drawing.Point(0, 32);
             this.foodList.Name = "foodList";
-            this.foodList.Size = new System.Drawing.Size(120, 96);
+            this.foodList.Size = new System.Drawing.Size(111, 96);
             this.foodList.TabIndex = 16;
             this.foodList.Visible = false;
             this.foodList.SelectedIndexChanged += new System.EventHandler(this.foodList_SelectedIndexChanged);
@@ -436,7 +436,7 @@
             this.priceList.ItemHeight = 23;
             this.priceList.Location = new System.Drawing.Point(118, 164);
             this.priceList.Name = "priceList";
-            this.priceList.Size = new System.Drawing.Size(44, 96);
+            this.priceList.Size = new System.Drawing.Size(31, 96);
             this.priceList.TabIndex = 19;
             this.priceList.Visible = false;
             // 
