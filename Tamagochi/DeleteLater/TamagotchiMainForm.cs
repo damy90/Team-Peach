@@ -290,6 +290,10 @@ namespace DeleteLater
         {
             player = Player.Deserialize(@"../../savedgame.xml");
             pet = player.Pet;
+            shop.LoadStore(pet);
+            shopList.Items.AddRange(shop.FoodsInStore.Select(x => x.GetType().Name).ToArray());
+            priceList.Items.AddRange(shop.FoodsInStore.Select(x => x as IBuyable).Select(x => x.Price.ToString()).ToArray());
+
             exitGameButton.Visible = false;
             exitGameButton.Enabled = false;
             loadGameButton.Visible = false;

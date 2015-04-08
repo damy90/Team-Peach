@@ -39,7 +39,7 @@
             <Simple name="Energy" value="85" />
           </Properties>
         </Complex>
-        <Simple name="Name" value="dfdf" />
+        <Simple name="Name" value="dffd" />
         <Simple name="Sex" value="Male" />
         <Collection name="FoodsInfinite">
           <Properties>
