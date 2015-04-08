@@ -287,7 +287,39 @@ namespace DeleteLater
 
         private void LoadGame(object sender, EventArgs e)
         {
-            // TODO
+            player = Player.Deserialize(@"../../");
+            exitGameButton.Visible = false;
+            exitGameButton.Enabled = false;
+            loadGameButton.Visible = false;
+            loadGameButton.Enabled = false;
+            newGameButton.Visible = false;
+            newGameButton.Enabled = false;
+            BackgroundImage = null;
+            petPictureBox.Visible = true;
+            gameTimer.Enabled = true;
+            feedButton.Visible = true;
+            cleanButton.Visible = true;
+            if (pet is IPlayable)
+            {
+                playButton.Visible = true;
+                playButton.Enabled = true;
+                happynessStatusBar.Visible = true;
+            }
+            feedButton.Enabled = true;
+            cleanButton.Enabled = true;
+            energyStatusBar.Visible = true;
+            hygieneStatusBar.Visible = true;
+
+            pointsAndCoins.Visible = true;
+            shopList.Visible = true;
+            foodList.Visible = true;
+            priceList.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+
+            FillFoodList();
+
         }
 
         private void shopList_MouseDoubleClick(object sender, MouseEventArgs e)
