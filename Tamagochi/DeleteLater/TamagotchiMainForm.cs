@@ -64,6 +64,7 @@ namespace DeleteLater
 
             if (msg == DialogResult.No)
             {
+                gameTimer.Enabled = true;
                 return;
             }
             else if (msg == DialogResult.Yes)
@@ -351,6 +352,7 @@ namespace DeleteLater
 
         private void TamagotchiMainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            gameTimer.Enabled = false;
             ExitGame(sender, e);
             e.Cancel = true;
         }
