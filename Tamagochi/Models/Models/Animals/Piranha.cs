@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Models
 {
-    class Piranha : Fish, IAnimal, ICarnivorous
+	class Piranha : Fish, IAnimal, ICarnivorous
 	{
 		#region Constants
-		private const string PiranhaPictureDefault = @"..\..\..\Models\Resourses\Pictures\PiranhaPicture_01.jpg";
-		private const string PiranhaPictureEating = @"..\..\..\Models\Resourses\Pictures\PiranhaPicture_02.jpg";
-		private const string PiranhaPictureUnhappy = @"..\..\..\Models\Resourses\Pictures\PiranhaPicture_03.jpg";
+		private const string PiranhaPictureDefault = @"..\..\..\Models\Resourses\Pictures\Piranha\Picture_01.jpg";
+		private const string PiranhaPictureEating = @"..\..\..\Models\Resourses\Pictures\Piranha\Picture_02.jpg";
+		private const string PiranhaPictureUnhappy = @"..\..\..\Models\Resourses\Pictures\Piranha\Picture_03.jpg";
 		private const double HappinessIncrement = 20;
 		private const double FeedIncrement = 20;
 		#endregion
@@ -18,16 +18,11 @@ namespace Models
 		#endregion
 
 		#region Constructors
-		internal Piranha()
-			: base()
-		{
-			base.Pictures = new string[3] { PiranhaPictureDefault, PiranhaPictureEating, PiranhaPictureUnhappy};
-			this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
-		}
 
 		public Piranha(Gender  sex, string name)
 			: base(sex, name)
 		{
+			base.Pictures = new string[3] { PiranhaPictureDefault, PiranhaPictureEating, PiranhaPictureUnhappy };
 			this.MeatFoodAllowed = new List<Meat> { new Drumstick(), new Pizza(), new Steak() };
 		}
 
