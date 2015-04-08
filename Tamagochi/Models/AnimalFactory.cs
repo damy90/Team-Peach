@@ -21,9 +21,6 @@ namespace Models
                     case "Dog":
                         Pet = new Dog(gender, name);
                         break;
-                    case "Camelopard":
-                        Pet = new Camelopard(gender, name);
-                        break;
                     case "Carp":
                         Pet = new Carp(gender, name);
                         break;

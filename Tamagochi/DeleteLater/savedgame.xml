@@ -1,6 +1,6 @@
 ﻿<Complex name="Root" type="Models.Player, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
   <Properties>
-    <Simple name="Coins" value="164" />
+    <Simple name="Coins" value="128" />
     <Complex name="Pet" type="Models.Cat, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <Properties>
         <Collection name="MeatFoodAllowed">
@@ -31,7 +31,15 @@
           </Items>
         </Collection>
         <Simple name="Points" value="0" />
-        <Simple name="Name" value="ssdsd" />
+        <Complex name="SerializedCondition">
+          <Properties>
+            <Simple name="Happiness" value="85" />
+            <Simple name="Feed" value="85" />
+            <Simple name="Cleanliness" value="85" />
+            <Simple name="Energy" value="85" />
+          </Properties>
+        </Complex>
+        <Simple name="Name" value="dfdf" />
         <Simple name="Sex" value="Male" />
         <Collection name="FoodsInfinite">
           <Properties>
@@ -61,6 +69,6 @@
         </Complex>
       </Items>
     </Collection>
-    <Simple name="Points" value="40" />
+    <Simple name="Points" value="15" />
   </Properties>
 </Complex>

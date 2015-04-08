@@ -52,7 +52,6 @@
     <Compile Include="Models\Foods\Apple.cs" />
     <Compile Include="Models\Foods\Banana.cs" />
     <Compile Include="Models\Animals\Bird.cs" />
-    <Compile Include="Models\Animals\Camelopard.cs" />
     <Compile Include="Models\Foods\Bread.cs" />
     <Compile Include="Models\Foods\Drumstick.cs" />
     <Compile Include="Models\Animals\Eagle.cs" />
