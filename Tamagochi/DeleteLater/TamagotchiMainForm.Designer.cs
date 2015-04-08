@@ -235,7 +235,7 @@
             // 
             // gameTimer
             // 
-            this.gameTimer.Interval = 1000;
+            this.gameTimer.Interval = 3000;
             this.gameTimer.Tick += new System.EventHandler(this.GameTimerTickEvents);
             // 
             // newPetMenu
