@@ -9,14 +9,14 @@ namespace Models.Models.Foods
     public class PricesConstants
     {
         //Plants
-        public const int PearPrice = 10;
-        public const int BananaPrice = 12;
-        public const int ApplePrice = 10;
+        public const int PearPrice = 20;
+        public const int BananaPrice = 30;
+        public const int ApplePrice = 20;
 
         //Meats
-        public const int FishMeatPrice = 10;
-        public const int PizzaPrice = 16;
-        public const int SteakPrice = 20;
-        public const int DrumstickPrice = 12;
+        public const int FishMeatPrice = 40;
+        public const int PizzaPrice = 36;
+        public const int SteakPrice = 50;
+        public const int DrumstickPrice = 40;
     }
 }

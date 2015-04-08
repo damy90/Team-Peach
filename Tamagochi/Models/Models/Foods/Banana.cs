@@ -5,10 +5,7 @@
     public class Banana : Plant, IBuyable
     {
         public Banana()
-        {
-        }
-        public Banana(int foodValue)
-            : base(foodValue)
+            : base(PricesConstants.BananaPrice/2)
         {
         }
         public int Price

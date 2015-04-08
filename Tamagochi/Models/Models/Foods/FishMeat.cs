@@ -4,7 +4,7 @@
     public class FishMeat : Meat, IBuyable
     {
         public FishMeat()
-            : base(6)
+            : base(PricesConstants.FishMeatPrice/2)
         {
         }
         public int Price

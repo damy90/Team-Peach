@@ -4,7 +4,7 @@
     public class Pear : Plant, IBuyable
     {
         public Pear()
-            : base(5)
+            : base(PricesConstants.PearPrice/2)
         {
         }
         public int Price

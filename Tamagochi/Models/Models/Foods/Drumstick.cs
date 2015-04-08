@@ -4,10 +4,8 @@ namespace Models
 {
     public class Drumstick : Meat, IBuyable
     {
-        private const int price = PricesConstants.DrumstickPrice;
-
         public Drumstick()
-            : base(price/2)
+            : base(PricesConstants.DrumstickPrice/2)
         {
         }
 

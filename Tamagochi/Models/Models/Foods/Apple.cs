@@ -8,7 +8,7 @@ namespace Models
         {
         }
         public Apple(int foodValue)
-            : base(foodValue)
+            : base(PricesConstants.ApplePrice/2)
         {
         }
 

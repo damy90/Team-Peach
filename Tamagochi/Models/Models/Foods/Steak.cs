@@ -4,10 +4,7 @@
     public class Steak : Meat, IBuyable
     {
         public Steak()
-        {
-        }
-        public Steak(int foodValue)
-            : base(foodValue)
+            : base(PricesConstants.SteakPrice/2)
         {
         }
         public int Price
