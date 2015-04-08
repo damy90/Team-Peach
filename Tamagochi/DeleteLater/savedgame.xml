@@ -1,6 +1,6 @@
 ﻿<Complex name="Root" type="Models.Player, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
   <Properties>
-    <Simple name="Coins" value="128" />
+    <Simple name="Coins" value="34" />
     <Complex name="Pet" type="Models.Cat, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <Properties>
         <Collection name="MeatFoodAllowed">
@@ -33,13 +33,13 @@
         <Simple name="Points" value="0" />
         <Complex name="SerializedCondition">
           <Properties>
-            <Simple name="Happiness" value="85" />
-            <Simple name="Feed" value="85" />
-            <Simple name="Cleanliness" value="85" />
-            <Simple name="Energy" value="85" />
+            <Simple name="Happiness" value="60" />
+            <Simple name="Feed" value="60" />
+            <Simple name="Cleanliness" value="60" />
+            <Simple name="Energy" value="60" />
           </Properties>
         </Complex>
-        <Simple name="Name" value="dfdf" />
+        <Simple name="Name" value="Pet Nam" />
         <Simple name="Sex" value="Male" />
         <Collection name="FoodsInfinite">
           <Properties>
@@ -67,8 +67,23 @@
             <Simple name="FoodValue" value="3" />
           </Properties>
         </Complex>
+        <Complex type="Models.FishMeat, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="FoodValue" value="20" />
+          </Properties>
+        </Complex>
+        <Complex type="Models.Steak, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="FoodValue" value="25" />
+          </Properties>
+        </Complex>
+        <Complex type="Models.Drumstick, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <Properties>
+            <Simple name="FoodValue" value="20" />
+          </Properties>
+        </Complex>
       </Items>
     </Collection>
-    <Simple name="Points" value="15" />
+    <Simple name="Points" value="40" />
   </Properties>
 </Complex>

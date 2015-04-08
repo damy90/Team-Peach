@@ -166,7 +166,7 @@ namespace DeleteLater
             cleanButton.Enabled = true;
             energyStatusBar.Visible = true;
             hygieneStatusBar.Visible = true;
-            
+
             pointsAndCoins.Visible = true;
             shopList.Visible = true;
             foodList.Visible = true;
@@ -247,18 +247,18 @@ namespace DeleteLater
             hygieneStatusBar.Value = pet.CurrentCondition.Cleanliness;
             if (pet is IPlayable)
             {
-                happynessStatusBar.Value = pet.CurrentCondition.Happiness;    
+                happynessStatusBar.Value = pet.CurrentCondition.Happiness;
             }
-            
+
             //TODO: add sleep
 
             ChangeProgressBarColor(energyStatusBar);
             ChangeProgressBarColor(hygieneStatusBar);
             if (pet is IPlayable)
             {
-                ChangeProgressBarColor(happynessStatusBar);    
+                ChangeProgressBarColor(happynessStatusBar);
             }
-            
+
             if (pet.CurrentCondition.Feed > 20 && pet.CurrentCondition.Cleanliness > 20 && pet.CurrentCondition.Happiness > 20)
             {
                 petPictureBox.BackgroundImage = Image.FromFile(pet.Pictures[0]);
@@ -290,6 +290,11 @@ namespace DeleteLater
         {
             player = Player.Deserialize(@"../../savedgame.xml");
             pet = player.Pet;
+
+            shop.LoadStore(pet);
+            shopList.Items.AddRange(shop.FoodsInStore.Select(x => x.GetType().Name).ToArray());
+            priceList.Items.AddRange(shop.FoodsInStore.Select(x => x as IBuyable).Select(x => x.Price.ToString()).ToArray());
+
             exitGameButton.Visible = false;
             exitGameButton.Enabled = false;
             loadGameButton.Visible = false;
