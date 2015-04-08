@@ -319,6 +319,8 @@ namespace DeleteLater
         private void TamagotchiMainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             ExitGame(sender, e);
+            e.Cancel = true;
         }
+
     }
 }
